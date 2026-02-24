@@ -27,7 +27,7 @@ const bookingData = {
  * MAIN COMPONENT
  */
 export function BookingCalendar() {
-  const [date, setDate] = useState<Date | undefined>(today);
+  const [date, setDate] = useState<Date | undefined>(undefined);
 
   const modifiers = useMemo(() => ({
     booked: bookingData.booked,
