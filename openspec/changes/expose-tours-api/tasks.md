@@ -1,9 +1,0 @@
-# Tasks: Expose Tours API
-
-Ordered list of tasks to implement the tours API.
-
-- [ ] Create `src/data` directory <!-- id: 0 -->
-- [ ] Copy external `tours.json` to `src/data/tours.json` <!-- id: 1 -->
-- [ ] Create `src/pages/api/tours.json.ts` endpoint <!-- id: 2 -->
-- [ ] Verify endpoint returns correct JSON data via curl <!-- id: 3 -->
-- [ ] Add basic CORS headers to the endpoint (optional but recommended for public APIs) <!-- id: 4 -->
