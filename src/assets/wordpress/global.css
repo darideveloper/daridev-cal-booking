@@ -1,0 +1,22 @@
+.parallax {
+   background-attachment: fixed !important;
+}
+ 
+.highlighted {
+	color: #ad3c2e !important;
+}
+
+.center {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+}
+
+.text-white {
+	color: white !important;
+}
+
+/*small buttons (like instagram in hero*/
+.btn-small a {
+	font-size: 0.7rem !important;
+}
