@@ -2,15 +2,23 @@
 import Layout from '../layouts/Layout.astro';
 import { BookingForm } from "@/components/organisms/BookingForm";
 import { BookingCalendar } from "@/components/organisms/BookingCalendar";
+import toursData from "@/data/tours.json";
 
-const tourId = Astro.url.searchParams.get('tour') || undefined;
+export async function getStaticPaths() {
+  return toursData.map((tour) => ({
+    params: { id: tour.id },
+    props: { tour },
+  }));
+}
+
+const { id } = Astro.params;
 ---
 
 <Layout>
     <main class="min-h-screen bg-brand-cream/20 py-12 px-4 flex items-center justify-center">
         <div class="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto items-stretch justify-center p-4 lg:p-8">
             <div class="w-full lg:w-1/2">
-                <BookingForm client:load initialTourId={tourId} />
+                <BookingForm client:load initialTourId={id} />
             </div>
             <div class="w-full lg:w-1/2">
                 <BookingCalendar client:load />

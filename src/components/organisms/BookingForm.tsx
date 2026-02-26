@@ -7,8 +7,18 @@ import { Select } from "@/components/atoms/ui/select"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/atoms/ui/card"
 import toursData from "@/data/tours.json"
 
-export function BookingForm() {
+interface BookingFormProps {
+  initialTourId?: string
+}
+
+export function BookingForm({ initialTourId }: BookingFormProps) {
   const { formData, updateFormData } = useBookingStore()
+
+  React.useEffect(() => {
+    if (initialTourId) {
+      updateFormData({ tourId: initialTourId })
+    }
+  }, [initialTourId, updateFormData])
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
