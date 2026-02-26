@@ -6,6 +6,7 @@
 @import "@fontsource/lato/400.css";
 @import "@fontsource/lato/700.css";
 
+/* branding and shadcn customization */
 @theme {
   --color-brand-red: oklch(0.577 0.245 27.325);
   --color-brand-cream: oklch(1 0 0);
@@ -118,4 +119,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Transparent bg */
+body {
+    background-color: rgba(0, 0, 0, 0); /* or simply 'transparent' */
 }
