@@ -24,26 +24,24 @@ export function BookingCalendar() {
   const updateFormData = useBookingStore((state: any) => state.updateFormData);
 
   const modifiers = useMemo(() => ({
-    booked: availability.booked,
-    limited: availability.limited,
-    available: availability.available,
+    isBooked: (d: Date) => availability.booked.some(date => date.toDateString() === d.toDateString()),
+    isLimited: (d: Date) => availability.limited.some(date => date.toDateString() === d.toDateString()),
+    isAvailable: (d: Date) => availability.available.some(date => date.toDateString() === d.toDateString()),
   }), [availability]);
 
   const modifiersClassNames = useMemo(() => {
-    const classNames: Record<string, string> = {};
-    (Object.entries(STATUS_CONFIG) as [StatusKey, StatusConfigValue][]).forEach(([key, value]) => {
-      if (value.classes.modifier) {
-        classNames[key] = value.classes.modifier;
-      }
-    });
-    return classNames;
+    return {
+      isBooked: STATUS_CONFIG.booked.classes.modifier,
+      isLimited: STATUS_CONFIG.limited.classes.modifier,
+      isAvailable: STATUS_CONFIG.available.classes.modifier,
+    };
   }, []);
 
   const getStatus = (d: Date | undefined): StatusKey => {
     if (!d) return 'standard';
     const dateStr = d.toDateString();
     if (availability.booked.some((date: Date) => date.toDateString() === dateStr)) return 'booked';
-    if (availability.limited.some((date: Date) => date.toDateString() === dateStr)) return 'limited';
+    if (availability.limited.some((date: Date = d) => date.toDateString() === dateStr)) return 'limited';
     if (availability.available.some((date: Date) => date.toDateString() === dateStr)) return 'available';
     return 'standard';
   };
@@ -104,9 +102,9 @@ export function BookingCalendar() {
                   "hover:bg-foreground hover:text-background rounded-md transition-colors"
                 ),
                 disabled: "hover:bg-transparent hover:text-muted-foreground",
+                ...modifiersClassNames,
               }}
               modifiers={modifiers}
-              modifiersClassNames={modifiersClassNames}
               disabled={availability.booked}
             />
           </div>

@@ -32,10 +32,15 @@ const getInitialAvailability = (tourId: string | null): Availability => {
     return { available: [], limited: [], booked: [] };
   }
   
+  const parseDate = (dateStr: string) => {
+    const [year, month, day] = dateStr.split('-').map(Number);
+    return new Date(year, month - 1, day);
+  };
+
   return {
-    available: tour.dates.available.map(d => new Date(d)),
-    limited: tour.dates.limited.map(d => new Date(d)),
-    booked: tour.dates.booked.map(d => new Date(d)),
+    available: tour.dates.available.map(parseDate),
+    limited: tour.dates.limited.map(parseDate),
+    booked: tour.dates.booked.map(parseDate),
   };
 };
 

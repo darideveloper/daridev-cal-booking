@@ -20,33 +20,33 @@ export const STATUS_CONFIG: Record<StatusKey, StatusConfigValue> = {
     label: 'Disponible',
     icon: CheckCircle2,
     classes: {
-      container: 'bg-primary/5 border-primary/10',
-      badge: 'border-primary text-primary bg-primary/5',
-      icon: 'text-primary',
-      modifier: 'bg-primary text-primary-foreground font-bold !hover:bg-foreground !hover:text-background',
-      legendMarker: 'bg-primary border-primary',
+      container: 'bg-emerald-50 border-emerald-100',
+      badge: 'border-emerald-500 text-emerald-700 bg-emerald-50',
+      icon: 'text-emerald-600',
+      modifier: 'bg-emerald-500 text-white font-bold hover:bg-emerald-600! hover:text-white!',
+      legendMarker: 'bg-emerald-500 border-emerald-600',
     }
   },
   limited: {
     label: 'Limitada',
     icon: AlertCircle,
     classes: {
-      container: 'bg-muted/50 border-border',
-      badge: 'border-muted-foreground/30 text-muted-foreground bg-muted',
-      icon: 'text-muted-foreground',
-      modifier: 'bg-muted text-muted-foreground border-b-2 border-muted-foreground rounded-none !hover:bg-foreground !hover:text-background',
-      legendMarker: 'bg-muted border-muted-foreground/30',
+      container: 'bg-amber-50 border-amber-100',
+      badge: 'border-amber-500 text-amber-700 bg-amber-50',
+      icon: 'text-amber-600',
+      modifier: 'bg-amber-500 text-amber-950 font-medium hover:bg-amber-600! hover:text-amber-950!',
+      legendMarker: 'bg-amber-500 border-amber-600',
     }
   },
   booked: {
     label: 'Completo',
     icon: XCircle,
     classes: {
-      container: 'bg-destructive/5 border-destructive/10',
-      badge: 'border-destructive text-destructive bg-destructive/5',
-      icon: 'text-destructive',
-      modifier: 'bg-destructive/10 text-destructive line-through opacity-50 cursor-not-allowed',
-      legendMarker: 'bg-destructive/20 opacity-50',
+      container: 'bg-slate-50 border-slate-100',
+      badge: 'border-slate-300 text-slate-500 bg-slate-50',
+      icon: 'text-slate-400',
+      modifier: 'bg-slate-100 text-slate-400 line-through opacity-50 cursor-not-allowed',
+      legendMarker: 'bg-slate-200 opacity-50',
     }
   },
   standard: {

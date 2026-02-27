@@ -125,3 +125,8 @@
 body {
     background-color: rgba(0, 0, 0, 0); /* or simply 'transparent' */
 }
+
+/* pointer */
+button, a {
+    cursor: pointer;
+}

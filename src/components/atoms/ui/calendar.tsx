@@ -209,6 +209,9 @@ function CalendarDayButton({
         "data-[selected-single=true]:bg-foreground data-[selected-single=true]:text-background data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-md data-[range-end=true]:rounded-r-md data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-md data-[range-start=true]:rounded-l-md [&>span]:text-xs [&>span]:opacity-70",
         "hover:bg-foreground hover:text-background",
         "data-[selected-single=true]:hover:bg-foreground data-[selected-single=true]:hover:text-background",
+        modifiers.isAvailable && "bg-emerald-500 text-white font-bold hover:bg-emerald-600! hover:text-white!",
+        modifiers.isLimited && "bg-amber-500 text-amber-950 font-medium hover:bg-amber-600! hover:text-amber-950!",
+        modifiers.isBooked && "bg-slate-100 text-slate-400 line-through opacity-50 cursor-not-allowed",
         defaultClassNames.day,
         className
       )}
