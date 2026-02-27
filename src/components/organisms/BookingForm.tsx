@@ -24,7 +24,14 @@ export function BookingForm({ initialTourId }: BookingFormProps) {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     const { name, value } = e.target
-    updateFormData({ [name]: name === "guests" ? parseInt(value, 10) : value })
+    let processedValue: string | number = value
+    
+    if (name === "guests") {
+      const numValue = parseInt(value, 10)
+      processedValue = isNaN(numValue) ? 0 : Math.min(numValue, 30)
+    }
+
+    updateFormData({ [name]: processedValue })
   }
 
   return (
@@ -89,7 +96,7 @@ export function BookingForm({ initialTourId }: BookingFormProps) {
                 name="guests"
                 type="number"
                 min="1"
-                max="20"
+                max="30"
                 value={formData.guests}
                 onChange={handleChange}
                 required
