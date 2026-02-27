@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import toursData from "@/data/tours.json";
+import toursData from "../data/tours.json";
 
 interface Availability {
   available: Date[];
@@ -8,10 +8,8 @@ interface Availability {
 }
 
 interface BookingState {
-  // Current selection
   selectedDate: Date | undefined;
-  
-  // Future-proofing for form data
+  currentStep: number;
   formData: {
     fullName: string;
     email: string;
@@ -19,12 +17,11 @@ interface BookingState {
     guests: number;
     specialRequests: string;
   };
-
-  // Availability for the current tour
   availability: Availability;
-
-  // Actions
   setSelectedDate: (date: Date | undefined) => void;
+  setStep: (step: number) => void;
+  nextStep: () => void;
+  prevStep: () => void;
   updateFormData: (data: Partial<BookingState['formData']>) => void;
   resetBooking: () => void;
 }
@@ -43,10 +40,8 @@ const getInitialAvailability = (tourId: string | null): Availability => {
 };
 
 export const useBookingStore = create<BookingState>((set) => ({
-  // Initial selection
   selectedDate: undefined,
-  
-  // Initial form data
+  currentStep: 1,
   formData: {
     fullName: '',
     email: '',
@@ -54,31 +49,25 @@ export const useBookingStore = create<BookingState>((set) => ({
     guests: 1,
     specialRequests: '',
   },
-
   availability: { available: [], limited: [], booked: [] },
-
-  // Actions
   setSelectedDate: (date) => set({ selectedDate: date }),
-  
+  setStep: (step) => set({ currentStep: step }),
+  nextStep: () => set((state) => ({ currentStep: state.currentStep + 1 })),
+  prevStep: () => set((state) => ({ currentStep: Math.max(1, state.currentStep - 1) })),
   updateFormData: (data) => set((state) => {
     const newFormData = { ...state.formData, ...data };
-    
-    // If tourId changed, update availability
     let newAvailability = state.availability;
     if (data.tourId !== undefined) {
       newAvailability = getInitialAvailability(newFormData.tourId);
     }
-    
     return { 
       formData: newFormData,
       availability: newAvailability,
-      // Reset selected date if it's no longer valid for the new tour (optional)
-      // selectedDate: data.tourId !== undefined ? undefined : state.selectedDate
     };
   }),
-  
   resetBooking: () => set({
     selectedDate: undefined,
+    currentStep: 1,
     formData: {
       fullName: '',
       email: '',
