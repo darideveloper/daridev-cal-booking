@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Calendar } from '@/components/atoms/ui/calendar';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/atoms/ui/card';
+import { Card, CardContent } from '@/components/atoms/ui/card';
 import { Button } from '@/components/atoms/ui/button';
 import { Label } from '@/components/atoms/ui/label';
 import { Select } from '@/components/atoms/ui/select';
@@ -30,9 +30,9 @@ export function BookingCalendar() {
   }, []);
 
   const modifiers = useMemo(() => ({
-    isBooked: (d: Date) => d > today && availability.booked.some(date => date.toDateString() === d.toDateString()),
-    isLimited: (d: Date) => d > today && availability.limited.some(date => date.toDateString() === d.toDateString()),
-    isAvailable: (d: Date) => d > today && availability.available.some(date => date.toDateString() === d.toDateString()),
+    isBooked: (d: Date) => d > today && availability.booked.some((date: Date) => date.toDateString() === d.toDateString()),
+    isLimited: (d: Date) => d > today && availability.limited.some((date: Date) => date.toDateString() === d.toDateString()),
+    isAvailable: (d: Date) => d > today && availability.available.some((date: Date) => date.toDateString() === d.toDateString()),
   }), [availability, today]);
 
   const modifiersClassNames = useMemo(() => {
@@ -61,18 +61,7 @@ export function BookingCalendar() {
   return (
     <div className="flex flex-col items-center justify-center p-4 bg-muted/30 space-y-4 rounded-3xl border border-border h-full w-full">
       <Card className="w-full max-w-md shadow-xl border-none bg-background flex-1">
-        <CardHeader className="pb-2">
-          <div className="flex justify-between items-center mb-1">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-brand-red px-2 py-0.5 bg-brand-red/10 rounded-full">
-              Paso 1 de 2
-            </span>
-          </div>
-          <CardTitle className="text-xl font-serif text-brand-charcoal">Selecciona tu Tour y Fecha</CardTitle>
-          <CardDescription className="text-xs text-brand-charcoal/60">
-            Elige el tour que deseas realizar y busca un día disponible.
-          </CardDescription>
-        </CardHeader>
-        <CardContent className="flex flex-col items-center gap-4 pt-0 h-full justify-center">
+        <CardContent className="flex flex-col items-center gap-4 h-full justify-center">
           
           <div className="w-full grid gap-1.5 mt-2">
             <Label htmlFor="tourId" className="text-xs">Tour</Label>

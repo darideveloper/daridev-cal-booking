@@ -68,3 +68,10 @@ The booking form MUST support initialization of its state via component properti
 - **When** the component mounts
 - **Then** the `formData.tourId` in the Zustand store MUST be set to "alhambra-completa".
 
+### Requirement: UI Simplification
+The `BookingForm` SHALL NOT display step indicators.
+
+#### Scenario: No Step Indicator in Step 2
+- **Given** the user is on the `BookingForm`
+- **Then** the text "Paso 2 de 2" MUST NOT be visible.
+

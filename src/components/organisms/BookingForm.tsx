@@ -27,11 +27,6 @@ export function BookingForm() {
     <div className="flex flex-col p-4 bg-muted/30 space-y-4 rounded-3xl border border-border h-full w-full">
       <Card className="w-full shadow-xl border-none bg-background flex-1">
         <CardHeader className="pb-4">
-          <div className="flex justify-between items-center mb-1">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-brand-red px-2 py-0.5 bg-brand-red/10 rounded-full">
-              Paso 2 de 2
-            </span>
-          </div>
           <CardTitle className="text-xl font-serif text-brand-charcoal">Datos de la reserva</CardTitle>
           <CardDescription className="text-xs text-brand-charcoal/60">
             Completa tus datos para finalizar la solicitud.
