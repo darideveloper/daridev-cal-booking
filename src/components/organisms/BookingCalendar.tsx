@@ -23,11 +23,17 @@ export function BookingCalendar() {
   const formData = useBookingStore((state: any) => state.formData);
   const updateFormData = useBookingStore((state: any) => state.updateFormData);
 
+  const today = useMemo(() => {
+    const d = new Date();
+    d.setHours(0, 0, 0, 0);
+    return d;
+  }, []);
+
   const modifiers = useMemo(() => ({
-    isBooked: (d: Date) => availability.booked.some(date => date.toDateString() === d.toDateString()),
-    isLimited: (d: Date) => availability.limited.some(date => date.toDateString() === d.toDateString()),
-    isAvailable: (d: Date) => availability.available.some(date => date.toDateString() === d.toDateString()),
-  }), [availability]);
+    isBooked: (d: Date) => d > today && availability.booked.some(date => date.toDateString() === d.toDateString()),
+    isLimited: (d: Date) => d > today && availability.limited.some(date => date.toDateString() === d.toDateString()),
+    isAvailable: (d: Date) => d > today && availability.available.some(date => date.toDateString() === d.toDateString()),
+  }), [availability, today]);
 
   const modifiersClassNames = useMemo(() => {
     return {
@@ -38,7 +44,7 @@ export function BookingCalendar() {
   }, []);
 
   const getStatus = (d: Date | undefined): StatusKey => {
-    if (!d) return 'standard';
+    if (!d || d <= today) return 'standard';
     const dateStr = d.toDateString();
     if (availability.booked.some((date: Date) => date.toDateString() === dateStr)) return 'booked';
     if (availability.limited.some((date: Date = d) => date.toDateString() === dateStr)) return 'limited';
@@ -105,7 +111,7 @@ export function BookingCalendar() {
                 ...modifiersClassNames,
               }}
               modifiers={modifiers}
-              disabled={availability.booked}
+              disabled={[(d: Date) => d <= today, ...availability.booked]}
             />
           </div>
 
