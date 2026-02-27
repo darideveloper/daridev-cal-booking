@@ -1,1913 +1,1244 @@
 [
-    {
-        "id": "alhambra-completa",
-        "slug": "visita-guiada-alhambra-completa",
-        "meta_title": "Alhambra Completa Granada | Nazaríes, Alcazaba y Generalife",
-        "meta_description": "Visita completa a la Alhambra con guía oficial historiador: Palacios Nazaríes, Alcazaba y Generalife. La experiencia más profunda del monumento musulmán más grande de Europa.",
-        "category": "Monumental",
-        "meeting_point": "Plaza del Generalife, frente a taquillas de la Alhambra",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=alhambra-completa",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/mHMpQ72Bm4nWdTRBA",
-        "title": "Alhambra Completa",
-        "subtitle": "La Joya de la Corona Nazarí al Completo",
-        "focus": "El complejo monumental musulmán más grande de Europa, descifrado en toda su profundidad: política, arte y espiritualidad.",
-        "introduction": "Te presento la joya de la corona de la ciudad nazarí. La Alhambra no es solo un monumento; es un libro abierto que narra el esplendor de una civilización. En este recorrido completo te sumergirás por la Alcazaba, el Generalife y los Palacios Nazaríes para entender el verdadero significado de este complejo monumental. Como historiador, mi objetivo es que comprendas el porqué de cada yesería y cada poema inscrito en sus paredes, alejándonos de la visita turística convencional para vivir una experiencia de inmersión cultural.",
-        "discoveries": [
-            {
-                "title": "Palacios Nazaríes",
-                "description": "El cenit del arte islámico: arquitectura, poesía y poder político entrelazados en el Palacio de Comares y el Patio de los Leones."
-            },
-            {
-                "title": "La Alcazaba",
-                "description": "La fortaleza militar que protegió a la dinastía nazarí y ofrece las mejores vistas del Albaicín y la ciudad."
-            },
-            {
-                "title": "Generalife",
-                "description": "Jardines y huertas reales: el concepto coránico del paraíso y el lugar de descanso de los reyes."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Cuánto tiempo se dedica a los Palacios Nazaríes?",
-                "answer": "Dedicamos aproximadamente una hora a los Palacios Nazaríes para analizar en profundidad su iconografía y simbolismo, asegurando que comprendas cada detalle de esta joya arquitectónica."
-            },
-            {
-                "question": "¿Es necesario caminar mucho?",
-                "answer": "Sí, el recorrido por la Alhambra es extenso e incluye desniveles. Recomendamos calzado muy cómodo y preparación para una caminata de unas 3 horas."
-            }
-        ],
-        "related_tours": [
-            "palacios-nazaries",
-            "albaicin-misterios",
-            "sacromonte"
-        ],
-        "duration": "3h",
-        "price": 140,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-15",
-                "2026-04-05",
-                "2026-04-26"
-            ],
-            "limited": [
-                "2026-03-01",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
-                "2026-04-04",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-03-10",
-                "2026-04-15"
-            ],
-            "booked": []
-        }
+  {
+    "id": "alhambra-completa",
+    "slug": "visita-guiada-alhambra-completa",
+    "meta_title": "Alhambra Completa Granada | Nazaríes, Alcazaba y Generalife",
+    "meta_description": "Visita completa a la Alhambra con guía oficial historiador: Palacios Nazaríes, Alcazaba y Generalife. La experiencia más profunda del monumento musulmán más grande de Europa.",
+    "category": "Monumental",
+    "meeting_point": "Plaza del Generalife, frente a taquillas de la Alhambra",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=alhambra-completa",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
     },
-    {
-        "id": "alhambra-sin-tickets",
-        "slug": "alhambra-sin-tickets-acceso-libre",
-        "meta_title": "Alhambra sin Entradas Granada | Palacio Carlos V y Bosques",
-        "meta_description": "¿Sin entradas para la Alhambra? Descubre el Palacio de Carlos V, el mirador del Aljibe y los bosques con un guía experto. Acceso libre, experiencia única.",
-        "category": "Monumental",
-        "meeting_point": "Puerta de las Granadas (inicio del bosque de la Alhambra)",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "booking_url": "/contacto?tour=alhambra-sin-tickets",
-        "disclaimer": "Nota: Este tour recorre únicamente las zonas de acceso libre del recinto. No incluye entradas a los monumentos interiores.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/2FpwmWpgfNpo3h7q6",
-        "title": "Alhambra sin Tickets",
-        "subtitle": "La Alhambra que Nadie te Cuenta, Sin Necesidad de Entradas",
-        "focus": "Una visita alternativa que demuestra que el recinto de la Alhambra esconde joyas de acceso libre que muy pocos conocen.",
-        "introduction": "¿No conseguiste entradas para la Alhambra? No te preocupes. El recinto monumental guarda secretos que van mucho más allá de los Palacios Nazaríes. El imponente Palacio de Carlos V, el mirador del Aljibe con sus vistas sobre Granada, los centenarios bosques de la Alhambra o el romántico Carmen de los Mártires son de libre acceso, y nuestro guía te los mostrará con la misma profundidad histórica. Una visita sorprendente que muchos descubren como su favorita.",
-        "discoveries": [
-            {
-                "title": "Palacio de Carlos V",
-                "description": "El único palacio renacentista circular del mundo, incrustado en el corazón de la fortaleza musulmana."
-            },
-            {
-                "title": "Mirador del Aljibe",
-                "description": "Vistas privilegiadas sobre Granada y el Albaicín desde los jardines del recinto monumental."
-            },
-            {
-                "title": "Bosques y Carmen de los Mártires",
-                "description": "El pulmón romántico de la Alhambra: jardines decimonónicos y naturaleza histórica."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Realmente vale la pena si no entro a los Palacios?",
-                "answer": "¡Absolutamente! El recinto de la Alhambra es una ciudad palatina enorme. Visitaremos lugares de libre acceso como el Palacio de Carlos V y los bosques, que guardan secretos históricos fascinantes que la mayoría de turistas pasan por alto."
-            },
-            {
-                "question": "¿Puedo comprar las entradas durante el tour?",
-                "answer": "No, las entradas suelen agotarse con semanas de antelación. Este tour está diseñado precisamente para quienes no consiguieron tickets pero quieren conocer la historia del recinto."
-            }
-        ],
-        "related_tours": [
-            "alhambra-completa",
-            "palacios-nazaries",
-            "albaicin-misterios"
-        ],
-        "duration": "2h",
-        "price": 100,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-01",
-                "2026-03-22",
-                "2026-04-11"
-            ],
-            "limited": [
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-28",
-                "2026-03-29",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-03-18",
-                "2026-04-02"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "palacios-nazaries",
-        "slug": "visita-palacios-nazaries-granada",
-        "meta_title": "Visita Palacios Nazaríes Granada | Comares y Patio de los Leones",
-        "meta_description": "Adéntrate en la residencia de los emires nazaríes. El Palacio de Comares y el Patio de los Leones explicados en profundidad por un guía historiador.",
-        "category": "Monumental",
-        "meeting_point": "Puerta del Vino (dentro del complejo monumental de la Alhambra)",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=palacios-nazaries",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/2FpwmWpgfNpo3h7q6",
+    "location_map": "https://maps.app.goo.gl/mHMpQ72Bm4nWdTRBA",
+    "title": "Alhambra Completa",
+    "subtitle": "La Joya de la Corona Nazarí al Completo",
+    "focus": "El complejo monumental musulmán más grande de Europa, descifrado en toda su profundidad: política, arte y espiritualidad.",
+    "introduction": "Te presento la joya de la corona de la ciudad nazarí. La Alhambra no es solo un monumento; es un libro abierto que narra el esplendor de una civilización. En este recorrido completo te sumergirás por la Alcazaba, el Generalife y los Palacios Nazaríes para entender el verdadero significado de este complejo monumental. Como historiador, mi objetivo es que comprendas el porqué de cada yesería y cada poema inscrito en sus paredes, alejándonos de la visita turística convencional para vivir una experiencia de inmersión cultural.",
+    "discoveries": [
+      {
         "title": "Palacios Nazaríes",
-        "subtitle": "El Corazón Artístico de la Alhambra",
-        "focus": "La residencia de los emires nazaríes: donde la política, el arte y la vida cotidiana se fusionaban en la cumbre de la civilización islámica.",
-        "introduction": "Nos adentramos en la residencia de los emires nazaríes. Visitar el Palacio de Comares, centro político de la dinastía, o el Patio de los Leones, culmen de la exquisitez del arte nazarí, es una de las experiencias que siempre recordarás de Granada. En esta visita centrada exclusivamente en los Palacios, tendremos tiempo para descifrar cada detalle: la caligrafía árabe en los azulejos, la geometría de las yeserías y la perfecta orientación de cada estancia.",
-        "discoveries": [
-            {
-                "title": "Palacio de Comares",
-                "description": "El centro del poder político nazarí: el Salón del Trono y su impresionante techumbre de madera de cedro."
-            },
-            {
-                "title": "Patio de los Leones",
-                "description": "El culmen de la arquitectura nazarí: 124 columnas y la famosa fuente que da nombre al patio más célebre de España."
-            },
-            {
-                "title": "Jardines del Partal",
-                "description": "El reflejo de la Alhambra en el agua y los jardines que conectan los palacios con el Generalife."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Por qué hacer una visita solo de los Palacios?",
-                "answer": "Al centrarnos exclusivamente en los Palacios Nazaríes, podemos detenernos en los detalles caligráficos y arquitectónicos que en una visita general se pasan por alto. Es una inmersión profunda para amantes del arte."
-            },
-            {
-                "question": "¿Qué pasa si quiero ver el Generalife después?",
-                "answer": "El guía te explicará cómo llegar al Generalife al finalizar la visita guiada en los Palacios, para que puedas explorarlo por tu cuenta si tienes la entrada correspondiente."
-            }
-        ],
-        "related_tours": [
-            "alhambra-completa",
-            "alhambra-sin-tickets",
-            "albaicin-misterios"
-        ],
-        "duration": "1.5h",
-        "price": 100,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-08",
-                "2026-03-29",
-                "2026-04-19"
-            ],
-            "limited": [
-                "2026-03-01",
-                "2026-03-07",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-03-03",
-                "2026-04-23"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "catedral-granada",
-        "slug": "visita-guiada-catedral-granada",
-        "meta_title": "Visita Guiada Catedral de Granada | Primera del Renacimiento Español",
-        "meta_description": "Descubre la Catedral de Granada, obra magna del Renacimiento español diseñada por Alonso Cano. Una visita en profundidad con guía historiador.",
-        "category": "Monumental",
-        "meeting_point": "Plaza de las Pasiegas (frente a la fachada principal de la Catedral)",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=catedral-granada",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/Bu2vvMa1aPMX2dWm6",
-        "title": "Catedral de Granada",
-        "subtitle": "La Obra Magna del Renacimiento Español",
-        "focus": "Primera catedral renacentista de España y obra cumbre de Alonso Cano. El mensaje político y artístico de la Granada cristiana.",
-        "introduction": "Descubre la obra magna del Renacimiento español. Déjate sorprender por su magnífica fachada diseñada por Alonso Cano, para luego envolverte de los mejores ejemplos del barroco andaluz en su interior. Analizaremos no solo su arquitectura imponente, sino el mensaje político y religioso que transformó la ciudad tras la conquista de 1492 y convirtió Granada en símbolo del nuevo poder cristiano.",
-        "discoveries": [
-            {
-                "title": "Fachada de Alonso Cano",
-                "description": "Una de las obras más originales del barroco español, diseñada por el genio granadino que revolucionó el arte de su tiempo."
-            },
-            {
-                "title": "Las Naves Interiores",
-                "description": "Grandiosidad y luz: una de las naves más altas del mundo, que abruma con su escala y su programa iconográfico."
-            },
-            {
-                "title": "Capilla Mayor",
-                "description": "El corazón litúrgico de la catedral y su impresionante conjunto de esculturas y pinturas del Siglo de Oro."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Es la Catedral solo un edificio religioso?",
-                "answer": "No, es un manifiesto político y artístico del triunfo cristiano tras la Reconquista. Analizaremos cómo el Renacimiento se usó para transformar la imagen de Granada."
-            },
-            {
-                "question": "¿Cuánto dura la visita interior?",
-                "answer": "Pasaremos aproximadamente una hora y cuarto en el interior, tiempo suficiente para admirar la Capilla Mayor y las naves sin prisas."
-            }
-        ],
-        "related_tours": [
-            "capilla-real",
-            "centro-ciudad",
-            "monasterio-cartuja"
-        ],
-        "duration": "1.5h",
-        "price": 100,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-14",
-                "2026-04-04",
-                "2026-04-25"
-            ],
-            "limited": [
-                "2026-03-01",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-26",
-                "2026-03-25",
-                "2026-04-08"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "capilla-real",
-        "slug": "visita-guiada-capilla-real-granada",
-        "meta_title": "Visita Guiada Capilla Real Granada | Mausoleo Reyes Católicos",
-        "meta_description": "Visita la Capilla Real de Granada, panteón de los Reyes Católicos. Una joya del gótico isabelino con la impresionante colección de pintura flamenca de Isabel la Católica.",
-        "category": "Monumental",
-        "meeting_point": "Calle Oficios, frente a la entrada al monumento",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=capilla-real",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/NpHwW8HniWgVs5Fe7",
-        "title": "Capilla Real",
-        "subtitle": "El Legado Eternos de los Reyes Católicos",
-        "focus": "Lugar de descanso de los monarcas más importantes de España. Una lección magistral sobre el poder, la fe y el arte en el siglo XV.",
-        "introduction": "Si visitas Granada, la Capilla Real es un lugar de parada obligatoria. Lugar de descanso de los Reyes Católicos, los monarcas más importantes de España, en su interior descubrirás y entenderás el rico patrimonio que alberga esta maravilla del gótico isabelino. Exploraremos el panteón donde reposan Isabel y Fernando, analizaremos su impresionante colección personal de pintura flamenca y comprenderemos el mensaje político y dinástico que hay detrás de cada detalle de este espacio sagrado.",
-        "discoveries": [
-            {
-                "title": "Panteón Real",
-                "description": "Los sepulcros de mármol de Isabel, Fernando, Juana y Felipe, obras maestras de la escultura funeraria renacentista."
-            },
-            {
-                "title": "Colección de Pintura Flamenca",
-                "description": "La colección personal de Isabel la Católica: uno de los conjuntos de pintura flamenca más importantes de España."
-            },
-            {
-                "title": "Reja de Bartolomé de Jaén",
-                "description": "Una de las rejas más bellas del Renacimiento español, que separa la nave del presbiterio con virtuosismo artesanal."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Se pueden ver de cerca los sepulcros de los Reyes Católicos?",
-                "answer": "Sí, nos situaremos frente a los mausoleos de mármol de Carrara para explicar su rica simbología y el legado dinástico que representan."
-            },
-            {
-                "question": "¿Qué importancia tiene la colección de pintura flamenca?",
-                "answer": "Es una de las colecciones personales más importantes de Europa. Veremos obras de gran valor que Isabel la Católica atesoró y que explican su gusto artístico personal."
-            }
-        ],
-        "related_tours": [
-            "catedral-granada",
-            "centro-ciudad",
-            "ruta-gran-capitan"
-        ],
-        "duration": "1.5h",
-        "price": 100,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-30",
-                "2026-03-07",
-                "2026-03-28",
-                "2026-04-12"
-            ],
-            "limited": [
-                "2026-03-01",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-29",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-03-12",
-                "2026-04-29"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "monasterio-san-jeronimo",
-        "slug": "visita-monasterio-san-jeronimo-granada",
-        "meta_title": "Visita Monasterio San Jerónimo Granada | Mausoleo Gran Capitán",
-        "meta_description": "Descubre el Monasterio de San Jerónimo, lugar de reposo del Gran Capitán. Obra cumbre del barroco español y símbolo del poder militar de los Reyes Católicos.",
-        "category": "Religioso",
-        "meeting_point": "Frente a la Iglesia de San Jerónimo",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=monasterio-san-jeronimo",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/dRY7TKzCLEpgbmpp7",
-        "title": "Monasterio de San Jerónimo",
-        "subtitle": "Gloria Militar y Espiritualidad en el Renacimiento Granadino",
-        "focus": "Arte, poder y fe. El mausoleo del Gran Capitán y la importancia de las órdenes religiosas en la nueva Granada cristiana.",
-        "introduction": "Lugar de reposo del Gran Capitán, el cerebro militar de los Reyes Católicos. El Monasterio de San Jerónimo es una obra cumbre del arte granadino donde la gloria militar y la espiritualidad se dan la mano. Con esta visita entenderás la importancia de los monasterios y de las órdenes religiosas para convertir Granada en la nueva Jerusalén. Un espacio que habla de poder, fe y del hombre que cambió el arte de la guerra para siempre.",
-        "discoveries": [
-            {
-                "title": "Mausoleo del Gran Capitán",
-                "description": "El sepulcro de Gonzalo Fernández de Córdoba, el militar más brillante de su época, honrado por los Reyes Católicos."
-            },
-            {
-                "title": "Iglesia del Monasterio",
-                "description": "Una de las primeras grandes iglesias renacentistas de Granada, con una nave imponente y un presbiterio monumental."
-            },
-            {
-                "title": "Claustros",
-                "description": "Los dos claustros del monasterio: espacios de silencio y contemplación que narran la vida de la orden jerónima."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Quién fue el Gran Capitán y por qué está enterrado aquí?",
-                "answer": "Gonzalo Fernández de Córdoba fue el genio militar de los Reyes Católicos. Explicaremos su importancia histórica mientras visitamos su impresionante mausoleo."
-            },
-            {
-                "question": "¿Qué veremos en los claustros?",
-                "answer": "Visitaremos sus dos claustros renacentistas, espacios de gran paz que nos permiten entender cómo era la vida contemplativa de los monjes jerónimos."
-            }
-        ],
-        "related_tours": [
-            "monasterio-cartuja",
-            "ruta-gran-capitan",
-            "capilla-real"
-        ],
-        "duration": "1.5h",
-        "price": 100,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-21",
-                "2026-04-18",
-                "2026-03-01"
-            ],
-            "limited": [
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-03-31",
-                "2026-04-01"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "monasterio-cartuja",
-        "slug": "visita-monasterio-cartuja-granada",
-        "meta_title": "Visita Monasterio de La Cartuja Granada | Sacristía más Bella del Mundo",
-        "meta_description": "Descubre el Monasterio de La Cartuja en Granada: el barroco en su máxima expresión. La sacristía más bella del mundo y la orden del silencio explicados por un experto.",
-        "category": "Religioso",
-        "meeting_point": "Entrada al Monasterio de La Cartuja",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=monasterio-cartuja",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/hZ2LZdXSPQ8anbTNA",
-        "title": "Monasterio de La Cartuja",
-        "subtitle": "La Orden del Silencio y el Barroco Más Puro",
-        "focus": "El paroxismo del barroco español: una explosión de decoración que busca abrumar los sentidos y elevar el alma hacia lo divino.",
-        "introduction": "La orden del silencio y la soledad. Descubre, tras los muros de este monasterio cartujo, la historia y forma de vida de esta peculiar orden religiosa. Dentro te espera el sagrario, uno de los mejores ejemplos del barroco español, y la sacristía, considerada como la más bonita del mundo. En esta visita desgranaremos la teología hecha piedra, la vida monástica y la impresionante técnica artística que define el Siglo de Oro granadino.",
-        "discoveries": [
-            {
-                "title": "La Sacristía",
-                "description": "Considerada la sacristía más bella del mundo: mármoles, nácar y estucos en una explosión decorativa sin igual."
-            },
-            {
-                "title": "El Sagrario",
-                "description": "Uno de los mejores ejemplos del barroco español, donde la decoración alcanza su máxima intensidad espiritual."
-            },
-            {
-                "title": "La Vida Cartuja",
-                "description": "La peculiar regla de vida de los monjes cartujos: silencio, soledad y contemplación como camino hacia Dios."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Por qué se dice que su sacristía es la más bella del mundo?",
-                "answer": "Debido a su asombrosa decoración barroca en estuco, mármol y maderas preciosas. Es una explosión visual que busca representar la gloria divina de forma abrumadora."
-            },
-            {
-                "question": "¿Cómo era la vida de un monje cartujo?",
-                "answer": "Durante el tour explicaremos la regla del silencio y la soledad absoluta que seguían, lo cual contrasta fuertemente con la riqueza ornamental del edificio."
-            }
-        ],
-        "related_tours": [
-            "monasterio-san-jeronimo",
-            "basilica-san-juan-de-dios",
-            "ruta-fray-leopoldo"
-        ],
-        "duration": "1.5h",
-        "price": 100,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-13",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-20",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-15",
-                "2026-04-05",
-                "2026-04-26"
-            ],
-            "limited": [
-                "2026-03-01",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
-                "2026-04-04",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-03-05",
-                "2026-04-14"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "ruta-fray-leopoldo",
-        "slug": "ruta-fray-leopoldo-granada",
-        "meta_title": "Ruta Fray Leopoldo Granada | Historia del Santo de los Pobres",
-        "meta_description": "Descubre la vida y obra de Fray Leopoldo de Alpandeire a través de los lugares más importantes de su paso por Granada. Una visita cercana y llena de historias reales.",
-        "category": "Religioso",
-        "meeting_point": "Jardines del Triunfo",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=ruta-fray-leopoldo",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/gqFfVH18vVEU5yvB8",
-        "title": "Ruta Fray Leopoldo",
-        "subtitle": "La Huella del Personaje Más Querido de Granada",
-        "focus": "Una visita clara, cercana y llena de historias reales sobre uno de los personajes más queridos y venerados de la ciudad.",
-        "introduction": "Descubre la vida y obra de Fray Leopoldo de Alpandeire a través de los lugares más importantes de su paso por Granada. Este humilde fraile capuchino, conocido por su bondad y su labor de acogida a los más necesitados, dejó una huella imborrable en la ciudad. Recorreremos los escenarios de su vida cotidiana, conoceremos las historias que el pueblo granadino le atribuye y visitaremos los espacios donde todavía hoy se mantiene viva su memoria. Una ruta emotiva que conecta con la Granada más humana y espiritual.",
-        "discoveries": [
-            {
-                "title": "Convento de Capuchinos",
-                "description": "El lugar donde Fray Leopoldo vivió décadas de su vida y donde aún se guarda su memoria y devoción popular."
-            },
-            {
-                "title": "Recorrido de las Limosnas",
-                "description": "Las calles de Granada que recorrió durante años pidiendo para los pobres: una geografía de la caridad."
-            },
-            {
-                "title": "Devoción Popular",
-                "description": "La historia de su beatificación y el fervor que sigue despertando entre los granadinos generación tras generación."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Es una ruta apta para personas con movilidad reducida?",
-                "answer": "Sí, el recorrido por los lugares vinculados a Fray Leopoldo es mayoritariamente llano y accesible por las calles del centro de Granada."
-            },
-            {
-                "question": "¿Se visita la cripta donde reposan sus restos?",
-                "answer": "Sí, la visita incluye el paso por la cripta en la Iglesia de los Capuchinos, donde podrás ser testigo de la profunda devoción popular que aún hoy despierta."
-            }
-        ],
-        "related_tours": [
-            "ruta-san-juan-de-dios",
-            "basilica-san-juan-de-dios",
-            "monasterio-cartuja"
-        ],
-        "duration": "1.5h",
-        "price": 100,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-01",
-                "2026-03-22",
-                "2026-04-11"
-            ],
-            "limited": [
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-28",
-                "2026-03-29",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-03-17",
-                "2026-04-07"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "ruta-gran-capitan",
-        "slug": "ruta-gran-capitan-granada",
-        "meta_title": "Ruta Gran Capitán Granada | Gonzalo Fernández de Córdoba",
-        "meta_description": "Recorre los escenarios históricos de Gonzalo Fernández de Córdoba en Granada. Una visita con el Monasterio de San Jerónimo como punto central de su legado.",
-        "category": "Histórico",
-        "meeting_point": "Monasterio de San Jerónimo",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=ruta-gran-capitan",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/wW2KfXctEbBC5v9a8",
-        "title": "Ruta del Gran Capitán",
-        "subtitle": "El Genio Militar que Forjó el Imperio Español",
-        "focus": "La historia de Gonzalo Fernández de Córdoba a través de los escenarios granadinos vinculados a su figura y su legado.",
-        "introduction": "Conoce la historia de Gonzalo Fernández de Córdoba, el Gran Capitán, a través de un recorrido por los principales escenarios de Granada vinculados a su figura. Considerado el padre de la infantería moderna, su genio militar cambió el arte de la guerra para siempre. La visita tiene como punto central el Monasterio de San Jerónimo, donde descubrirás su legado, su sepulcro y su importancia en la España de los Reyes Católicos. Una ruta para entender cómo un hombre de Granada cambió la historia del mundo.",
-        "discoveries": [
-            {
-                "title": "Monasterio de San Jerónimo",
-                "description": "Su mausoleo, elegido como honor al mejor general de su tiempo por los propios Reyes Católicos."
-            },
-            {
-                "title": "El Legado Militar",
-                "description": "Cómo el Gran Capitán revolucionó las tácticas militares y sentó las bases del ejército moderno europeo."
-            },
-            {
-                "title": "Granada y la Nueva Nobleza",
-                "description": "El papel de la nobleza castellana en la transformación de Granada tras la conquista de 1492."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Este tour es muy técnico sobre historia militar?",
-                "answer": "No, aunque hablamos de sus hazañas, nos centramos en su figura humana y su impacto en la transformación de la Granada musulmana a la cristiana."
-            },
-            {
-                "question": "¿Qué relación tiene con el Monasterio de San Jerónimo?",
-                "answer": "El monasterio fue elegido por él y su esposa como lugar de descanso eterno, y es el eje central para entender su legado en la ciudad."
-            }
-        ],
-        "related_tours": [
-            "monasterio-san-jeronimo",
-            "capilla-real",
-            "catedral-granada"
-        ],
-        "duration": "2h",
-        "price": 110,
-        "dates": {
-            "available": [
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-03-08",
-                "2026-03-29",
-                "2026-04-19"
-            ],
-            "limited": [
-                "2026-03-01",
-                "2026-03-07",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-03-02",
-                "2026-04-30"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "ruta-san-juan-de-dios",
-        "slug": "ruta-san-juan-de-dios-granada",
-        "meta_title": "Ruta San Juan de Dios Granada | Legado del Santo de los Enfermos",
-        "meta_description": "Adéntrate en la Granada de San Juan de Dios. Recorre los lugares clave de su obra y descubre su legado en la atención a los enfermos y las huellas que dejó en la ciudad.",
-        "category": "Religioso",
-        "meeting_point": "Frente a la Basílica de San Juan de Dios",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=ruta-san-juan-de-dios",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/5xzVJMTkxh33Cs6b9",
-        "title": "Ruta de San Juan de Dios",
-        "subtitle": "El Santo que Transformó la Atención a los Pobres en Granada",
-        "focus": "La Granada social del siglo XVI: cómo un hombre cambió la historia de la sanidad y dejó una huella imborrable en la ciudad.",
-        "introduction": "Adéntrate en la Granada de San Juan de Dios, paseando por los lugares clave de su obra, incluida la Basílica de San Juan de Dios y el antiguo hospital. Este portugués llegado a Granada sin nada se convirtió en el fundador de la Orden Hospitalaria y en el patrón universal de los enfermos. Una visita guiada cercana que explica su legado en la atención a los más necesitados y las huellas físicas y espirituales que dejó en la ciudad.",
-        "discoveries": [
-            {
-                "title": "Basílica de San Juan de Dios",
-                "description": "Obra maestra del barroco dorado, construida para honrar al santo de los pobres y custodiar sus reliquias."
-            },
-            {
-                "title": "El Antiguo Hospital",
-                "description": "El primer gran hospital moderno de Granada, fundado por el propio Juan de Dios con sus limosnas."
-            },
-            {
-                "title": "La Orden Hospitalaria",
-                "description": "Cómo una pequeña iniciativa personal se convirtió en una de las órdenes religiosas más importantes del mundo."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Visitaremos el hospital que él fundó?",
-                "answer": "Sí, conoceremos la historia del antiguo hospital y cómo Juan de Dios revolucionó el concepto de cuidado a los enfermos en el siglo XVI."
-            },
-            {
-                "question": "¿Es una ruta muy larga?",
-                "answer": "Tiene una duración de unas 2 horas a un ritmo pausado, recorriendo los lugares clave de su vida en el centro histórico."
-            }
-        ],
-        "related_tours": [
-            "basilica-san-juan-de-dios",
-            "ruta-fray-leopoldo",
-            "monasterio-cartuja"
-        ],
-        "duration": "2h",
-        "price": 110,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-14",
-                "2026-04-04",
-                "2026-04-25"
-            ],
-            "limited": [
-                "2026-03-01",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-26",
-                "2026-03-19",
-                "2026-04-09"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "basilica-san-juan-de-dios",
-        "slug": "basilica-san-juan-de-dios-granada",
-        "meta_title": "Visita Basílica San Juan de Dios Granada | Joya del Barroco Aúreo",
-        "meta_description": "Visita la Basílica de San Juan de Dios en Granada. Una obra maestra del barroco aúreo y lugar de reposo del santo de los pobres. Fe y arte unidos.",
-        "category": "Religioso",
-        "meeting_point": "Calle San Juan de Dios (Puerta Principal de la Basílica)",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=basilica-san-juan-de-dios",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/5xzVJMTkxh33Cs6b9",
-        "title": "Basílica de San Juan de Dios",
-        "subtitle": "El Barroco en su Máxima Expresión",
-        "focus": "Luz, oro y devoción. Un templo que brilla con luz propia y que cuenta la historia de la caridad en Granada.",
-        "introduction": "La Basílica de San Juan de Dios no deja indiferente a nadie; es, sencillamente, deslumbrante. Conocerás una de las figuras más queridas de Granada, San Juan de Dios, el santo de los pobres y los enfermos. Concebida como un relicario gigante para albergar sus restos, en su interior te espera una deliciosa muestra del barroco más puro: retablos dorados, frescos y espejos que crean una atmósfera celestial. Un viaje donde la vida y obra del santo, la espiritualidad de la Orden Hospitalaria y la belleza de su arquitectura te dejarán una huella imborrable.",
-        "discoveries": [
-            {
-                "title": "Barroco Aúreo",
-                "description": "El horror vacui llevado al extremo: retablos dorados, frescos y espejos que crean una atmósfera celestial única."
-            },
-            {
-                "title": "Camarín del Santo",
-                "description": "La estancia más sagrada y lujosa del templo, donde se veneran las reliquias de San Juan de Dios."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Por qué hay tantos espejos en el interior?",
-                "answer": "Los espejos, junto con el oro, se usaban en el barroco para multiplicar la luz y crear una atmósfera que recordara al cielo, buscando impresionar al fiel."
-            },
-            {
-                "question": "¿Podemos subir al camarín del Santo?",
-                "answer": "Dependiendo de la disponibilidad del monumento el día de la visita, intentaremos acceder a este espacio sagrado para ver de cerca las reliquias."
-            }
-        ],
-        "related_tours": [
-            "ruta-san-juan-de-dios",
-            "monasterio-cartuja",
-            "ruta-fray-leopoldo"
-        ],
-        "duration": "1.5h",
-        "price": 110,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-07",
-                "2026-03-28",
-                "2026-04-12"
-            ],
-            "limited": [
-                "2026-03-01",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-29",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-03-26",
-                "2026-04-16"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "albaicin-misterios",
-        "slug": "tour-albaicin-misterios-leyendas",
-        "meta_title": "Tour Albaicín Granada: Historia, Leyendas y Vistas Alhambra",
-        "meta_description": "Callejea por el Albaicín, Patrimonio de la Humanidad. Un paseo entre historia nazarí, leyendas locales y los mejores miradores a la Alhambra.",
-        "category": "Barrios",
-        "meeting_point": "Plaza Nueva (junto a la Fuente de los Granados)",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "booking_url": "/contacto?tour=albaicin-misterios",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/WDK9ywYpokLPmXEu8",
-        "title": "Misterios y Leyendas del Albaicín",
-        "subtitle": "Historia, Enigmas y Miradores Inolvidables",
-        "focus": "El alma antigua de Granada. Un laberinto de calles blancas donde cada esquina guarda una leyenda y cada mirador, una postal.",
-        "introduction": "Descubre el mítico barrio granadino, declarado Patrimonio de la Humanidad, con su historia y significación en la vida de la ciudad. Este antiguo arrabal musulmán conserva su trazado medieval intacto: aljibes, cármenes y restos de murallas que nos hablan de la vida en la Granada nazarí. En el viaje te acompañará un rico patrimonio junto con los misterios y leyendas más enigmáticos de la ciudad, finalizando en el mítico mirador de San Nicolás, desde donde contemplarás las vistas más bellas de la Alhambra.",
-        "discoveries": [
-            {
-                "title": "Patrimonio Andalusí",
-                "description": "La evolución urbana: del esplendor zirí y nazarí a la transformación cristiana, conservada en cada callejuela."
-            },
-            {
-                "title": "Misterios y Leyendas",
-                "description": "Relatos de amores prohibidos y sucesos inexplicables que forman parte del imaginario popular granadino."
-            },
-            {
-                "title": "Mirador de San Nicolás",
-                "description": "La vista panorámica más famosa del mundo: la Alhambra y Sierra Nevada frente a ti al atardecer."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Se cuentan historias de fantasmas?",
-                "answer": "Más que fantasmas, nos centramos en enigmas históricos y leyendas populares que han pasado de generación en generación en el barrio más antiguo de Granada."
-            },
-            {
-                "question": "¿El tour termina en el Mirador de San Nicolás?",
-                "answer": "Sí, finalizamos allí para que puedas disfrutar de la puesta de sol sobre la Alhambra, una de las vistas más famosas del mundo."
-            }
-        ],
-        "related_tours": [
-            "sacromonte",
-            "alhambra-completa",
-            "centro-ciudad"
-        ],
-        "duration": "2h",
-        "price": 110,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-20",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-21",
-                "2026-04-18",
-                "2026-03-01"
-            ],
-            "limited": [
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-03-04",
-                "2026-04-21"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "sacromonte",
-        "slug": "tour-sacromonte-cuevas-flamenco",
-        "meta_title": "Visita Abadía Sacromonte Granada | Cuevas, Flamenco e Historia",
-        "meta_description": "Adéntrate en el Sacromonte gitano. Conoce la vida en las cuevas, el origen del flamenco y la histórica Abadía del Monte Sacro. Una experiencia auténtica en Granada.",
-        "category": "Barrios",
-        "meeting_point": "Peso de la Harina (inicio Cuesta del Chapiz)",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "important_info": [
-            "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
-            "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
-            "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
-        ],
-        "booking_url": "/contacto?tour=sacromonte",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/aqtgNukapZzXTsN16",
-        "title": "Abadía del Sacromonte",
-        "subtitle": "Cuevas, Flamenco y Espiritualidad",
-        "focus": "El barrio con más duende de Granada. Un paisaje único de chumberas y cuevas blancas donde nació la zambra y se forjó una identidad única.",
-        "introduction": "En este viaje al pasado al barrio con más duende de Granada, descubrirás el origen gitano del Sacromonte, las cuevas donde todavía viven los locales y el flamenco como la forma de expresión artística más profunda. No te pierdas la magnífica Abadía del Sacromonte y descubre su historia entre reliquias, leyendas y espiritualidad, donde te aguardan unas vistas poco conocidas de la Alhambra. Un tour antropológico, histórico y paisajístico en uno de los rincones más singulares de España.",
-        "discoveries": [
-            {
-                "title": "Viviendas Trogloditas",
-                "description": "Arquitectura bioclimática vernácula: la vida en el interior de la montaña y la comunidad gitana que habita el barrio."
-            },
-            {
-                "title": "La Abadía del Sacromonte",
-                "description": "Cuna del cristianismo en Granada, los Libros Plúmbeos y una panorámica desconocida de la Alhambra."
-            },
-            {
-                "title": "Cultura Gitana y Flamenco",
-                "description": "El flamenco como expresión de dolor y alegría: historia de la Zambra granadina y una identidad transformada en arte."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Entraremos en las cuevas originales?",
-                "answer": "Visitaremos las Santas Cuevas de la Abadía, donde se originó la leyenda de los Libros Plúmbeos y el origen del cristianismo en Granada."
-            },
-            {
-                "question": "¿Hay que subir muchas cuestas?",
-                "answer": "El barrio del Sacromonte tiene pendientes pronunciadas. El tour requiere cierta forma física o el uso del autobús urbano para algunos tramos si se prefiere."
-            }
-        ],
-        "related_tours": [
-            "albaicin-misterios",
-            "centro-ciudad",
-            "alhambra-completa"
-        ],
-        "duration": "2h",
-        "price": 110,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-03",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-22",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-27",
-                "2026-04-29",
-                "2026-04-30",
-                "2026-03-15",
-                "2026-04-05",
-                "2026-04-26"
-            ],
-            "limited": [
-                "2026-03-01",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
-                "2026-04-04",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-03-11",
-                "2026-04-28"
-            ],
-            "booked": []
-        }
-    },
-    {
-        "id": "centro-ciudad",
-        "slug": "tour-centro-historico-granada",
-        "meta_title": "Tour Centro Histórico Granada | Catedral, Alcaicería y Madraza",
-        "meta_description": "Paseo por el corazón de Granada: Catedral, Capilla Real, Alcaicería, Madraza y Corral del Carbón. Arte, historia y exotismo en dos horas con guía especializado.",
-        "category": "Barrios",
-        "meeting_point": "Plaza de las Pasiegas (frente a la Catedral)",
-        "languages": [
-            "Español 🇪🇸",
-            "Inglés 🇬🇧"
-        ],
-        "included": [
-            "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
-        ],
-        "not_included": [
-            "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
-            "Propinas",
-            "Traslados",
-            "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita.",
-            "Esta actividad es reembolsable hasta 48 horas antes del inicio del evento."
-        ],
-        "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 48 horas antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
-        "booking_url": "/contacto?tour=centro-ciudad",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
-        "contact_info": {
-            "whatsapp": "https://wa.me/34662338112"
-        },
-        "location_map": "https://maps.app.goo.gl/Bu2vvMa1aPMX2dWm6",
-        "title": "Centro Ciudad",
-        "subtitle": "El Corazón de Granada: Arte, Historia y Exotismo",
-        "focus": "Un paseo que une dos mundos: la Granada nazarí y la cristiana, conviviendo en el mismo espacio en el corazón de la ciudad.",
-        "introduction": "Sumérgete en el corazón de Granada con un paseo que te llevará por joyas como la imponente Catedral renacentista, la solemne Capilla Real y el vibrante bullicio de la Plaza Bib-Rambla. Descubrirás el Zoco o Alcaicería, auténtico mercado de la seda nazarí, y pasearás junto a la elegante fachada del Palacio de la Chancillería en Plaza Nueva. Conocerás también la histórica Madraza, primera universidad andalusí, y te envolverá la leyenda del Corral del Carbón. Un viaje que une arte, historia y exotismo de la mano de nuestro guía especializado.",
-        "discoveries": [
-            {
-                "title": "Catedral y Capilla Real",
-                "description": "El poder cristiano hecho piedra: renacimiento español y gótico isabelino frente a frente en el centro de la ciudad."
-            },
-            {
-                "title": "Alcaicería y Plaza Bib-Rambla",
-                "description": "El bullicio del zoco nazarí y la plaza central de la vida granadina, desde la Edad Media hasta hoy."
-            },
-            {
-                "title": "Madraza y Corral del Carbón",
-                "description": "La primera universidad andalusí y el único caravansar nazarí conservado en España."
-            }
-        ],
-        "faqs": [
-            {
-                "question": "¿Veremos la Alcaicería (el antiguo mercado de seda)?",
-                "answer": "Sí, pasearemos por sus estrechas calles para entender cómo funcionaba el comercio en la época nazarí y cómo ha evolucionado hasta hoy."
-            },
-            {
-                "question": "¿Es una buena opción para un primer día en Granada?",
-                "answer": "Es la opción ideal, ya que ofrece una visión general de la historia de la ciudad, desde sus raíces árabes hasta su esplendor renacentista."
-            }
-        ],
-        "related_tours": [
-            "catedral-granada",
-            "capilla-real",
-            "albaicin-misterios"
-        ],
-        "duration": "2h",
-        "price": 110,
-        "dates": {
-            "available": [
-                "2026-03-02",
-                "2026-03-04",
-                "2026-03-05",
-                "2026-03-06",
-                "2026-03-09",
-                "2026-03-10",
-                "2026-03-11",
-                "2026-03-12",
-                "2026-03-13",
-                "2026-03-16",
-                "2026-03-17",
-                "2026-03-18",
-                "2026-03-19",
-                "2026-03-20",
-                "2026-03-23",
-                "2026-03-24",
-                "2026-03-25",
-                "2026-03-26",
-                "2026-03-27",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-02",
-                "2026-04-03",
-                "2026-04-06",
-                "2026-04-07",
-                "2026-04-08",
-                "2026-04-09",
-                "2026-04-10",
-                "2026-04-13",
-                "2026-04-14",
-                "2026-04-15",
-                "2026-04-16",
-                "2026-04-17",
-                "2026-04-20",
-                "2026-04-21",
-                "2026-04-23",
-                "2026-04-24",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-04-27",
-                "2026-04-28",
-                "2026-04-29",
-                "2026-03-01",
-                "2026-03-22",
-                "2026-04-11"
-            ],
-            "limited": [
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-28",
-                "2026-03-29",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
-                "2026-03-03",
-                "2026-04-30"
-            ],
-            "booked": []
-        }
+        "description": "El cenit del arte islámico: arquitectura, poesía y poder político entrelazados en el Palacio de Comares y el Patio de los Leones."
+      },
+      {
+        "title": "La Alcazaba",
+        "description": "La fortaleza militar que protegió a la dinastía nazarí y ofrece las mejores vistas del Albaicín y la ciudad."
+      },
+      {
+        "title": "Generalife",
+        "description": "Jardines y huertas reales: el concepto coránico del paraíso y el lugar de descanso de los reyes."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Cuánto tiempo se dedica a los Palacios Nazaríes?",
+        "answer": "Dedicamos aproximadamente una hora a los Palacios Nazaríes para analizar en profundidad su iconografía y simbolismo, asegurando que comprendas cada detalle de esta joya arquitectónica."
+      },
+      {
+        "question": "¿Es necesario caminar mucho?",
+        "answer": "Sí, el recorrido por la Alhambra es extenso e incluye desniveles. Recomendamos calzado muy cómodo y preparación para una caminata de unas 3 horas."
+      }
+    ],
+    "related_tours": [
+      "palacios-nazaries",
+      "albaicin-misterios",
+      "sacromonte"
+    ],
+    "duration": "3h",
+    "price": 140,
+    "dates": {
+      "limited": [
+        "2026-03-01",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-14",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-04-04",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-25",
+        "2026-03-10",
+        "2026-04-15"
+      ],
+      "booked": []
     }
+  },
+  {
+    "id": "alhambra-sin-tickets",
+    "slug": "alhambra-sin-tickets-acceso-libre",
+    "meta_title": "Alhambra sin Entradas Granada | Palacio Carlos V y Bosques",
+    "meta_description": "¿Sin entradas para la Alhambra? Descubre el Palacio de Carlos V, el mirador del Aljibe y los bosques con un guía experto. Acceso libre, experiencia única.",
+    "category": "Monumental",
+    "meeting_point": "Puerta de las Granadas (inicio del bosque de la Alhambra)",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "booking_url": "/contacto?tour=alhambra-sin-tickets",
+    "disclaimer": "Nota: Este tour recorre únicamente las zonas de acceso libre del recinto. No incluye entradas a los monumentos interiores.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/2FpwmWpgfNpo3h7q6",
+    "title": "Alhambra sin Tickets",
+    "subtitle": "La Alhambra que Nadie te Cuenta, Sin Necesidad de Entradas",
+    "focus": "Una visita alternativa que demuestra que el recinto de la Alhambra esconde joyas de acceso libre que muy pocos conocen.",
+    "introduction": "¿No conseguiste entradas para la Alhambra? No te preocupes. El recinto monumental guarda secretos que van mucho más allá de los Palacios Nazaríes. El imponente Palacio de Carlos V, el mirador del Aljibe con sus vistas sobre Granada, los centenarios bosques de la Alhambra o el romántico Carmen de los Mártires son de libre acceso, y nuestro guía te los mostrará con la misma profundidad histórica. Una visita sorprendente que muchos descubren como su favorita.",
+    "discoveries": [
+      {
+        "title": "Palacio de Carlos V",
+        "description": "El único palacio renacentista circular del mundo, incrustado en el corazón de la fortaleza musulmana."
+      },
+      {
+        "title": "Mirador del Aljibe",
+        "description": "Vistas privilegiadas sobre Granada y el Albaicín desde los jardines del recinto monumental."
+      },
+      {
+        "title": "Bosques y Carmen de los Mártires",
+        "description": "El pulmón romántico de la Alhambra: jardines decimonónicos y naturaleza histórica."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Realmente vale la pena si no entro a los Palacios?",
+        "answer": "¡Absolutamente! El recinto de la Alhambra es una ciudad palatina enorme. Visitaremos lugares de libre acceso como el Palacio de Carlos V y los bosques, que guardan secretos históricos fascinantes que la mayoría de turistas pasan por alto."
+      },
+      {
+        "question": "¿Puedo comprar las entradas durante el tour?",
+        "answer": "No, las entradas suelen agotarse con semanas de antelación. Este tour está diseñado precisamente para quienes no consiguieron tickets pero quieren conocer la historia del recinto."
+      }
+    ],
+    "related_tours": [
+      "alhambra-completa",
+      "palacios-nazaries",
+      "albaicin-misterios"
+    ],
+    "duration": "2h",
+    "price": 100,
+    "dates": {
+      "limited": [
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-21",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-12",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-25",
+        "2026-04-26",
+        "2026-03-18",
+        "2026-04-02"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "palacios-nazaries",
+    "slug": "visita-palacios-nazaries-granada",
+    "meta_title": "Visita Palacios Nazaríes Granada | Comares y Patio de los Leones",
+    "meta_description": "Adéntrate en la residencia de los emires nazaríes. El Palacio de Comares y el Patio de los Leones explicados en profundidad por un guía historiador.",
+    "category": "Monumental",
+    "meeting_point": "Puerta del Vino (dentro del complejo monumental de la Alhambra)",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=palacios-nazaries",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/2FpwmWpgfNpo3h7q6",
+    "title": "Palacios Nazaríes",
+    "subtitle": "El Corazón Artístico de la Alhambra",
+    "focus": "La residencia de los emires nazaríes: donde la política, el arte y la vida cotidiana se fusionaban en la cumbre de la civilización islámica.",
+    "introduction": "Nos adentramos en la residencia de los emires nazaríes. Visitar el Palacio de Comares, centro político de la dinastía, o el Patio de los Leones, culmen de la exquisitez del arte nazarí, es una de las experiencias que siempre recordarás de Granada. En esta visita centrada exclusivamente en los Palacios, tendremos tiempo para descifrar cada detalle: la caligrafía árabe en los azulejos, la geometría de las yeserías y la perfecta orientación de cada estancia.",
+    "discoveries": [
+      {
+        "title": "Palacio de Comares",
+        "description": "El centro del poder político nazarí: el Salón del Trono y su impresionante techumbre de madera de cedro."
+      },
+      {
+        "title": "Patio de los Leones",
+        "description": "El culmen de la arquitectura nazarí: 124 columnas y la famosa fuente que da nombre al patio más célebre de España."
+      },
+      {
+        "title": "Jardines del Partal",
+        "description": "El reflejo de la Alhambra en el agua y los jardines que conectan los palacios con el Generalife."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Por qué hacer una visita solo de los Palacios?",
+        "answer": "Al centrarnos exclusivamente en los Palacios Nazaríes, podemos detenernos en los detalles caligráficos y arquitectónicos que en una visita general se pasan por alto. Es una inmersión profunda para amantes del arte."
+      },
+      {
+        "question": "¿Qué pasa si quiero ver el Generalife después?",
+        "answer": "El guía te explicará cómo llegar al Generalife al finalizar la visita guiada en los Palacios, para que puedas explorarlo por tu cuenta si tienes la entrada correspondiente."
+      }
+    ],
+    "related_tours": [
+      "alhambra-completa",
+      "alhambra-sin-tickets",
+      "albaicin-misterios"
+    ],
+    "duration": "1.5h",
+    "price": 100,
+    "dates": {
+      "limited": [
+        "2026-03-01",
+        "2026-03-07",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-28",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-18",
+        "2026-04-25",
+        "2026-04-26",
+        "2026-03-03",
+        "2026-04-23"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "catedral-granada",
+    "slug": "visita-guiada-catedral-granada",
+    "meta_title": "Visita Guiada Catedral de Granada | Primera del Renacimiento Español",
+    "meta_description": "Descubre la Catedral de Granada, obra magna del Renacimiento español diseñada por Alonso Cano. Una visita en profundidad con guía historiador.",
+    "category": "Monumental",
+    "meeting_point": "Plaza de las Pasiegas (frente a la fachada principal de la Catedral)",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=catedral-granada",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/Bu2vvMa1aPMX2dWm6",
+    "title": "Catedral de Granada",
+    "subtitle": "La Obra Magna del Renacimiento Español",
+    "focus": "Primera catedral renacentista de España y obra cumbre de Alonso Cano. El mensaje político y artístico de la Granada cristiana.",
+    "introduction": "Descubre la obra magna del Renacimiento español. Déjate sorprender por su magnífica fachada diseñada por Alonso Cano, para luego envolverte de los mejores ejemplos del barroco andaluz en su interior. Analizaremos no solo su arquitectura imponente, sino el mensaje político y religioso que transformó la ciudad tras la conquista de 1492 y convirtió Granada en símbolo del nuevo poder cristiano.",
+    "discoveries": [
+      {
+        "title": "Fachada de Alonso Cano",
+        "description": "Una de las obras más originales del barroco español, diseñada por el genio granadino que revolucionó el arte de su tiempo."
+      },
+      {
+        "title": "Las Naves Interiores",
+        "description": "Grandiosidad y luz: una de las naves más altas del mundo, que abruma con su escala y su programa iconográfico."
+      },
+      {
+        "title": "Capilla Mayor",
+        "description": "El corazón litúrgico de la catedral y su impresionante conjunto de esculturas y pinturas del Siglo de Oro."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Es la Catedral solo un edificio religioso?",
+        "answer": "No, es un manifiesto político y artístico del triunfo cristiano tras la Reconquista. Analizaremos cómo el Renacimiento se usó para transformar la imagen de Granada."
+      },
+      {
+        "question": "¿Cuánto dura la visita interior?",
+        "answer": "Pasaremos aproximadamente una hora y cuarto en el interior, tiempo suficiente para admirar la Capilla Mayor y las naves sin prisas."
+      }
+    ],
+    "related_tours": [
+      "capilla-real",
+      "centro-ciudad",
+      "monasterio-cartuja"
+    ],
+    "duration": "1.5h",
+    "price": 100,
+    "dates": {
+      "limited": [
+        "2026-03-01",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-15",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-04-05",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-26",
+        "2026-03-25",
+        "2026-04-08"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "capilla-real",
+    "slug": "visita-guiada-capilla-real-granada",
+    "meta_title": "Visita Guiada Capilla Real Granada | Mausoleo Reyes Católicos",
+    "meta_description": "Visita la Capilla Real de Granada, panteón de los Reyes Católicos. Una joya del gótico isabelino con la impresionante colección de pintura flamenca de Isabel la Católica.",
+    "category": "Monumental",
+    "meeting_point": "Calle Oficios, frente a la entrada al monumento",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=capilla-real",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/NpHwW8HniWgVs5Fe7",
+    "title": "Capilla Real",
+    "subtitle": "El Legado Eternos de los Reyes Católicos",
+    "focus": "Lugar de descanso de los monarcas más importantes de España. Una lección magistral sobre el poder, la fe y el arte en el siglo XV.",
+    "introduction": "Si visitas Granada, la Capilla Real es un lugar de parada obligatoria. Lugar de descanso de los Reyes Católicos, los monarcas más importantes de España, en su interior descubrirás y entenderás el rico patrimonio que alberga esta maravilla del gótico isabelino. Exploraremos el panteón donde reposan Isabel y Fernando, analizaremos su impresionante colección personal de pintura flamenca y comprenderemos el mensaje político y dinástico que hay detrás de cada detalle de este espacio sagrado.",
+    "discoveries": [
+      {
+        "title": "Panteón Real",
+        "description": "Los sepulcros de mármol de Isabel, Fernando, Juana y Felipe, obras maestras de la escultura funeraria renacentista."
+      },
+      {
+        "title": "Colección de Pintura Flamenca",
+        "description": "La colección personal de Isabel la Católica: uno de los conjuntos de pintura flamenca más importantes de España."
+      },
+      {
+        "title": "Reja de Bartolomé de Jaén",
+        "description": "Una de las rejas más bellas del Renacimiento español, que separa la nave del presbiterio con virtuosismo artesanal."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Se pueden ver de cerca los sepulcros de los Reyes Católicos?",
+        "answer": "Sí, nos situaremos frente a los mausoleos de mármol de Carrara para explicar su rica simbología y el legado dinástico que representan."
+      },
+      {
+        "question": "¿Qué importancia tiene la colección de pintura flamenca?",
+        "answer": "Es una de las colecciones personales más importantes de Europa. Veremos obras de gran valor que Isabel la Católica atesoró y que explican su gusto artístico personal."
+      }
+    ],
+    "related_tours": [
+      "catedral-granada",
+      "centro-ciudad",
+      "ruta-gran-capitan"
+    ],
+    "duration": "1.5h",
+    "price": 100,
+    "dates": {
+      "limited": [
+        "2026-03-01",
+        "2026-03-08",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-29",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-11",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-25",
+        "2026-04-26",
+        "2026-03-12",
+        "2026-04-29"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "monasterio-san-jeronimo",
+    "slug": "visita-monasterio-san-jeronimo-granada",
+    "meta_title": "Visita Monasterio San Jerónimo Granada | Mausoleo Gran Capitán",
+    "meta_description": "Descubre el Monasterio de San Jerónimo, lugar de reposo del Gran Capitán. Obra cumbre del barroco español y símbolo del poder militar de los Reyes Católicos.",
+    "category": "Religioso",
+    "meeting_point": "Frente a la Iglesia de San Jerónimo",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=monasterio-san-jeronimo",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/dRY7TKzCLEpgbmpp7",
+    "title": "Monasterio de San Jerónimo",
+    "subtitle": "Gloria Militar y Espiritualidad en el Renacimiento Granadino",
+    "focus": "Arte, poder y fe. El mausoleo del Gran Capitán y la importancia de las órdenes religiosas en la nueva Granada cristiana.",
+    "introduction": "Lugar de reposo del Gran Capitán, el cerebro militar de los Reyes Católicos. El Monasterio de San Jerónimo es una obra cumbre del arte granadino donde la gloria militar y la espiritualidad se dan la mano. Con esta visita entenderás la importancia de los monasterios y de las órdenes religiosas para convertir Granada en la nueva Jerusalén. Un espacio que habla de poder, fe y del hombre que cambió el arte de la guerra para siempre.",
+    "discoveries": [
+      {
+        "title": "Mausoleo del Gran Capitán",
+        "description": "El sepulcro de Gonzalo Fernández de Córdoba, el militar más brillante de su época, honrado por los Reyes Católicos."
+      },
+      {
+        "title": "Iglesia del Monasterio",
+        "description": "Una de las primeras grandes iglesias renacentistas de Granada, con una nave imponente y un presbiterio monumental."
+      },
+      {
+        "title": "Claustros",
+        "description": "Los dos claustros del monasterio: espacios de silencio y contemplación que narran la vida de la orden jerónima."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Quién fue el Gran Capitán y por qué está enterrado aquí?",
+        "answer": "Gonzalo Fernández de Córdoba fue el genio militar de los Reyes Católicos. Explicaremos su importancia histórica mientras visitamos su impresionante mausoleo."
+      },
+      {
+        "question": "¿Qué veremos en los claustros?",
+        "answer": "Visitaremos sus dos claustros renacentistas, espacios de gran paz que nos permiten entender cómo era la vida contemplativa de los monjes jerónimos."
+      }
+    ],
+    "related_tours": [
+      "monasterio-cartuja",
+      "ruta-gran-capitan",
+      "capilla-real"
+    ],
+    "duration": "1.5h",
+    "price": 100,
+    "dates": {
+      "limited": [
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-22",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-19",
+        "2026-04-25",
+        "2026-04-26",
+        "2026-03-31",
+        "2026-04-01"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "monasterio-cartuja",
+    "slug": "visita-monasterio-cartuja-granada",
+    "meta_title": "Visita Monasterio de La Cartuja Granada | Sacristía más Bella del Mundo",
+    "meta_description": "Descubre el Monasterio de La Cartuja en Granada: el barroco en su máxima expresión. La sacristía más bella del mundo y la orden del silencio explicados por un experto.",
+    "category": "Religioso",
+    "meeting_point": "Entrada al Monasterio de La Cartuja",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=monasterio-cartuja",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/hZ2LZdXSPQ8anbTNA",
+    "title": "Monasterio de La Cartuja",
+    "subtitle": "La Orden del Silencio y el Barroco Más Puro",
+    "focus": "El paroxismo del barroco español: una explosión de decoración que busca abrumar los sentidos y elevar el alma hacia lo divino.",
+    "introduction": "La orden del silencio y la soledad. Descubre, tras los muros de este monasterio cartujo, la historia y forma de vida de esta peculiar orden religiosa. Dentro te espera el sagrario, uno de los mejores ejemplos del barroco español, y la sacristía, considerada como la más bonita del mundo. En esta visita desgranaremos la teología hecha piedra, la vida monástica y la impresionante técnica artística que define el Siglo de Oro granadino.",
+    "discoveries": [
+      {
+        "title": "La Sacristía",
+        "description": "Considerada la sacristía más bella del mundo: mármoles, nácar y estucos en una explosión decorativa sin igual."
+      },
+      {
+        "title": "El Sagrario",
+        "description": "Uno de los mejores ejemplos del barroco español, donde la decoración alcanza su máxima intensidad espiritual."
+      },
+      {
+        "title": "La Vida Cartuja",
+        "description": "La peculiar regla de vida de los monjes cartujos: silencio, soledad y contemplación como camino hacia Dios."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Por qué se dice que su sacristía es la más bella del mundo?",
+        "answer": "Debido a su asombrosa decoración barroca en estuco, mármol y maderas preciosas. Es una explosión visual que busca representar la gloria divina de forma abrumadora."
+      },
+      {
+        "question": "¿Cómo era la vida de un monje cartujo?",
+        "answer": "Durante el tour explicaremos la regla del silencio y la soledad absoluta que seguían, lo cual contrasta fuertemente con la riqueza ornamental del edificio."
+      }
+    ],
+    "related_tours": [
+      "monasterio-san-jeronimo",
+      "basilica-san-juan-de-dios",
+      "ruta-fray-leopoldo"
+    ],
+    "duration": "1.5h",
+    "price": 100,
+    "dates": {
+      "limited": [
+        "2026-03-01",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-14",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-04-04",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-25",
+        "2026-03-05",
+        "2026-04-14"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "ruta-fray-leopoldo",
+    "slug": "ruta-fray-leopoldo-granada",
+    "meta_title": "Ruta Fray Leopoldo Granada | Historia del Santo de los Pobres",
+    "meta_description": "Descubre la vida y obra de Fray Leopoldo de Alpandeire a través de los lugares más importantes de su paso por Granada. Una visita cercana y llena de historias reales.",
+    "category": "Religioso",
+    "meeting_point": "Jardines del Triunfo",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=ruta-fray-leopoldo",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/gqFfVH18vVEU5yvB8",
+    "title": "Ruta Fray Leopoldo",
+    "subtitle": "La Huella del Personaje Más Querido de Granada",
+    "focus": "Una visita clara, cercana y llena de historias reales sobre uno de los personajes más queridos y venerados de la ciudad.",
+    "introduction": "Descubre la vida y obra de Fray Leopoldo de Alpandeire a través de los lugares más importantes de su paso por Granada. Este humilde fraile capuchino, conocido por su bondad y su labor de acogida a los más necesitados, dejó una huella imborrable en la ciudad. Recorreremos los escenarios de su vida cotidiana, conoceremos las historias que el pueblo granadino le atribuye y visitaremos los espacios donde todavía hoy se mantiene viva su memoria. Una ruta emotiva que conecta con la Granada más humana y espiritual.",
+    "discoveries": [
+      {
+        "title": "Convento de Capuchinos",
+        "description": "El lugar donde Fray Leopoldo vivió décadas de su vida y donde aún se guarda su memoria y devoción popular."
+      },
+      {
+        "title": "Recorrido de las Limosnas",
+        "description": "Las calles de Granada que recorrió durante años pidiendo para los pobres: una geografía de la caridad."
+      },
+      {
+        "title": "Devoción Popular",
+        "description": "La historia de su beatificación y el fervor que sigue despertando entre los granadinos generación tras generación."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Es una ruta apta para personas con movilidad reducida?",
+        "answer": "Sí, el recorrido por los lugares vinculados a Fray Leopoldo es mayoritariamente llano y accesible por las calles del centro de Granada."
+      },
+      {
+        "question": "¿Se visita la cripta donde reposan sus restos?",
+        "answer": "Sí, la visita incluye el paso por la cripta en la Iglesia de los Capuchinos, donde podrás ser testigo de la profunda devoción popular que aún hoy despierta."
+      }
+    ],
+    "related_tours": [
+      "ruta-san-juan-de-dios",
+      "basilica-san-juan-de-dios",
+      "monasterio-cartuja"
+    ],
+    "duration": "1.5h",
+    "price": 100,
+    "dates": {
+      "limited": [
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-21",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-12",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-25",
+        "2026-04-26",
+        "2026-03-17",
+        "2026-04-07"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "ruta-gran-capitan",
+    "slug": "ruta-gran-capitan-granada",
+    "meta_title": "Ruta Gran Capitán Granada | Gonzalo Fernández de Córdoba",
+    "meta_description": "Recorre los escenarios históricos de Gonzalo Fernández de Córdoba en Granada. Una visita con el Monasterio de San Jerónimo como punto central de su legado.",
+    "category": "Histórico",
+    "meeting_point": "Monasterio de San Jerónimo",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=ruta-gran-capitan",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/wW2KfXctEbBC5v9a8",
+    "title": "Ruta del Gran Capitán",
+    "subtitle": "El Genio Militar que Forjó el Imperio Español",
+    "focus": "La historia de Gonzalo Fernández de Córdoba a través de los escenarios granadinos vinculados a su figura y su legado.",
+    "introduction": "Conoce la historia de Gonzalo Fernández de Córdoba, el Gran Capitán, a través de un recorrido por los principales escenarios de Granada vinculados a su figura. Considerado el padre de la infantería moderna, su genio militar cambió el arte de la guerra para siempre. La visita tiene como punto central el Monasterio de San Jerónimo, donde descubrirás su legado, su sepulcro y su importancia en la España de los Reyes Católicos. Una ruta para entender cómo un hombre de Granada cambió la historia del mundo.",
+    "discoveries": [
+      {
+        "title": "Monasterio de San Jerónimo",
+        "description": "Su mausoleo, elegido como honor al mejor general de su tiempo por los propios Reyes Católicos."
+      },
+      {
+        "title": "El Legado Militar",
+        "description": "Cómo el Gran Capitán revolucionó las tácticas militares y sentó las bases del ejército moderno europeo."
+      },
+      {
+        "title": "Granada y la Nueva Nobleza",
+        "description": "El papel de la nobleza castellana en la transformación de Granada tras la conquista de 1492."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Este tour es muy técnico sobre historia militar?",
+        "answer": "No, aunque hablamos de sus hazañas, nos centramos en su figura humana y su impacto en la transformación de la Granada musulmana a la cristiana."
+      },
+      {
+        "question": "¿Qué relación tiene con el Monasterio de San Jerónimo?",
+        "answer": "El monasterio fue elegido por él y su esposa como lugar de descanso eterno, y es el eje central para entender su legado en la ciudad."
+      }
+    ],
+    "related_tours": [
+      "monasterio-san-jeronimo",
+      "capilla-real",
+      "catedral-granada"
+    ],
+    "duration": "2h",
+    "price": 110,
+    "dates": {
+      "limited": [
+        "2026-03-01",
+        "2026-03-07",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-28",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-18",
+        "2026-04-25",
+        "2026-04-26",
+        "2026-03-02",
+        "2026-04-30"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "ruta-san-juan-de-dios",
+    "slug": "ruta-san-juan-de-dios-granada",
+    "meta_title": "Ruta San Juan de Dios Granada | Legado del Santo de los Enfermos",
+    "meta_description": "Adéntrate en la Granada de San Juan de Dios. Recorre los lugares clave de su obra y descubre su legado en la atención a los enfermos y las huellas que dejó en la ciudad.",
+    "category": "Religioso",
+    "meeting_point": "Frente a la Basílica de San Juan de Dios",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=ruta-san-juan-de-dios",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/5xzVJMTkxh33Cs6b9",
+    "title": "Ruta de San Juan de Dios",
+    "subtitle": "El Santo que Transformó la Atención a los Pobres en Granada",
+    "focus": "La Granada social del siglo XVI: cómo un hombre cambió la historia de la sanidad y dejó una huella imborrable en la ciudad.",
+    "introduction": "Adéntrate en la Granada de San Juan de Dios, paseando por los lugares clave de su obra, incluida la Basílica de San Juan de Dios y el antiguo hospital. Este portugués llegado a Granada sin nada se convirtió en el fundador de la Orden Hospitalaria y en el patrón universal de los enfermos. Una visita guiada cercana que explica su legado en la atención a los más necesitados y las huellas físicas y espirituales que dejó en la ciudad.",
+    "discoveries": [
+      {
+        "title": "Basílica de San Juan de Dios",
+        "description": "Obra maestra del barroco dorado, construida para honrar al santo de los pobres y custodiar sus reliquias."
+      },
+      {
+        "title": "El Antiguo Hospital",
+        "description": "El primer gran hospital moderno de Granada, fundado por el propio Juan de Dios con sus limosnas."
+      },
+      {
+        "title": "La Orden Hospitalaria",
+        "description": "Cómo una pequeña iniciativa personal se convirtió en una de las órdenes religiosas más importantes del mundo."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Visitaremos el hospital que él fundó?",
+        "answer": "Sí, conoceremos la historia del antiguo hospital y cómo Juan de Dios revolucionó el concepto de cuidado a los enfermos en el siglo XVI."
+      },
+      {
+        "question": "¿Es una ruta muy larga?",
+        "answer": "Tiene una duración de unas 2 horas a un ritmo pausado, recorriendo los lugares clave de su vida en el centro histórico."
+      }
+    ],
+    "related_tours": [
+      "basilica-san-juan-de-dios",
+      "ruta-fray-leopoldo",
+      "monasterio-cartuja"
+    ],
+    "duration": "2h",
+    "price": 110,
+    "dates": {
+      "limited": [
+        "2026-03-01",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-15",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-04-05",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-26",
+        "2026-03-19",
+        "2026-04-09"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "basilica-san-juan-de-dios",
+    "slug": "basilica-san-juan-de-dios-granada",
+    "meta_title": "Visita Basílica San Juan de Dios Granada | Joya del Barroco Aúreo",
+    "meta_description": "Visita la Basílica de San Juan de Dios en Granada. Una obra maestra del barroco aúreo y lugar de reposo del santo de los pobres. Fe y arte unidos.",
+    "category": "Religioso",
+    "meeting_point": "Calle San Juan de Dios (Puerta Principal de la Basílica)",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=basilica-san-juan-de-dios",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/5xzVJMTkxh33Cs6b9",
+    "title": "Basílica de San Juan de Dios",
+    "subtitle": "El Barroco en su Máxima Expresión",
+    "focus": "Luz, oro y devoción. Un templo que brilla con luz propia y que cuenta la historia de la caridad en Granada.",
+    "introduction": "La Basílica de San Juan de Dios no deja indiferente a nadie; es, sencillamente, deslumbrante. Conocerás una de las figuras más queridas de Granada, San Juan de Dios, el santo de los pobres y los enfermos. Concebida como un relicario gigante para albergar sus restos, en su interior te espera una deliciosa muestra del barroco más puro: retablos dorados, frescos y espejos que crean una atmósfera celestial. Un viaje donde la vida y obra del santo, la espiritualidad de la Orden Hospitalaria y la belleza de su arquitectura te dejarán una huella imborrable.",
+    "discoveries": [
+      {
+        "title": "Barroco Aúreo",
+        "description": "El horror vacui llevado al extremo: retablos dorados, frescos y espejos que crean una atmósfera celestial única."
+      },
+      {
+        "title": "Camarín del Santo",
+        "description": "La estancia más sagrada y lujosa del templo, donde se veneran las reliquias de San Juan de Dios."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Por qué hay tantos espejos en el interior?",
+        "answer": "Los espejos, junto con el oro, se usaban en el barroco para multiplicar la luz y crear una atmósfera que recordara al cielo, buscando impresionar al fiel."
+      },
+      {
+        "question": "¿Podemos subir al camarín del Santo?",
+        "answer": "Dependiendo de la disponibilidad del monumento el día de la visita, intentaremos acceder a este espacio sagrado para ver de cerca las reliquias."
+      }
+    ],
+    "related_tours": [
+      "ruta-san-juan-de-dios",
+      "monasterio-cartuja",
+      "ruta-fray-leopoldo"
+    ],
+    "duration": "1.5h",
+    "price": 110,
+    "dates": {
+      "limited": [
+        "2026-03-01",
+        "2026-03-08",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-29",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-11",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-25",
+        "2026-04-26",
+        "2026-03-26",
+        "2026-04-16"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "albaicin-misterios",
+    "slug": "tour-albaicin-misterios-leyendas",
+    "meta_title": "Tour Albaicín Granada: Historia, Leyendas y Vistas Alhambra",
+    "meta_description": "Callejea por el Albaicín, Patrimonio de la Humanidad. Un paseo entre historia nazarí, leyendas locales y los mejores miradores a la Alhambra.",
+    "category": "Barrios",
+    "meeting_point": "Plaza Nueva (junto a la Fuente de los Granados)",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "booking_url": "/contacto?tour=albaicin-misterios",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/WDK9ywYpokLPmXEu8",
+    "title": "Misterios y Leyendas del Albaicín",
+    "subtitle": "Historia, Enigmas y Miradores Inolvidables",
+    "focus": "El alma antigua de Granada. Un laberinto de calles blancas donde cada esquina guarda una leyenda y cada mirador, una postal.",
+    "introduction": "Descubre el mítico barrio granadino, declarado Patrimonio de la Humanidad, con su historia y significación en la vida de la ciudad. Este antiguo arrabal musulmán conserva su trazado medieval intacto: aljibes, cármenes y restos de murallas que nos hablan de la vida en la Granada nazarí. En el viaje te acompañará un rico patrimonio junto con los misterios y leyendas más enigmáticos de la ciudad, finalizando en el mítico mirador de San Nicolás, desde donde contemplarás las vistas más bellas de la Alhambra.",
+    "discoveries": [
+      {
+        "title": "Patrimonio Andalusí",
+        "description": "La evolución urbana: del esplendor zirí y nazarí a la transformación cristiana, conservada en cada callejuela."
+      },
+      {
+        "title": "Misterios y Leyendas",
+        "description": "Relatos de amores prohibidos y sucesos inexplicables que forman parte del imaginario popular granadino."
+      },
+      {
+        "title": "Mirador de San Nicolás",
+        "description": "La vista panorámica más famosa del mundo: la Alhambra y Sierra Nevada frente a ti al atardecer."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Se cuentan historias de fantasmas?",
+        "answer": "Más que fantasmas, nos centramos en enigmas históricos y leyendas populares que han pasado de generación en generación en el barrio más antiguo de Granada."
+      },
+      {
+        "question": "¿El tour termina en el Mirador de San Nicolás?",
+        "answer": "Sí, finalizamos allí para que puedas disfrutar de la puesta de sol sobre la Alhambra, una de las vistas más famosas del mundo."
+      }
+    ],
+    "related_tours": [
+      "sacromonte",
+      "alhambra-completa",
+      "centro-ciudad"
+    ],
+    "duration": "2h",
+    "price": 110,
+    "dates": {
+      "limited": [
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-22",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-19",
+        "2026-04-25",
+        "2026-04-26",
+        "2026-03-04",
+        "2026-04-21"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "sacromonte",
+    "slug": "tour-sacromonte-cuevas-flamenco",
+    "meta_title": "Visita Abadía Sacromonte Granada | Cuevas, Flamenco e Historia",
+    "meta_description": "Adéntrate en el Sacromonte gitano. Conoce la vida en las cuevas, el origen del flamenco y la histórica Abadía del Monte Sacro. Una experiencia auténtica en Granada.",
+    "category": "Barrios",
+    "meeting_point": "Peso de la Harina (inicio Cuesta del Chapiz)",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "important_info": [
+      "Antes de reservar con nosotros, asegúrese de que tiene la entrada disponible al monumento",
+      "Si tiene algún problema con la compra de entradas al monumento o quiere que se lo gestionemos nosotros, háganoslo saber",
+      "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
+    ],
+    "booking_url": "/contacto?tour=sacromonte",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/aqtgNukapZzXTsN16",
+    "title": "Abadía del Sacromonte",
+    "subtitle": "Cuevas, Flamenco y Espiritualidad",
+    "focus": "El barrio con más duende de Granada. Un paisaje único de chumberas y cuevas blancas donde nació la zambra y se forjó una identidad única.",
+    "introduction": "En este viaje al pasado al barrio con más duende de Granada, descubrirás el origen gitano del Sacromonte, las cuevas donde todavía viven los locales y el flamenco como la forma de expresión artística más profunda. No te pierdas la magnífica Abadía del Sacromonte y descubre su historia entre reliquias, leyendas y espiritualidad, donde te aguardan unas vistas poco conocidas de la Alhambra. Un tour antropológico, histórico y paisajístico en uno de los rincones más singulares de España.",
+    "discoveries": [
+      {
+        "title": "Viviendas Trogloditas",
+        "description": "Arquitectura bioclimática vernácula: la vida en el interior de la montaña y la comunidad gitana que habita el barrio."
+      },
+      {
+        "title": "La Abadía del Sacromonte",
+        "description": "Cuna del cristianismo en Granada, los Libros Plúmbeos y una panorámica desconocida de la Alhambra."
+      },
+      {
+        "title": "Cultura Gitana y Flamenco",
+        "description": "El flamenco como expresión de dolor y alegría: historia de la Zambra granadina y una identidad transformada en arte."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Entraremos en las cuevas originales?",
+        "answer": "Visitaremos las Santas Cuevas de la Abadía, donde se originó la leyenda de los Libros Plúmbeos y el origen del cristianismo en Granada."
+      },
+      {
+        "question": "¿Hay que subir muchas cuestas?",
+        "answer": "El barrio del Sacromonte tiene pendientes pronunciadas. El tour requiere cierta forma física o el uso del autobús urbano para algunos tramos si se prefiere."
+      }
+    ],
+    "related_tours": [
+      "albaicin-misterios",
+      "centro-ciudad",
+      "alhambra-completa"
+    ],
+    "duration": "2h",
+    "price": 110,
+    "dates": {
+      "limited": [
+        "2026-03-01",
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-14",
+        "2026-03-21",
+        "2026-03-22",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-04-04",
+        "2026-04-11",
+        "2026-04-12",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-25",
+        "2026-03-11",
+        "2026-04-28"
+      ],
+      "booked": []
+    }
+  },
+  {
+    "id": "centro-ciudad",
+    "slug": "tour-centro-historico-granada",
+    "meta_title": "Tour Centro Histórico Granada | Catedral, Alcaicería y Madraza",
+    "meta_description": "Paseo por el corazón de Granada: Catedral, Capilla Real, Alcaicería, Madraza y Corral del Carbón. Arte, historia y exotismo en dos horas con guía especializado.",
+    "category": "Barrios",
+    "meeting_point": "Plaza de las Pasiegas (frente a la Catedral)",
+    "languages": [
+      "Español 🇪🇸",
+      "Inglés 🇬🇧"
+    ],
+    "included": [
+      "Guía oficial especializado",
+      "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
+    ],
+    "not_included": [
+      "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
+      "Propinas",
+      "Traslados",
+      "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita.",
+      "Esta actividad es reembolsable hasta 48 horas antes del inicio del evento."
+    ],
+    "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 48 horas antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
+    "booking_url": "/contacto?tour=centro-ciudad",
+    "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
+    "contact_info": {
+      "whatsapp": "https://wa.me/34662338112"
+    },
+    "location_map": "https://maps.app.goo.gl/Bu2vvMa1aPMX2dWm6",
+    "title": "Centro Ciudad",
+    "subtitle": "El Corazón de Granada: Arte, Historia y Exotismo",
+    "focus": "Un paseo que une dos mundos: la Granada nazarí y la cristiana, conviviendo en el mismo espacio en el corazón de la ciudad.",
+    "introduction": "Sumérgete en el corazón de Granada con un paseo que te llevará por joyas como la imponente Catedral renacentista, la solemne Capilla Real y el vibrante bullicio de la Plaza Bib-Rambla. Descubrirás el Zoco o Alcaicería, auténtico mercado de la seda nazarí, y pasearás junto a la elegante fachada del Palacio de la Chancillería en Plaza Nueva. Conocerás también la histórica Madraza, primera universidad andalusí, y te envolverá la leyenda del Corral del Carbón. Un viaje que une arte, historia y exotismo de la mano de nuestro guía especializado.",
+    "discoveries": [
+      {
+        "title": "Catedral y Capilla Real",
+        "description": "El poder cristiano hecho piedra: renacimiento español y gótico isabelino frente a frente en el centro de la ciudad."
+      },
+      {
+        "title": "Alcaicería y Plaza Bib-Rambla",
+        "description": "El bullicio del zoco nazarí y la plaza central de la vida granadina, desde la Edad Media hasta hoy."
+      },
+      {
+        "title": "Madraza y Corral del Carbón",
+        "description": "La primera universidad andalusí y el único caravansar nazarí conservado en España."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "¿Veremos la Alcaicería (el antiguo mercado de seda)?",
+        "answer": "Sí, pasearemos por sus estrechas calles para entender cómo funcionaba el comercio en la época nazarí y cómo ha evolucionado hasta hoy."
+      },
+      {
+        "question": "¿Es una buena opción para un primer día en Granada?",
+        "answer": "Es la opción ideal, ya que ofrece una visión general de la historia de la ciudad, desde sus raíces árabes hasta su esplendor renacentista."
+      }
+    ],
+    "related_tours": [
+      "catedral-granada",
+      "capilla-real",
+      "albaicin-misterios"
+    ],
+    "duration": "2h",
+    "price": 110,
+    "dates": {
+      "limited": [
+        "2026-03-07",
+        "2026-03-08",
+        "2026-03-14",
+        "2026-03-15",
+        "2026-03-21",
+        "2026-03-28",
+        "2026-03-29",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-12",
+        "2026-04-18",
+        "2026-04-19",
+        "2026-04-25",
+        "2026-04-26",
+        "2026-03-03",
+        "2026-04-30"
+      ],
+      "booked": []
+    }
+  }
 ]

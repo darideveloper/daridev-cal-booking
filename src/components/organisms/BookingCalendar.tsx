@@ -32,7 +32,9 @@ export function BookingCalendar() {
   const modifiers = useMemo(() => ({
     isBooked: (d: Date) => d > today && availability.booked.some((date: Date) => date.toDateString() === d.toDateString()),
     isLimited: (d: Date) => d > today && availability.limited.some((date: Date) => date.toDateString() === d.toDateString()),
-    isAvailable: (d: Date) => d > today && availability.available.some((date: Date) => date.toDateString() === d.toDateString()),
+    isAvailable: (d: Date) => d > today && 
+      !availability.booked.some((date: Date) => date.toDateString() === d.toDateString()) &&
+      !availability.limited.some((date: Date) => date.toDateString() === d.toDateString()),
   }), [availability, today]);
 
   const modifiersClassNames = useMemo(() => {
@@ -47,9 +49,8 @@ export function BookingCalendar() {
     if (!d || d <= today) return 'standard';
     const dateStr = d.toDateString();
     if (availability.booked.some((date: Date) => date.toDateString() === dateStr)) return 'booked';
-    if (availability.limited.some((date: Date = d) => date.toDateString() === dateStr)) return 'limited';
-    if (availability.available.some((date: Date) => date.toDateString() === dateStr)) return 'available';
-    return 'standard';
+    if (availability.limited.some((date: Date) => date.toDateString() === dateStr)) return 'limited';
+    return 'available';
   };
 
   const statusKey = getStatus(selectedDate);

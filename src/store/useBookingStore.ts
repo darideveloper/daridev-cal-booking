@@ -2,7 +2,6 @@ import { create } from 'zustand';
 import toursData from "../data/tours.json";
 
 interface Availability {
-  available: Date[];
   limited: Date[];
   booked: Date[];
 }
@@ -29,7 +28,7 @@ interface BookingState {
 const getInitialAvailability = (tourId: string | null): Availability => {
   const tour = toursData.find(t => t.id === tourId);
   if (!tour || !tour.dates) {
-    return { available: [], limited: [], booked: [] };
+    return { limited: [], booked: [] };
   }
   
   const parseDate = (dateStr: string) => {
@@ -38,9 +37,8 @@ const getInitialAvailability = (tourId: string | null): Availability => {
   };
 
   return {
-    available: tour.dates.available.map(parseDate),
-    limited: tour.dates.limited.map(parseDate),
-    booked: tour.dates.booked.map(parseDate),
+    limited: (tour.dates.limited || []).map(parseDate),
+    booked: (tour.dates.booked || []).map(parseDate),
   };
 };
 
@@ -54,7 +52,7 @@ export const useBookingStore = create<BookingState>((set) => ({
     guests: 1,
     specialRequests: '',
   },
-  availability: { available: [], limited: [], booked: [] },
+  availability: { limited: [], booked: [] },
   setSelectedDate: (date) => set({ selectedDate: date }),
   setStep: (step) => set({ currentStep: step }),
   nextStep: () => set((state) => ({ currentStep: state.currentStep + 1 })),
@@ -80,6 +78,6 @@ export const useBookingStore = create<BookingState>((set) => ({
       guests: 1,
       specialRequests: '',
     },
-    availability: { available: [], limited: [], booked: [] },
+    availability: { limited: [], booked: [] },
   }),
 }));
