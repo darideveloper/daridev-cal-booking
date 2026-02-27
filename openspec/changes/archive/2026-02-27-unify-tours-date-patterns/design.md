@@ -16,7 +16,7 @@ The availability data currently covers **March 1, 2026** to **April 30, 2026**.
     - **All other weekdays** (Monday through Friday) in March and April 2026 that are not selected as "limited".
 
 ### 3. Verification of Weekends (2026)
-- **March**: 7-8, 14-15, 21-22, 28-29.
+- **March**: 1, 7-8, 14-15, 21-22, 28-29.
 - **April**: 4-5, 11-12, 18-19, 25-26.
 
 ### 4. Special Case: Palacios Nazaríes

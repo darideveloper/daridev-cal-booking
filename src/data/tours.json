@@ -39,7 +39,7 @@
         "discoveries": [
             {
                 "title": "Palacios Nazaríes",
-                "description": "El cenit del arte islámico: arquitectura, poetry y poder político entrelazados en el Palacio de Comares y el Patio de los Leones."
+                "description": "El cenit del arte islámico: arquitectura, poesía y poder político entrelazados en el Palacio de Comares y el Patio de los Leones."
             },
             {
                 "title": "La Alcazaba",
@@ -75,7 +75,6 @@
                 "2026-03-05",
                 "2026-03-06",
                 "2026-03-09",
-                "2026-03-10",
                 "2026-03-11",
                 "2026-03-12",
                 "2026-03-13",
@@ -89,6 +88,11 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
+                "2026-03-30",
+                "2026-03-31",
+                "2026-04-01",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
@@ -96,7 +100,6 @@
                 "2026-04-10",
                 "2026-04-13",
                 "2026-04-14",
-                "2026-04-15",
                 "2026-04-16",
                 "2026-04-17",
                 "2026-04-20",
@@ -107,33 +110,30 @@
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-15",
+                "2026-04-05",
+                "2026-04-26"
             ],
             "limited": [
+                "2026-03-01",
                 "2026-03-07",
                 "2026-03-08",
                 "2026-03-14",
-                "2026-03-15",
                 "2026-03-21",
                 "2026-03-22",
                 "2026-03-28",
                 "2026-03-29",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
                 "2026-04-04",
-                "2026-04-05",
                 "2026-04-11",
                 "2026-04-12",
                 "2026-04-18",
                 "2026-04-19",
                 "2026-04-25",
-                "2026-04-26"
+                "2026-03-10",
+                "2026-04-15"
             ],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "booked": []
         }
     },
     {
@@ -149,7 +149,7 @@
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -213,7 +213,6 @@
                 "2026-03-13",
                 "2026-03-16",
                 "2026-03-17",
-                "2026-03-18",
                 "2026-03-19",
                 "2026-03-20",
                 "2026-03-23",
@@ -221,19 +220,10 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
+                "2026-03-30",
+                "2026-03-31",
+                "2026-04-01",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
@@ -252,20 +242,30 @@
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-01",
+                "2026-03-22",
+                "2026-04-11"
             ],
             "limited": [
+                "2026-03-07",
+                "2026-03-08",
+                "2026-03-14",
+                "2026-03-15",
+                "2026-03-21",
+                "2026-03-28",
                 "2026-03-29",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
                 "2026-04-04",
-                "2026-04-05"
+                "2026-04-05",
+                "2026-04-12",
+                "2026-04-18",
+                "2026-04-19",
+                "2026-04-25",
+                "2026-04-26",
+                "2026-03-18",
+                "2026-04-02"
             ],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "booked": []
         }
     },
     {
@@ -281,7 +281,7 @@
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -308,7 +308,7 @@
         "discoveries": [
             {
                 "title": "Palacio de Comares",
-                "description": "El centro del poder político nazarí: el Salón del Trono and su impresionante techumbre de madera de cedro."
+                "description": "El centro del poder político nazarí: el Salón del Trono y su impresionante techumbre de madera de cedro."
             },
             {
                 "title": "Patio de los Leones",
@@ -337,10 +337,8 @@
         "duration": "1.5h",
         "price": 100,
         "dates": {
-            "available": [],
-            "limited": [
+            "available": [
                 "2026-03-02",
-                "2026-03-03",
                 "2026-03-04",
                 "2026-03-05",
                 "2026-03-06",
@@ -359,25 +357,11 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
                 "2026-03-30",
                 "2026-03-31",
                 "2026-04-01",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
@@ -391,17 +375,34 @@
                 "2026-04-20",
                 "2026-04-21",
                 "2026-04-22",
-                "2026-04-23",
                 "2026-04-24",
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-08",
+                "2026-03-29",
+                "2026-04-19"
             ],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "limited": [
+                "2026-03-01",
+                "2026-03-07",
+                "2026-03-14",
+                "2026-03-15",
+                "2026-03-21",
+                "2026-03-22",
+                "2026-03-28",
+                "2026-04-04",
+                "2026-04-05",
+                "2026-04-11",
+                "2026-04-12",
+                "2026-04-18",
+                "2026-04-25",
+                "2026-04-26",
+                "2026-03-03",
+                "2026-04-23"
+            ],
+            "booked": []
         }
     },
     {
@@ -417,7 +418,7 @@
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -491,21 +492,15 @@
                 "2026-03-20",
                 "2026-03-23",
                 "2026-03-24",
-                "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
-                "2026-03-29",
                 "2026-03-30",
                 "2026-03-31",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
+                "2026-04-01",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
-                "2026-04-08",
                 "2026-04-09",
                 "2026-04-10",
                 "2026-04-13",
@@ -521,24 +516,30 @@
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-14",
+                "2026-04-04",
+                "2026-04-25"
             ],
             "limited": [
+                "2026-03-01",
                 "2026-03-07",
                 "2026-03-08",
-                "2026-03-14",
                 "2026-03-15",
                 "2026-03-21",
                 "2026-03-22",
                 "2026-03-28",
-                "2026-04-01",
-                "2026-04-04",
-                "2026-04-05"
+                "2026-03-29",
+                "2026-04-05",
+                "2026-04-11",
+                "2026-04-12",
+                "2026-04-18",
+                "2026-04-19",
+                "2026-04-26",
+                "2026-03-25",
+                "2026-04-08"
             ],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "booked": []
         }
     },
     {
@@ -554,7 +555,7 @@
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -575,7 +576,7 @@
         },
         "location_map": "https://maps.app.goo.gl/NpHwW8HniWgVs5Fe7",
         "title": "Capilla Real",
-        "subtitle": "El Legado Eterno de los Reyes Católicos",
+        "subtitle": "El Legado Eternos de los Reyes Católicos",
         "focus": "Lugar de descanso de los monarcas más importantes de España. Una lección magistral sobre el poder, la fe y el arte en el siglo XV.",
         "introduction": "Si visitas Granada, la Capilla Real es un lugar de parada obligatoria. Lugar de descanso de los Reyes Católicos, los monarcas más importantes de España, en su interior descubrirás y entenderás el rico patrimonio que alberga esta maravilla del gótico isabelino. Exploraremos el panteón donde reposan Isabel y Fernando, analizaremos su impresionante colección personal de pintura flamenca y comprenderemos el mensaje político y dinástico que hay detrás de cada detalle de este espacio sagrado.",
         "discoveries": [
@@ -619,7 +620,6 @@
                 "2026-03-09",
                 "2026-03-10",
                 "2026-03-11",
-                "2026-03-12",
                 "2026-03-13",
                 "2026-03-16",
                 "2026-03-17",
@@ -631,13 +631,11 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
+                "2026-03-30",
+                "2026-03-31",
+                "2026-04-01",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
@@ -655,27 +653,30 @@
                 "2026-04-24",
                 "2026-04-27",
                 "2026-04-28",
-                "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-07",
+                "2026-03-28",
+                "2026-04-12"
             ],
             "limited": [
+                "2026-03-01",
+                "2026-03-08",
+                "2026-03-14",
+                "2026-03-15",
+                "2026-03-21",
+                "2026-03-22",
                 "2026-03-29",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
                 "2026-04-04",
                 "2026-04-05",
                 "2026-04-11",
-                "2026-04-12",
                 "2026-04-18",
                 "2026-04-19",
                 "2026-04-25",
-                "2026-04-26"
+                "2026-04-26",
+                "2026-03-12",
+                "2026-04-29"
             ],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "booked": []
         }
     },
     {
@@ -691,7 +692,7 @@
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -714,7 +715,7 @@
         "title": "Monasterio de San Jerónimo",
         "subtitle": "Gloria Militar y Espiritualidad en el Renacimiento Granadino",
         "focus": "Arte, poder y fe. El mausoleo del Gran Capitán y la importancia de las órdenes religiosas en la nueva Granada cristiana.",
-        "introduction": "Lugar de reposo del Gran Capitán, el cerebro militar de los Reyes Católicos. El Monasterio de San Jerónimo es una obra cumbre del arte granadino donde la gloria militar and la espiritualidad se dan la mano. Con esta visita entenderás la importancia de los monasterios y de las órdenes religiosas para convertir Granada en la nueva Jerusalén. Un espacio que habla de poder, fe y del hombre que cambió el arte de la guerra para siempre.",
+        "introduction": "Lugar de reposo del Gran Capitán, el cerebro militar de los Reyes Católicos. El Monasterio de San Jerónimo es una obra cumbre del arte granadino donde la gloria militar y la espiritualidad se dan la mano. Con esta visita entenderás la importancia de los monasterios y de las órdenes religiosas para convertir Granada en la nueva Jerusalén. Un espacio que habla de poder, fe y del hombre que cambió el arte de la guerra para siempre.",
         "discoveries": [
             {
                 "title": "Mausoleo del Gran Capitán",
@@ -768,25 +769,9 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
                 "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
@@ -805,13 +790,30 @@
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-21",
+                "2026-04-18",
+                "2026-03-01"
             ],
-            "limited": [],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "limited": [
+                "2026-03-07",
+                "2026-03-08",
+                "2026-03-14",
+                "2026-03-15",
+                "2026-03-22",
+                "2026-03-28",
+                "2026-03-29",
+                "2026-04-04",
+                "2026-04-05",
+                "2026-04-11",
+                "2026-04-12",
+                "2026-04-19",
+                "2026-04-25",
+                "2026-04-26",
+                "2026-03-31",
+                "2026-04-01"
+            ],
+            "booked": []
         }
     },
     {
@@ -827,7 +829,7 @@
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -850,7 +852,7 @@
         "title": "Monasterio de La Cartuja",
         "subtitle": "La Orden del Silencio y el Barroco Más Puro",
         "focus": "El paroxismo del barroco español: una explosión de decoración que busca abrumar los sentidos y elevar el alma hacia lo divino.",
-        "introduction": "La orden del silencio y la soledad. Descubre, tras los muros de este monasterio cartujo, la historia y forma de vida de esta peculiar orden religiosa. Dentro te espera el sagrario, uno de los mejores ejemplos del barroco español, and la sacristía, considerada como la más bonita del mundo. En esta visita desgranaremos la teología hecha piedra, la vida monástica and la impresionante técnica artística que define el Siglo de Oro granadino.",
+        "introduction": "La orden del silencio y la soledad. Descubre, tras los muros de este monasterio cartujo, la historia y forma de vida de esta peculiar orden religiosa. Dentro te espera el sagrario, uno de los mejores ejemplos del barroco español, y la sacristía, considerada como la más bonita del mundo. En esta visita desgranaremos la teología hecha piedra, la vida monástica y la impresionante técnica artística que define el Siglo de Oro granadino.",
         "discoveries": [
             {
                 "title": "La Sacristía",
@@ -862,7 +864,7 @@
             },
             {
                 "title": "La Vida Cartuja",
-                "description": "La peculiar regla de vida de los monjes cartujos: silencio, soledad and contemplación como camino hacia Dios."
+                "description": "La peculiar regla de vida de los monjes cartujos: silencio, soledad y contemplación como camino hacia Dios."
             }
         ],
         "faqs": [
@@ -887,7 +889,6 @@
                 "2026-03-02",
                 "2026-03-03",
                 "2026-03-04",
-                "2026-03-05",
                 "2026-03-06",
                 "2026-03-09",
                 "2026-03-10",
@@ -904,50 +905,57 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
                 "2026-03-30",
                 "2026-03-31",
                 "2026-04-01",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
                 "2026-04-09",
                 "2026-04-10",
+                "2026-04-11",
+                "2026-04-12",
                 "2026-04-13",
-                "2026-04-14",
                 "2026-04-15",
                 "2026-04-16",
                 "2026-04-17",
+                "2026-04-18",
+                "2026-04-19",
                 "2026-04-20",
-                "2026-04-21",
                 "2026-04-22",
                 "2026-04-23",
                 "2026-04-24",
+                "2026-04-25",
+                "2026-04-26",
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-15",
+                "2026-04-05",
+                "2026-04-26"
             ],
-            "limited": [],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "limited": [
+                "2026-03-01",
+                "2026-03-07",
+                "2026-03-08",
+                "2026-03-14",
+                "2026-03-21",
+                "2026-03-22",
+                "2026-03-28",
+                "2026-03-29",
+                "2026-04-04",
+                "2026-04-11",
+                "2026-04-12",
+                "2026-04-18",
+                "2026-04-19",
+                "2026-04-25",
+                "2026-03-05",
+                "2026-04-14"
+            ],
+            "booked": []
         }
     },
     {
@@ -963,7 +971,7 @@
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -985,12 +993,12 @@
         "location_map": "https://maps.app.goo.gl/gqFfVH18vVEU5yvB8",
         "title": "Ruta Fray Leopoldo",
         "subtitle": "La Huella del Personaje Más Querido de Granada",
-        "focus": "Una visita clara, cercana and llena de historias reales sobre uno de los personajes más queridos y venerados de la ciudad.",
-        "introduction": "Descubre la vida y obra de Fray Leopoldo de Alpandeire a través de los lugares más importantes de su paso por Granada. Este humilde fraile capuchino, conocido por su bondad and su labor de acogida a los más necesitados, dejó una huella imborrable en la ciudad. Recorreremos los escenarios de su vida cotidiana, conoceremos las historias que el pueblo granadino le atribuye and visitaremos los espacios donde todavía hoy se mantiene viva su memoria. Una ruta emotiva que conecta con la Granada más humana and espiritual.",
+        "focus": "Una visita clara, cercana y llena de historias reales sobre uno de los personajes más queridos y venerados de la ciudad.",
+        "introduction": "Descubre la vida y obra de Fray Leopoldo de Alpandeire a través de los lugares más importantes de su paso por Granada. Este humilde fraile capuchino, conocido por su bondad y su labor de acogida a los más necesitados, dejó una huella imborrable en la ciudad. Recorreremos los escenarios de su vida cotidiana, conoceremos las historias que el pueblo granadino le atribuye y visitaremos los espacios donde todavía hoy se mantiene viva su memoria. Una ruta emotiva que conecta con la Granada más humana y espiritual.",
         "discoveries": [
             {
                 "title": "Convento de Capuchinos",
-                "description": "El lugar donde Fray Leopoldo vivió décadas de su vida and donde aún se guarda su memoria and devoción popular."
+                "description": "El lugar donde Fray Leopoldo vivió décadas de su vida y donde aún se guarda su memoria y devoción popular."
             },
             {
                 "title": "Recorrido de las Limosnas",
@@ -998,7 +1006,7 @@
             },
             {
                 "title": "Devoción Popular",
-                "description": "La historia de su beatificación and el fervor que sigue despertando entre los granadinos generación tras generación."
+                "description": "La historia de su beatificación y el fervor que sigue despertando entre los granadinos generación tras generación."
             }
         ],
         "faqs": [
@@ -1031,7 +1039,6 @@
                 "2026-03-12",
                 "2026-03-13",
                 "2026-03-16",
-                "2026-03-17",
                 "2026-03-18",
                 "2026-03-19",
                 "2026-03-20",
@@ -1040,8 +1047,12 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
+                "2026-03-30",
+                "2026-03-31",
+                "2026-04-01",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
-                "2026-04-07",
                 "2026-04-08",
                 "2026-04-09",
                 "2026-04-10",
@@ -1058,7 +1069,10 @@
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-01",
+                "2026-03-22",
+                "2026-04-11"
             ],
             "limited": [
                 "2026-03-07",
@@ -1066,25 +1080,19 @@
                 "2026-03-14",
                 "2026-03-15",
                 "2026-03-21",
-                "2026-03-22",
                 "2026-03-28",
                 "2026-03-29",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
                 "2026-04-04",
                 "2026-04-05",
-                "2026-04-11",
                 "2026-04-12",
                 "2026-04-18",
                 "2026-04-19",
                 "2026-04-25",
-                "2026-04-26"
+                "2026-04-26",
+                "2026-03-17",
+                "2026-04-07"
             ],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "booked": []
         }
     },
     {
@@ -1100,7 +1108,7 @@
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -1122,8 +1130,8 @@
         "location_map": "https://maps.app.goo.gl/wW2KfXctEbBC5v9a8",
         "title": "Ruta del Gran Capitán",
         "subtitle": "El Genio Militar que Forjó el Imperio Español",
-        "focus": "La historia de Gonzalo Fernández de Córdoba a través de los escenarios granadinos vinculados a su figura and su legado.",
-        "introduction": "Conoce la historia de Gonzalo Fernández de Córdoba, el Gran Capitán, a través de un recorrido por los principales escenarios de Granada vinculados a su figura. Considerado el padre de la infantería moderna, su genio militar cambió el arte de la guerra para siempre. La visita tiene como punto central el Monasterio de San Jerónimo, donde descubrirás su legado, su sepulcro and su importancia en la España de los Reyes Católicos. Una ruta para entender cómo un hombre de Granada cambió la historia del mundo.",
+        "focus": "La historia de Gonzalo Fernández de Córdoba a través de los escenarios granadinos vinculados a su figura y su legado.",
+        "introduction": "Conoce la historia de Gonzalo Fernández de Córdoba, el Gran Capitán, a través de un recorrido por los principales escenarios de Granada vinculados a su figura. Considerado el padre de la infantería moderna, su genio militar cambió el arte de la guerra para siempre. La visita tiene como punto central el Monasterio de San Jerónimo, donde descubrirás su legado, su sepulcro y su importancia en la España de los Reyes Católicos. Una ruta para entender cómo un hombre de Granada cambió la historia del mundo.",
         "discoveries": [
             {
                 "title": "Monasterio de San Jerónimo",
@@ -1131,10 +1139,10 @@
             },
             {
                 "title": "El Legado Militar",
-                "description": "Cómo el Gran Capitán revolucionó las tácticas militares and sentó las bases del ejército moderno europeo."
+                "description": "Cómo el Gran Capitán revolucionó las tácticas militares y sentó las bases del ejército moderno europeo."
             },
             {
-                "title": "Granada and la Nueva Nobleza",
+                "title": "Granada y la Nueva Nobleza",
                 "description": "El papel de la nobleza castellana en la transformación de Granada tras la conquista de 1492."
             }
         ],
@@ -1157,7 +1165,6 @@
         "price": 110,
         "dates": {
             "available": [
-                "2026-03-02",
                 "2026-03-03",
                 "2026-03-04",
                 "2026-03-05",
@@ -1177,25 +1184,11 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
                 "2026-03-30",
                 "2026-03-31",
                 "2026-04-01",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
@@ -1214,20 +1207,36 @@
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
+                "2026-03-08",
+                "2026-03-29",
+                "2026-04-19"
+            ],
+            "limited": [
+                "2026-03-01",
+                "2026-03-07",
+                "2026-03-14",
+                "2026-03-15",
+                "2026-03-21",
+                "2026-03-22",
+                "2026-03-28",
+                "2026-04-04",
+                "2026-04-05",
+                "2026-04-11",
+                "2026-04-12",
+                "2026-04-18",
+                "2026-04-25",
+                "2026-04-26",
+                "2026-03-02",
                 "2026-04-30"
             ],
-            "limited": [],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "booked": []
         }
     },
     {
         "id": "ruta-san-juan-de-dios",
         "slug": "ruta-san-juan-de-dios-granada",
         "meta_title": "Ruta San Juan de Dios Granada | Legado del Santo de los Enfermos",
-        "meta_description": "Adéntrate en la Granada de San Juan de Dios. Recorre los lugares clave de su obra and descubre su legado en la atención a los enfermos and las huellas que dejó en la ciudad.",
+        "meta_description": "Adéntrate en la Granada de San Juan de Dios. Recorre los lugares clave de su obra y descubre su legado en la atención a los enfermos y las huellas que dejó en la ciudad.",
         "category": "Religioso",
         "meeting_point": "Frente a la Basílica de San Juan de Dios",
         "languages": [
@@ -1236,7 +1245,7 @@
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -1251,19 +1260,19 @@
             "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
         ],
         "booking_url": "/contacto?tour=ruta-san-juan-de-dios",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía and deben ser gestionadas por el cliente.",
+        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
         "contact_info": {
             "whatsapp": "https://wa.me/34662338112"
         },
         "location_map": "https://maps.app.goo.gl/5xzVJMTkxh33Cs6b9",
         "title": "Ruta de San Juan de Dios",
         "subtitle": "El Santo que Transformó la Atención a los Pobres en Granada",
-        "focus": "La Granada social del siglo XVI: cómo un hombre cambió la historia de la sanidad and dejó una huella imborrable en la ciudad.",
-        "introduction": "Adéntrate en the Granada de San Juan de Dios, paseando por los lugares clave de su obra, incluida the Basílica de San Juan de Dios and the antiguo hospital. Este portugués llegado a Granada sin nada se convirtió en el fundador de the Orden Hospitalaria and en el patrón universal de los enfermos. Una visita guiada cercana que explica su legado en the atención a los más necesitados and the huellas físicas and espirituales que dejó en the ciudad.",
+        "focus": "La Granada social del siglo XVI: cómo un hombre cambió la historia de la sanidad y dejó una huella imborrable en la ciudad.",
+        "introduction": "Adéntrate en la Granada de San Juan de Dios, paseando por los lugares clave de su obra, incluida la Basílica de San Juan de Dios y el antiguo hospital. Este portugués llegado a Granada sin nada se convirtió en el fundador de la Orden Hospitalaria y en el patrón universal de los enfermos. Una visita guiada cercana que explica su legado en la atención a los más necesitados y las huellas físicas y espirituales que dejó en la ciudad.",
         "discoveries": [
             {
                 "title": "Basílica de San Juan de Dios",
-                "description": "Obra maestra del barroco dorado, construida para honrar al santo de los pobres and custodiar sus reliquias."
+                "description": "Obra maestra del barroco dorado, construida para honrar al santo de los pobres y custodiar sus reliquias."
             },
             {
                 "title": "El Antiguo Hospital",
@@ -1298,7 +1307,6 @@
                 "2026-03-04",
                 "2026-03-05",
                 "2026-03-06",
-                "2026-03-09",
                 "2026-03-10",
                 "2026-03-11",
                 "2026-03-12",
@@ -1306,36 +1314,20 @@
                 "2026-03-16",
                 "2026-03-17",
                 "2026-03-18",
-                "2026-03-19",
                 "2026-03-20",
                 "2026-03-23",
                 "2026-03-24",
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
                 "2026-03-30",
                 "2026-03-31",
                 "2026-04-01",
-                "2026-04-04",
-                "2026-04-05",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
-                "2026-04-09",
                 "2026-04-10",
                 "2026-04-13",
                 "2026-04-14",
@@ -1350,29 +1342,46 @@
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-14",
+                "2026-04-04",
+                "2026-04-25"
             ],
-            "limited": [],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "limited": [
+                "2026-03-01",
+                "2026-03-07",
+                "2026-03-08",
+                "2026-03-15",
+                "2026-03-21",
+                "2026-03-22",
+                "2026-03-28",
+                "2026-03-29",
+                "2026-04-05",
+                "2026-04-11",
+                "2026-04-12",
+                "2026-04-18",
+                "2026-04-19",
+                "2026-04-26",
+                "2026-03-19",
+                "2026-04-09"
+            ],
+            "booked": []
         }
     },
     {
         "id": "basilica-san-juan-de-dios",
         "slug": "basilica-san-juan-de-dios-granada",
         "meta_title": "Visita Basílica San Juan de Dios Granada | Joya del Barroco Aúreo",
-        "meta_description": "Visita the Basílica de San Juan de Dios en Granada. Una obra maestra del barroco aúreo and lugar de reposo del santo de los pobres. Fe and arte unidos.",
+        "meta_description": "Visita la Basílica de San Juan de Dios en Granada. Una obra maestra del barroco aúreo y lugar de reposo del santo de los pobres. Fe y arte unidos.",
         "category": "Religioso",
-        "meeting_point": "Calle San Juan de Dios (Puerta Principal de the Basílica)",
+        "meeting_point": "Calle San Juan de Dios (Puerta Principal de la Basílica)",
         "languages": [
             "Español 🇪🇸",
             "Inglés 🇬🇧"
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -1387,23 +1396,23 @@
             "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
         ],
         "booking_url": "/contacto?tour=basilica-san-juan-de-dios",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía and deben ser gestionadas por el cliente.",
+        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
         "contact_info": {
             "whatsapp": "https://wa.me/34662338112"
         },
         "location_map": "https://maps.app.goo.gl/5xzVJMTkxh33Cs6b9",
         "title": "Basílica de San Juan de Dios",
         "subtitle": "El Barroco en su Máxima Expresión",
-        "focus": "Luz, oro and devoción. Un templo que brilla con luz propia and que cuenta the historia de the caridad en Granada.",
-        "introduction": "La Basílica de San Juan de Dios no deja indiferente a nadie; es, sencillamente, deslumbrante. Conocerás una de the figuras más queridas de Granada, San Juan de Dios, el santo de los pobres and los enfermos. Concebida como un relicario gigante para albergar sus restos, en su interior te espera una deliciosa muestra del barroco más puro: retablos dorados, frescos and espejos que crean una atmósfera celestial. Un viaje donde the vida and obra del santo, the espiritualidad de the Orden Hospitalaria and the beauty of its architecture te dejarán una huella imborrable.",
+        "focus": "Luz, oro y devoción. Un templo que brilla con luz propia y que cuenta la historia de la caridad en Granada.",
+        "introduction": "La Basílica de San Juan de Dios no deja indiferente a nadie; es, sencillamente, deslumbrante. Conocerás una de las figuras más queridas de Granada, San Juan de Dios, el santo de los pobres y los enfermos. Concebida como un relicario gigante para albergar sus restos, en su interior te espera una deliciosa muestra del barroco más puro: retablos dorados, frescos y espejos que crean una atmósfera celestial. Un viaje donde la vida y obra del santo, la espiritualidad de la Orden Hospitalaria y la belleza de su arquitectura te dejarán una huella imborrable.",
         "discoveries": [
             {
                 "title": "Barroco Aúreo",
-                "description": "El horror vacui llevado al extremo: retablos dorados, frescos and espejos que crean una atmósfera celestial única."
+                "description": "El horror vacui llevado al extremo: retablos dorados, frescos y espejos que crean una atmósfera celestial única."
             },
             {
                 "title": "Camarín del Santo",
-                "description": "La estancia más sagrada and lujosa del templo, donde se veneran current reliquias de San Juan de Dios."
+                "description": "La estancia más sagrada y lujosa del templo, donde se veneran las reliquias de San Juan de Dios."
             }
         ],
         "faqs": [
@@ -1435,6 +1444,8 @@
                 "2026-03-11",
                 "2026-03-12",
                 "2026-03-13",
+                "2026-03-14",
+                "2026-03-15",
                 "2026-03-16",
                 "2026-03-17",
                 "2026-03-18",
@@ -1443,14 +1454,12 @@
                 "2026-03-23",
                 "2026-03-24",
                 "2026-03-25",
-                "2026-03-26",
                 "2026-03-27",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
+                "2026-03-30",
+                "2026-03-31",
+                "2026-04-01",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
@@ -1459,7 +1468,6 @@
                 "2026-04-13",
                 "2026-04-14",
                 "2026-04-15",
-                "2026-04-16",
                 "2026-04-17",
                 "2026-04-20",
                 "2026-04-21",
@@ -1469,43 +1477,46 @@
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-07",
+                "2026-03-28",
+                "2026-04-12"
             ],
             "limited": [
-                "2026-03-07",
+                "2026-03-01",
                 "2026-03-08",
                 "2026-03-14",
                 "2026-03-15",
                 "2026-03-21",
                 "2026-03-22",
-                "2026-03-28",
                 "2026-03-29",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
                 "2026-04-04",
-                "2026-04-05"
+                "2026-04-05",
+                "2026-04-11",
+                "2026-04-18",
+                "2026-04-19",
+                "2026-04-25",
+                "2026-04-26",
+                "2026-03-26",
+                "2026-04-16"
             ],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "booked": []
         }
     },
     {
         "id": "albaicin-misterios",
         "slug": "tour-albaicin-misterios-leyendas",
-        "meta_title": "Tour Albaicín Granada: Historia, Leyendas and Vistas Alhambra",
-        "meta_description": "Callejea por el Albaicín, Patrimonio de the Humanidad. Un paseo entre historia nazarí, leyendas locales and los mejores miradores a the Alhambra.",
+        "meta_title": "Tour Albaicín Granada: Historia, Leyendas y Vistas Alhambra",
+        "meta_description": "Callejea por el Albaicín, Patrimonio de la Humanidad. Un paseo entre historia nazarí, leyendas locales y los mejores miradores a la Alhambra.",
         "category": "Barrios",
-        "meeting_point": "Plaza Nueva (junto a the Fuente de los Granados)",
+        "meeting_point": "Plaza Nueva (junto a la Fuente de los Granados)",
         "languages": [
             "Español 🇪🇸",
             "Inglés 🇬🇧"
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -1515,27 +1526,27 @@
         ],
         "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 72 horas(3 días) antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
         "booking_url": "/contacto?tour=albaicin-misterios",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía and deben ser gestionadas por el cliente.",
+        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
         "contact_info": {
             "whatsapp": "https://wa.me/34662338112"
         },
         "location_map": "https://maps.app.goo.gl/WDK9ywYpokLPmXEu8",
-        "title": "Misterios and Leyendas del Albaicín",
-        "subtitle": "Historia, Enigmas and Miradores Inolvidables",
-        "focus": "El alma antigua de Granada. Un laberinto de calles blancas donde cada esquina guarda una leyenda and cada mirador, una postal.",
-        "introduction": "Descubre el mítico barrio granadino, declarado Patrimonio de the Humanidad, con su historia and significación en the vida de the ciudad. Este antiguo arrabal musulmán conserva su trazado medieval intacto: aljibes, cármenes and restos de murallas que nos hablan de the vida en the Granada nazarí. En el viaje te acompañará un rico patrimonio junto con los misterios and leyendas más enigmáticos de the ciudad, finalizando en el mítico mirador de San Nicolás, desde donde contemplarás the vistas más bellas de the Alhambra.",
+        "title": "Misterios y Leyendas del Albaicín",
+        "subtitle": "Historia, Enigmas y Miradores Inolvidables",
+        "focus": "El alma antigua de Granada. Un laberinto de calles blancas donde cada esquina guarda una leyenda y cada mirador, una postal.",
+        "introduction": "Descubre el mítico barrio granadino, declarado Patrimonio de la Humanidad, con su historia y significación en la vida de la ciudad. Este antiguo arrabal musulmán conserva su trazado medieval intacto: aljibes, cármenes y restos de murallas que nos hablan de la vida en la Granada nazarí. En el viaje te acompañará un rico patrimonio junto con los misterios y leyendas más enigmáticos de la ciudad, finalizando en el mítico mirador de San Nicolás, desde donde contemplarás las vistas más bellas de la Alhambra.",
         "discoveries": [
             {
                 "title": "Patrimonio Andalusí",
-                "description": "La evolución urbana: del esplendor zirí and nazarí a the transformación cristiana, conservada en cada callejuela."
+                "description": "La evolución urbana: del esplendor zirí y nazarí a la transformación cristiana, conservada en cada callejuela."
             },
             {
-                "title": "Misterios and Leyendas",
-                "description": "Relatos de amores prohibidos and sucesos inexplicables que forman parte del imaginario popular granadino."
+                "title": "Misterios y Leyendas",
+                "description": "Relatos de amores prohibidos y sucesos inexplicables que forman parte del imaginario popular granadino."
             },
             {
                 "title": "Mirador de San Nicolás",
-                "description": "La vista panorámica más famosa del mundo: the Alhambra and Sierra Nevada frente a ti al atardecer."
+                "description": "La vista panorámica más famosa del mundo: la Alhambra y Sierra Nevada frente a ti al atardecer."
             }
         ],
         "faqs": [
@@ -1559,7 +1570,6 @@
             "available": [
                 "2026-03-02",
                 "2026-03-03",
-                "2026-03-04",
                 "2026-03-05",
                 "2026-03-06",
                 "2026-03-09",
@@ -1577,6 +1587,11 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
+                "2026-03-30",
+                "2026-03-31",
+                "2026-04-01",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
@@ -1587,57 +1602,57 @@
                 "2026-04-15",
                 "2026-04-16",
                 "2026-04-17",
+                "2026-04-18",
+                "2026-04-19",
                 "2026-04-20",
-                "2026-04-21",
                 "2026-04-22",
                 "2026-04-23",
                 "2026-04-24",
+                "2026-04-25",
+                "2026-04-26",
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-21",
+                "2026-04-18",
+                "2026-03-01"
             ],
             "limited": [
                 "2026-03-07",
                 "2026-03-08",
                 "2026-03-14",
                 "2026-03-15",
-                "2026-03-21",
                 "2026-03-22",
                 "2026-03-28",
                 "2026-03-29",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
                 "2026-04-04",
                 "2026-04-05",
                 "2026-04-11",
                 "2026-04-12",
-                "2026-04-18",
                 "2026-04-19",
                 "2026-04-25",
-                "2026-04-26"
+                "2026-04-26",
+                "2026-03-04",
+                "2026-04-21"
             ],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "booked": []
         }
     },
     {
         "id": "sacromonte",
         "slug": "tour-sacromonte-cuevas-flamenco",
         "meta_title": "Visita Abadía Sacromonte Granada | Cuevas, Flamenco e Historia",
-        "meta_description": "Adéntrate en the Sacromonte gitano. Conoce the vida en the cuevas, el origen del flamenco and the histórica Abadía del Monte Sacro. Una experiencia auténtica en Granada.",
+        "meta_description": "Adéntrate en el Sacromonte gitano. Conoce la vida en las cuevas, el origen del flamenco y la histórica Abadía del Monte Sacro. Una experiencia auténtica en Granada.",
         "category": "Barrios",
-        "meeting_point": "Peso de the Harina (inicio Cuesta del Chapiz)",
+        "meeting_point": "Peso de la Harina (inicio Cuesta del Chapiz)",
         "languages": [
             "Español 🇪🇸",
             "Inglés 🇬🇧"
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
@@ -1652,27 +1667,27 @@
             "Deben reservar el horario del tour en función de la hora de entrada al monumento que aparece en su ticket"
         ],
         "booking_url": "/contacto?tour=sacromonte",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía and deben ser gestionadas por el cliente.",
+        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
         "contact_info": {
             "whatsapp": "https://wa.me/34662338112"
         },
         "location_map": "https://maps.app.goo.gl/aqtgNukapZzXTsN16",
         "title": "Abadía del Sacromonte",
-        "subtitle": "Cuevas, Flamenco and Espiritualidad",
-        "focus": "El barrio con más duende de Granada. Un paisaje único de chumberas and cuevas blancas donde nació the zambra and se forjó una identidad única.",
-        "introduction": "En este viaje al pasado al barrio con más duende de Granada, descubrirás el origen gitano del Sacromonte, the cuevas donde todavía viven los locales and el flamenco como the forma de expresión artística más profunda. No te pierdas the magnífica Abadía del Sacromonte and descubre su historia entre reliquias, leyendas and espiritualidad, donde te aguardan unas vistas poco conocidas de the Alhambra. Un tour antropológico, histórico and paisajístico en uno de los rincones más singulares de España.",
+        "subtitle": "Cuevas, Flamenco y Espiritualidad",
+        "focus": "El barrio con más duende de Granada. Un paisaje único de chumberas y cuevas blancas donde nació la zambra y se forjó una identidad única.",
+        "introduction": "En este viaje al pasado al barrio con más duende de Granada, descubrirás el origen gitano del Sacromonte, las cuevas donde todavía viven los locales y el flamenco como la forma de expresión artística más profunda. No te pierdas la magnífica Abadía del Sacromonte y descubre su historia entre reliquias, leyendas y espiritualidad, donde te aguardan unas vistas poco conocidas de la Alhambra. Un tour antropológico, histórico y paisajístico en uno de los rincones más singulares de España.",
         "discoveries": [
             {
                 "title": "Viviendas Trogloditas",
-                "description": "Arquitectura bioclimática vernácula: the vida en el interior de the montaña and the comunidad gitana que habita el barrio."
+                "description": "Arquitectura bioclimática vernácula: la vida en el interior de la montaña y la comunidad gitana que habita el barrio."
             },
             {
                 "title": "La Abadía del Sacromonte",
-                "description": "Cuna del cristianismo en Granada, los Libros Plúmbeos and una panorámica desconocida de the Alhambra."
+                "description": "Cuna del cristianismo en Granada, los Libros Plúmbeos y una panorámica desconocida de la Alhambra."
             },
             {
-                "title": "Cultura Gitana and Flamenco",
-                "description": "El flamenco como expresión de dolor and alegría: historia de the Zambra granadina and una identidad transformada en arte."
+                "title": "Cultura Gitana y Flamenco",
+                "description": "El flamenco como expresión de dolor y alegría: historia de la Zambra granadina y una identidad transformada en arte."
             }
         ],
         "faqs": [
@@ -1701,7 +1716,6 @@
                 "2026-03-06",
                 "2026-03-09",
                 "2026-03-10",
-                "2026-03-11",
                 "2026-03-12",
                 "2026-03-13",
                 "2026-03-16",
@@ -1714,19 +1728,11 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
+                "2026-03-30",
+                "2026-03-31",
+                "2026-04-01",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
@@ -1743,69 +1749,78 @@
                 "2026-04-23",
                 "2026-04-24",
                 "2026-04-27",
-                "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-04-30",
+                "2026-03-15",
+                "2026-04-05",
+                "2026-04-26"
             ],
             "limited": [
+                "2026-03-01",
+                "2026-03-07",
+                "2026-03-08",
+                "2026-03-14",
+                "2026-03-21",
+                "2026-03-22",
+                "2026-03-28",
                 "2026-03-29",
-                "2026-03-30",
-                "2026-03-31",
-                "2026-04-01",
                 "2026-04-04",
-                "2026-04-05"
+                "2026-04-11",
+                "2026-04-12",
+                "2026-04-18",
+                "2026-04-19",
+                "2026-04-25",
+                "2026-03-11",
+                "2026-04-28"
             ],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "booked": []
         }
     },
     {
         "id": "centro-ciudad",
         "slug": "tour-centro-historico-granada",
-        "meta_title": "Tour Centro Histórico Granada | Catedral, Alcaicería and Madraza",
-        "meta_description": "Paseo por el corazón de Granada: Catedral, Capilla Real, Alcaicería, Madraza and Corral del Carbón. Arte, historia and exotismo en dos horas con guía especializado.",
+        "meta_title": "Tour Centro Histórico Granada | Catedral, Alcaicería y Madraza",
+        "meta_description": "Paseo por el corazón de Granada: Catedral, Capilla Real, Alcaicería, Madraza y Corral del Carbón. Arte, historia y exotismo en dos horas con guía especializado.",
         "category": "Barrios",
-        "meeting_point": "Plaza de current Pasiegas (frente a the Catedral)",
+        "meeting_point": "Plaza de las Pasiegas (frente a la Catedral)",
         "languages": [
             "Español 🇪🇸",
             "Inglés 🇬🇧"
         ],
         "included": [
             "Guía oficial especializado",
-            "Nuestro guía de recomendaciones de servicios con promociones y descuentos(restaurantes, tablaos de flamenco y hoteles)"
+            "Nuestro guía de recomendaciones de servicios con promociones y descuentos (restaurantes, tablaos de flamenco y hoteles)"
         ],
         "not_included": [
             "Entradas al monumento (si lo solicita podemos gestionar su compra de entradas)",
             "Propinas",
             "Traslados",
             "Si son más de siete visitantes el guía alquilará un audio guía, que se añadirá al precio total de la visita.",
-            "Esta actividad es rembolsable hasta 48 horas antes del inicio del evento."
+            "Esta actividad es reembolsable hasta 48 horas antes del inicio del evento."
         ],
         "cancelation": "Política de cancelación: Puedes cancelar sin cargos hasta 48 horas antes de la actividad. Si lo haces con menos antelación, llegas tarde o no te presentas, no habrá reembolso",
         "booking_url": "/contacto?tour=centro-ciudad",
-        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía and deben ser gestionadas por el cliente.",
+        "disclaimer": "Nota: Las entradas a los monumentos no están incluidas en el precio del servicio de guía y deben ser gestionadas por el cliente.",
         "contact_info": {
             "whatsapp": "https://wa.me/34662338112"
         },
         "location_map": "https://maps.app.goo.gl/Bu2vvMa1aPMX2dWm6",
         "title": "Centro Ciudad",
-        "subtitle": "El Corazón de Granada: Arte, Historia and Exotismo",
-        "focus": "Un paseo que une dos mundos: the Granada nazarí and the cristiana, conviviendo en el mismo espacio en el corazón de the ciudad.",
-        "introduction": "Sumérgete en el corazón de Granada con un paseo que te llevará por joyas como the imponente Catedral renacentista, the solemne Capilla Real and el vibrante bullicio de the Plaza Bib-Rambla. Descubrirás el Zoco o Alcaicería, auténtico mercado de the seda nazarí, and pasearás junto a the elegante fachada del Palacio de the Chancillería en Plaza Nueva. Conocerás también the histórica Madraza, primera universidad andalusí, and te envolverá the leyenda del Corral del Carbón. Un viaje que une arte, historia and exotismo de the mano de nuestro guía especializado.",
+        "subtitle": "El Corazón de Granada: Arte, Historia y Exotismo",
+        "focus": "Un paseo que une dos mundos: la Granada nazarí y la cristiana, conviviendo en el mismo espacio en el corazón de la ciudad.",
+        "introduction": "Sumérgete en el corazón de Granada con un paseo que te llevará por joyas como la imponente Catedral renacentista, la solemne Capilla Real y el vibrante bullicio de la Plaza Bib-Rambla. Descubrirás el Zoco o Alcaicería, auténtico mercado de la seda nazarí, y pasearás junto a la elegante fachada del Palacio de la Chancillería en Plaza Nueva. Conocerás también la histórica Madraza, primera universidad andalusí, y te envolverá la leyenda del Corral del Carbón. Un viaje que une arte, historia y exotismo de la mano de nuestro guía especializado.",
         "discoveries": [
             {
-                "title": "Catedral and Capilla Real",
-                "description": "El poder cristiano hecho piedra: renacimiento español and gótico isabelino frente a frente en el centro de the ciudad."
+                "title": "Catedral y Capilla Real",
+                "description": "El poder cristiano hecho piedra: renacimiento español y gótico isabelino frente a frente en el centro de la ciudad."
             },
             {
-                "title": "Alcaicería and Plaza Bib-Rambla",
-                "description": "El bullicio del zoco nazarí and the plaza central de the vida granadina, desde the Edad Media hasta hoy."
+                "title": "Alcaicería y Plaza Bib-Rambla",
+                "description": "El bullicio del zoco nazarí y la plaza central de la vida granadina, desde la Edad Media hasta hoy."
             },
             {
-                "title": "Madraza and Corral del Carbón",
-                "description": "The primera universidad andalusí and el único caravansar nazarí conservado en España."
+                "title": "Madraza y Corral del Carbón",
+                "description": "La primera universidad andalusí y el único caravansar nazarí conservado en España."
             }
         ],
         "faqs": [
@@ -1828,7 +1843,6 @@
         "dates": {
             "available": [
                 "2026-03-02",
-                "2026-03-03",
                 "2026-03-04",
                 "2026-03-05",
                 "2026-03-06",
@@ -1847,22 +1861,11 @@
                 "2026-03-25",
                 "2026-03-26",
                 "2026-03-27",
-                "2026-03-07",
-                "2026-03-08",
-                "2026-03-14",
-                "2026-03-15",
-                "2026-03-21",
-                "2026-03-22",
-                "2026-03-28",
-                "2026-03-29",
                 "2026-03-30",
                 "2026-03-31",
-                "2026-04-11",
-                "2026-04-12",
-                "2026-04-18",
-                "2026-04-19",
-                "2026-04-25",
-                "2026-04-26",
+                "2026-04-01",
+                "2026-04-02",
+                "2026-04-03",
                 "2026-04-06",
                 "2026-04-07",
                 "2026-04-08",
@@ -1875,23 +1878,36 @@
                 "2026-04-17",
                 "2026-04-20",
                 "2026-04-21",
-                "2026-04-22",
                 "2026-04-23",
                 "2026-04-24",
+                "2026-04-25",
+                "2026-04-26",
                 "2026-04-27",
                 "2026-04-28",
                 "2026-04-29",
-                "2026-04-30"
+                "2026-03-01",
+                "2026-03-22",
+                "2026-04-11"
             ],
             "limited": [
-                "2026-04-01",
+                "2026-03-07",
+                "2026-03-08",
+                "2026-03-14",
+                "2026-03-15",
+                "2026-03-21",
+                "2026-03-28",
+                "2026-03-29",
                 "2026-04-04",
-                "2026-04-05"
+                "2026-04-05",
+                "2026-04-12",
+                "2026-04-18",
+                "2026-04-19",
+                "2026-04-25",
+                "2026-04-26",
+                "2026-03-03",
+                "2026-04-30"
             ],
-            "booked": [
-                "2026-04-02",
-                "2026-04-03"
-            ]
+            "booked": []
         }
     }
 ]

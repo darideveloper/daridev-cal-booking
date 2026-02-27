@@ -24,18 +24,15 @@ Every tour object in the catalog MUST provide a set of frequently asked question
 ### Requirement: Tour Availability Data
 Every tour object in the catalog MUST provide accurate availability information for booking.
 
-#### Scenario: Date Structure Definition
+#### ADDED Scenario: Consistency in Availability Patterns
 - **GIVEN** a tour object in `src/data/tours.json`
-- **WHEN** the `dates` property is present
-- **THEN** it MUST contain three arrays: `available`, `limited`, and `booked`.
+- **WHEN** availability arrays are populated
+- **THEN** it MUST prioritize weekends (Saturdays and Sundays) as `limited`.
+- **AND** it MUST keep the `booked` array empty for all tours.
+- **AND** it MUST mark the majority of other weekdays as `available`.
 
-#### Scenario: Date Format Compliance
-- **GIVEN** the `dates` property
-- **WHEN** populating the availability arrays
-- **THEN** all entries MUST be strings in the `YYYY-MM-DD` format.
-
-#### Scenario: Logical Date Separation
-- **GIVEN** a tour's availability arrays
-- **WHEN** checking for date occurrences
-- **THEN** a single date MUST NOT appear in more than one of the `available`, `limited`, or `booked` arrays for that tour.
+#### ADDED Scenario: Visual Variety in Limited Status
+- **GIVEN** the collection of all tours
+- **WHEN** the `limited` arrays are defined
+- **THEN** each tour SHOULD include 1-2 random weekdays in its `limited` array to avoid perfectly uniform availability patterns across the catalog.
 
