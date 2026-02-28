@@ -8,8 +8,17 @@ export default function BookingFlow({ initialTourId }: { initialTourId?: string 
   const updateFormData = useBookingStore((state: any) => state.updateFormData)
 
   useEffect(() => {
+    // If we have an initial ID from the path ([id].astro)
     if (initialTourId) {
       updateFormData({ tourId: initialTourId })
+    } 
+    // Otherwise check for the query parameter (?tour=...)
+    else {
+      const urlParams = new URLSearchParams(window.location.search);
+      const tourQuery = urlParams.get('tour');
+      if (tourQuery) {
+        updateFormData({ tourId: tourQuery });
+      }
     }
   }, [initialTourId, updateFormData])
 

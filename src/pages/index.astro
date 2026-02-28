@@ -1,14 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import BookingFlow from "@/components/organisms/BookingFlow";
-
-const tourId = Astro.url.searchParams.get('tour') || undefined;
 ---
 
 <Layout>
     <main class="min-h-screen bg-brand-cream/20 py-12 px-4 flex items-center justify-center">
         <div class="flex flex-col lg:flex-row gap-6 w-full max-w-6xl mx-auto items-stretch justify-center p-4 lg:p-8">
-            <BookingFlow client:load initialTourId={tourId} />
+            <BookingFlow client:load />
         </div>
     </main>
 </Layout>
