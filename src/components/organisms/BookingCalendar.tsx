@@ -119,7 +119,7 @@ export function BookingCalendar() {
         </CardContent>
       </Card>
 
-      <div className="max-w-md text-center text-foreground/40 text-[10px] font-sans italic">
+      <div className="max-w-md text-center text-white text-[10px] font-sans italic">
         <p>La disponibilidad se actualiza diariamente.</p>
       </div>
     </div>

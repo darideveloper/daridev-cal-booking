@@ -72,7 +72,8 @@ export function BookingForm() {
 
       const data = await response.json()
       if (data.stripe_url) {
-        window.location.href = data.stripe_url
+        window.open(data.stripe_url, '_blank');
+        window.location.reload();
       } else {
         throw new Error('No se recibió la URL de pago')
       }
@@ -188,7 +189,7 @@ export function BookingForm() {
         </CardContent>
       </Card>
       
-      <div className="text-center text-foreground/40 text-[10px] font-sans italic px-4 pb-2">
+      <div className="text-center text-white text-[10px] font-sans italic px-4 pb-2">
         <p>Todos los campos marcados son obligatorios para procesar su solicitud.</p>
       </div>
     </form>
