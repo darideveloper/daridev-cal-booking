@@ -33,7 +33,7 @@ const injectVirtualLimitedDates = (limited: Date[], booked: Date[]): Date[] => {
   const bookedStrings = new Set(booked.map(d => d.toDateString()));
   const limitedStrings = new Set(limited.map(d => d.toDateString()));
 
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 12; i++) {
     const d = new Date(today);
     d.setDate(today.getDate() + i);
     const dateStr = d.toDateString();
