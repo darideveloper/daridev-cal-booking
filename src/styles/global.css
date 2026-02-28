@@ -124,6 +124,7 @@
 /* Transparent bg */
 body {
     background-color: rgba(0, 0, 0, 0); /* or simply 'transparent' */
+    overflow: hidden;
 }
 
 /* pointer */
