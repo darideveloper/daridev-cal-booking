@@ -130,7 +130,7 @@ export function BookingForm() {
             </div>
 
             <div className="grid gap-1.5 w-full md:w-1/2">
-              <Label htmlFor="guests" className="text-xs">Personas</Label>
+              <Label htmlFor="guests" className="text-xs">Personas (máximo 30)</Label>
               <Input
                 id="guests"
                 name="guests"

@@ -28,7 +28,7 @@ export const STATUS_CONFIG: Record<StatusKey, StatusConfigValue> = {
     }
   },
   limited: {
-    label: 'Limitada',
+    label: 'Pocas plazas',
     icon: AlertCircle,
     classes: {
       container: 'bg-amber-50 border-amber-100',
