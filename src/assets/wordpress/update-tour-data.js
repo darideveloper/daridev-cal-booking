@@ -18,10 +18,8 @@ if (page === "tours") {
 async function updateTourData() {
   // Update Booking Iframe
   const iframeElem = document.querySelector(".custom-iframe-container iframe")
-  if (iframeElem) {
-    const bookingUrl = `https://granada-go-tours-booking.apps.darideveloper.com/${tourId}`
-    iframeElem.setAttribute("src", bookingUrl)
-  }
+  const bookingUrl = `https://granada-go-tours-booking.apps.darideveloper.com/${tourId}`
+  iframeElem.setAttribute("src", bookingUrl)
 
   // Fetch API Data
   const [tourData, randomTours] = await Promise.all([
@@ -32,9 +30,12 @@ async function updateTourData() {
   console.log({ tourData, randomTours })
 
   // Update UI Content
-  // hero
+  // ----- Hero -----
   const h1Elem = document.querySelector("#hero h1")
-  if (h1Elem && tourData.title) {
-    h1Elem.innerHTML = tourData.title
-  }
+  h1Elem.innerHTML = tourData.title
+
+  // ----- Summary -----
+  const durationElem = document.querySelector("#summary #duration > div > div")
+  durationElem.innerHTML = tourData.duration
+
 }
