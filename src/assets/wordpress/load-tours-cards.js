@@ -5,6 +5,7 @@ async function loadTours() {
 
   try {
     const data = await getToursData()
+    console.log({ data })
     const template = wrapper.firstElementChild
     if (!template) return
 
@@ -14,10 +15,10 @@ async function loadTours() {
     }
 
     data.forEach(item => {
-      // 1. Clone the template
+      // Clone the template
       const clone = template.cloneNode(true)
 
-      // 2. Update Text Content
+      // Update Text Content
       const h3 = clone.getElementsByTagName("h3")[0]
       if (h3) h3.textContent = item.title
 
@@ -28,14 +29,17 @@ async function loadTours() {
       const price = clone.querySelector('.price')
       if (price) price.textContent = "€" + item.price
 
-      // 3. Update Image Source
+      // Update Image Source
       const img = clone.querySelector('img')
-      if (img && item.imageUrl) {
-        img.src = item.imageUrl
-        img.alt = item.title // Good for SEO/Accessibility
-      }
+      const imgSrc = `${apiBase}/tours/banners/${item.id}.webp`
+      img.src = imgSrc
+      img.setAttribute("data-src", imgSrc)
+      img.setAttribute("data-srcset", imgSrc)
+      img.setAttribute("srcset", imgSrc)
 
-      // 4. Convert Card to <a> Link
+      img.alt = item.title // Good for SEO/Accessibility
+
+      // Convert Card to <a> Link
       const linkCard = document.createElement('a')
       linkCard.href = item.url || "#"
       linkCard.target = "_blank"

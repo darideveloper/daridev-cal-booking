@@ -1,5 +1,7 @@
+const apiBase = "https://granada-go-tours-booking.apps.darideveloper.com"
+
 async function getToursData() {
-  const url = "https://granada-go-tours-booking.apps.darideveloper.com/api/tours"
+  const url = `${apiBase}/api/tours`
   const res = await fetch(url)
   const data = await res.json()
   return data
