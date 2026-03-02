@@ -32,9 +32,13 @@ async function updateTourData() {
   // Update UI Content
 
   // ----- Hero -----
+  const heroElem = document.querySelector("#hero")
   const titleElem = document.querySelector("#hero h1")
   const subtitleElem = document.querySelector("#hero .title p")
   const focusElem = document.querySelector("#hero .focus p")
+  const bannerSrc = `${apiBase}/tours/banners/${tourData.id}.webp`
+  console.log({ bannerSrc })
+  heroElem.style.backgroundImage = `url('${bannerSrc}')`
   titleElem.innerHTML = tourData.title
   subtitleElem.innerHTML = tourData.subtitle
   focusElem.innerHTML = tourData.focus
