@@ -32,10 +32,17 @@ async function updateTourData() {
   // Update UI Content
   // ----- Hero -----
   const h1Elem = document.querySelector("#hero h1")
+  const subtitleElem = document.querySelector("#hero .title p")
+  const focusElem = document.querySelector("#hero .focus p")
   h1Elem.innerHTML = tourData.title
+  subtitleElem.innerHTML = tourData.subtitle
+  focusElem.innerHTML = tourData.focus
 
   // ----- Summary -----
   const durationElem = document.querySelector("#summary #duration > div > div")
   durationElem.innerHTML = tourData.duration
 
+  // ----- Location -----
+  const locationButton = document.querySelector("#location a")
+  locationButton.setAttribute("href", tourData.location_map)
 }
