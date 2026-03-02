@@ -40,8 +40,8 @@ async function updateTourData() {
   focusElem.innerHTML = tourData.focus
 
   // ----- Summary -----
-  const durationElem = document.querySelector("#summary .duration > div > div")
-  const langElem = document.querySelector("#summary .languages")
+  const durationElem = document.querySelector("#summary .duration p")
+  const langElem = document.querySelector("#summary .languages p")
   const priceElem = document.querySelector("#summary .price p")
   const introElem = document.querySelector("#summary .intro")
   durationElem.innerHTML = tourData.duration
