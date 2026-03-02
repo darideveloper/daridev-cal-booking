@@ -31,10 +31,10 @@ async function updateTourData() {
 
   // Update UI Content
   // ----- Hero -----
-  const h1Elem = document.querySelector("#hero h1")
+  const titleElem = document.querySelector("#hero h1")
   const subtitleElem = document.querySelector("#hero .title p")
   const focusElem = document.querySelector("#hero .focus p")
-  h1Elem.innerHTML = tourData.title
+  titleElem.innerHTML = tourData.title
   subtitleElem.innerHTML = tourData.subtitle
   focusElem.innerHTML = tourData.focus
 
@@ -47,18 +47,26 @@ async function updateTourData() {
   priceElem.innerHTML = "€ " + tourData.price
 
   // ----- Location -----
-  const locationButtonElm = document.querySelector("#location a")
-  const meetingPointElem = document.querySelector("#location p")
-  locationButtonElm.setAttribute("href", tourData.location_map)
-  meetingPointElem.innerHTML = tourData.meeting_point
+  const mapLinkElem = document.querySelector("#location a")
+  const pointElem = document.querySelector("#location p")
+  mapLinkElem.setAttribute("href", tourData.location_map)
+  pointElem.innerHTML = tourData.meeting_point
 
   // ----- Discoveries -----
-  const dicoveriesIds = [0, 1, 2]
-  dicoveriesIds.forEach((discoverIndex) => {
-    const baseSelector = `#discoveries .grid-container > div:nth-child(${discoverIndex + 1})`
-    const discoveriesCardTitle = document.querySelector(`${baseSelector} h3`)
-    const discoveriesCardDescription = document.querySelector(`${baseSelector} p`)
-    discoveriesCardTitle.innerHTML = tourData.discoveries[discoverIndex].title
-    discoveriesCardDescription.innerHTML = tourData.discoveries[discoverIndex].description
+  const discoveryIndexes = [0, 1, 2]
+  discoveryIndexes.forEach((index) => {
+    const baseSelector = `#discoveries .grid-container > div:nth-child(${index + 1})`
+    const titleElem = document.querySelector(`${baseSelector} h3`)
+    const descElem = document.querySelector(`${baseSelector} p`)
+    titleElem.innerHTML = tourData.discoveries[index].title
+    descElem.innerHTML = tourData.discoveries[index].description
   })
+
+  // ----- Items -----
+  const includedElem = document.querySelector("#items .included .checks p")
+  const notIncludedElem = document.querySelector("#items .no-included .checks p")
+  const disclaimerElem = document.querySelector("#items .disclaimer p span")
+  includedElem.innerHTML = tourData.included.map(item => `✅ ${item}`).join('<br>')
+  notIncludedElem.innerHTML = tourData.not_included.map(item => `❌ ${item}`).join('<br>')
+  disclaimerElem.innerHTML = tourData.disclaimer
 }
