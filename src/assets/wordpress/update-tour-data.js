@@ -51,4 +51,14 @@ async function updateTourData() {
   const meetingPointElem = document.querySelector("#location p")
   locationButtonElm.setAttribute("href", tourData.location_map)
   meetingPointElem.innerHTML = tourData.meeting_point
+
+  // ----- Discoveries -----
+  const dicoveriesIds = [0, 1, 2]
+  dicoveriesIds.forEach((discoverIndex) => {
+    const baseSelector = `#discoveries .grid-container > div:nth-child(${discoverIndex + 1})`
+    const discoveriesCardTitle = document.querySelector(`${baseSelector} h3`)
+    const discoveriesCardDescription = document.querySelector(`${baseSelector} p`)
+    discoveriesCardTitle.innerHTML = tourData.discoveries[discoverIndex].title
+    discoveriesCardDescription.innerHTML = tourData.discoveries[discoverIndex].description
+  })
 }
