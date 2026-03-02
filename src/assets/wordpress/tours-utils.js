@@ -11,9 +11,14 @@ async function getTourData(tourId) {
   return tourData
 }
 
-async function getRandomTours(tours, count = 3) {
+async function getRandomTours(count = 3) {
+  const currentPath = window.location.pathname
+  const segments = currentPath.split("/").filter((segment) => segment.length > 0)
+  const currentTourId = segments[1]
+
   const data = await getToursData()
-  return [...data]
+  return data
+    .filter(tour => tour.id !== currentTourId)
     .sort(() => Math.random() - 0.5)
     .slice(0, count)
 }
