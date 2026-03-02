@@ -41,7 +41,7 @@ async function loadTours() {
 
       // Convert Card to <a> Link
       const linkCard = document.createElement('a')
-      linkCard.href = item.url || "#"
+      linkCard.href = `${toursBase}/${item.id}/`
       linkCard.target = "_blank"
       linkCard.rel = "noopener noreferrer" // Security best practice for _blank
 

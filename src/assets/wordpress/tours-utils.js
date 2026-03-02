@@ -1,4 +1,5 @@
 const apiBase = "https://granada-go-tours-booking.apps.darideveloper.com"
+const toursBase = "https://granadago.com/tours"
 
 async function getToursData() {
   const url = `${apiBase}/api/tours`
