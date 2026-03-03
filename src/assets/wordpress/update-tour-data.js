@@ -68,15 +68,19 @@ async function updateTourData() {
   mapIframeElem.setAttribute("src", tourData.google_maps_iframe)
 
   // ----- Discoveries -----
-  const discoveryIndexes = [0, 1, 2]
-  discoveryIndexes.forEach((index) => {
-    const discoverData = tourData.discoveries[index]
+  tourData.discoveries.forEach((discoverData, index) => {
+    // We use the index from forEach to target the correct DOM element
     const baseSelector = `#discoveries .grid-container > div:nth-child(${index + 1})`
+
     const titleElem = document.querySelector(`${baseSelector} h3`)
     const descElem = document.querySelector(`${baseSelector} p`)
     const imageElem = document.querySelector(`${baseSelector} img`)
+
+    // Update text content
     titleElem.innerHTML = discoverData.title
     descElem.innerHTML = discoverData.description
+
+    // Handle image updates
     const imgSrc = `${apiBase}/tours/discover/${tourData.id}-${discoverData.id}.jpg`
     imageElem.src = imgSrc
     imageElem.setAttribute("data-src", imgSrc)
@@ -93,21 +97,26 @@ async function updateTourData() {
   disclaimerElem.innerHTML = tourData.disclaimer
 
   // ----- Related Tours -----
-  const relatedToursIndexes = [0, 1, 2]
-  relatedToursIndexes.forEach((index) => {
+  randomTours.forEach((tour, index) => {
+    // Use index + 1 for the CSS nth-child selector (which is 1-based)
     const baseSelector = `#related-tours > div > div:nth-child(${index + 1})`
+
     const relatedTitleElem = document.querySelector(`${baseSelector} .header h3 span`)
     const relatedFocusElem = document.querySelector(`${baseSelector} .header p`)
     const relatedPriceElem = document.querySelector(`${baseSelector} .price p`)
     const relatedTimeElem = document.querySelector(`${baseSelector} .time p`)
     const relatedButtonElem = document.querySelector(`${baseSelector} a`)
     const relatedImage = document.querySelector(`${baseSelector} img`)
-    relatedTitleElem.innerHTML = randomTours[index].title
-    relatedFocusElem.innerHTML = randomTours[index].focus
-    relatedPriceElem.innerHTML = randomTours[index].price + " / grupo"
-    relatedTimeElem.innerHTML = randomTours[index].duration + " hrs"
-    relatedButtonElem.setAttribute("href", `${toursBase}/${randomTours[index].id}/`)
-    const imgSrc = `${apiBase}/tours/banners/${randomTours[index].id}.webp`
+
+    // Update text and attributes using the 'tour' object from the loop
+    relatedTitleElem.innerHTML = tour.title
+    relatedFocusElem.innerHTML = tour.focus
+    relatedPriceElem.innerHTML = `${tour.price} / grupo`
+    relatedTimeElem.innerHTML = `${tour.duration} hrs`
+    relatedButtonElem.setAttribute("href", `${toursBase}/${tour.id}/`)
+
+    // Handle image updates
+    const imgSrc = `${apiBase}/tours/banners/${tour.id}.webp`
     relatedImage.src = imgSrc
     relatedImage.setAttribute("data-src", imgSrc)
     relatedImage.setAttribute("data-srcset", imgSrc)
