@@ -38,7 +38,13 @@ async function updateTourData() {
   const focusElem = document.querySelector("#hero .focus p")
   const bannerSrc = `${apiBase}/tours/banners/${tourData.id}.webp`
   console.log({ bannerSrc })
-  heroElem.style.backgroundImage = `url('${bannerSrc}')`
+
+  // Update hero bg
+  const redGradient = 'linear-gradient(180deg, rgba(176, 58, 46, 0) 29%, rgba(176, 58, 46, 1) 100%)'
+  const darkOverlay = 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))'
+  heroElem.style.backgroundImage = `${redGradient}, ${darkOverlay}, url('${bannerSrc}')`
+
+  // Update hero texts
   titleElem.innerHTML = tourData.title
   subtitleElem.innerHTML = tourData.subtitle
   focusElem.innerHTML = tourData.focus
@@ -64,11 +70,18 @@ async function updateTourData() {
   // ----- Discoveries -----
   const discoveryIndexes = [0, 1, 2]
   discoveryIndexes.forEach((index) => {
+    const discoverData = tourData.discoveries[index]
     const baseSelector = `#discoveries .grid-container > div:nth-child(${index + 1})`
     const titleElem = document.querySelector(`${baseSelector} h3`)
     const descElem = document.querySelector(`${baseSelector} p`)
-    titleElem.innerHTML = tourData.discoveries[index].title
-    descElem.innerHTML = tourData.discoveries[index].description
+    const imageElem = document.querySelector(`${baseSelector} img`)
+    titleElem.innerHTML = discoverData.title
+    descElem.innerHTML = discoverData.description
+    const imgSrc = `${apiBase}/tours/discover/${tourData.id}-${discoverData.id}.jpg`
+    imageElem.src = imgSrc
+    imageElem.setAttribute("data-src", imgSrc)
+    imageElem.setAttribute("data-srcset", imgSrc)
+    imageElem.setAttribute("srcset", imgSrc)
   })
 
   // ----- Items -----
@@ -88,11 +101,17 @@ async function updateTourData() {
     const relatedPriceElem = document.querySelector(`${baseSelector} .price p`)
     const relatedTimeElem = document.querySelector(`${baseSelector} .time p`)
     const relatedButtonElem = document.querySelector(`${baseSelector} a`)
+    const relatedImage = document.querySelector(`${baseSelector} img`)
     relatedTitleElem.innerHTML = randomTours[index].title
     relatedFocusElem.innerHTML = randomTours[index].focus
     relatedPriceElem.innerHTML = randomTours[index].price + " / grupo"
     relatedTimeElem.innerHTML = randomTours[index].duration + " hrs"
     relatedButtonElem.setAttribute("href", `${toursBase}/${randomTours[index].id}/`)
+    const imgSrc = `${apiBase}/tours/banners/${randomTours[index].id}.webp`
+    relatedImage.src = imgSrc
+    relatedImage.setAttribute("data-src", imgSrc)
+    relatedImage.setAttribute("data-srcset", imgSrc)
+    relatedImage.setAttribute("srcset", imgSrc)
   })
 
   // ----- Cancelation -----
