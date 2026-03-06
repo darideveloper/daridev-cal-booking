@@ -3,6 +3,7 @@
     "id": "alhambra-completa",
     "meta_title": "Alhambra Completa Granada | Nazaríes, Alcazaba y Generalife",
     "meta_description": "Visita completa a la Alhambra con guía oficial historiador: Palacios Nazaríes, Alcazaba y Generalife. La experiencia más profunda del monumento musulmán más grande de Europa.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Plaza del Generalife, frente a taquillas de la Alhambra",
     "languages": [
       "Español 🇪🇸",
@@ -81,6 +82,7 @@
     "id": "alhambra-sin-tickets",
     "meta_title": "Alhambra sin Entradas Granada | Palacio Carlos V y Bosques",
     "meta_description": "¿Sin entradas para la Alhambra? Descubre el Palacio de Carlos V, el mirador del Aljibe y los bosques con un guía experto. Acceso libre, experiencia única.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Plaza Nueva, frente a la fachada de la Real Chancilleria",
     "languages": [
       "Español 🇪🇸",
@@ -159,6 +161,7 @@
     "id": "palacios-nazaries",
     "meta_title": "Visita Palacios Nazaríes Granada | Comares y Palacio de los leones",
     "meta_description": "Adéntrate en la residencia de los emires nazaríes. El Palacio de Comares y el Palacio de los leones explicados en profundidad por un guía historiador.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Puerta del Vino (dentro del complejo monumental de la Alhambra)",
     "languages": [
       "Español 🇪🇸",
@@ -237,6 +240,7 @@
     "id": "catedral-granada",
     "meta_title": "Visita Guiada Catedral de Granada | Primera del Renacimiento Español",
     "meta_description": "Descubre la Catedral de Granada, obra magna del Renacimiento español diseñada por Alonso Cano. Una visita en profundidad con guía historiador.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Plaza de las Pasiegas (frente a la fachada principal de la Catedral)",
     "languages": [
       "Español 🇪🇸",
@@ -259,7 +263,7 @@
     "title": "Catedral de Granada",
     "subtitle": "La obra magna del Renacimiento español",
     "focus": "Primera catedral renacentista de España y obra cumbre de Alonso Cano. El mensaje político y artístico de la Granada cristiana.",
-    "introduction": "Descubre la obra magna del Renacimiento español. Déjate sorprender por su magnífica fachada diseñada por Alonso Cano, para luego envolverte de los mejores ejemplos del barroco andaluz in su interior. Analizaremos no solo su arquitectura imponente, sino el mensaje político y religioso que transformó la ciudad tras la conquista de 1492 y convirtió Granada en símbolo del nuevo poder cristiano.",
+    "introduction": "Descubre la obra magna del Renacimiento español. Déjate sorprender por su magnífica fachada diseñada por Alonso Cano, para luego envolverte de los mejores ejemplos del barroco andaluz en su interior. Analizaremos no solo su arquitectura imponente, sino el mensaje político y religioso que transformó la ciudad tras la conquista de 1492 y convirtió Granada en símbolo del nuevo poder cristiano.",
     "discoveries": [
       {
         "id": "fachada-de-alonso-cano",
@@ -315,6 +319,7 @@
     "id": "capilla-real",
     "meta_title": "Visita Guiada Capilla Real Granada | Mausoleo Reyes Católicos",
     "meta_description": "Visita la Capilla Real de Granada, panteón de los Reyes Católicos. Una joya del gótico isabelino con la impresionante colección de pintura flamenca de Isabel la Católica.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Calle Oficios, frente a la entrada al monumento",
     "languages": [
       "Español 🇪🇸",
@@ -393,6 +398,7 @@
     "id": "monasterio-san-jeronimo",
     "meta_title": "Visita Monasterio San Jerónimo Granada | Mausoleo Gran Capitán",
     "meta_description": "Descubre el Monasterio de San Jerónimo, lugar de reposo del Gran Capitán. Obra cumbre del barroco español y símbolo del poder militar de los Reyes Católicos.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Frente a la Iglesia de San Jerónimo",
     "languages": [
       "Español 🇪🇸",
@@ -471,6 +477,7 @@
     "id": "monasterio-cartuja",
     "meta_title": "Visita Monasterio de La Cartuja Granada | Sacristía más Bella del Mundo",
     "meta_description": "Descubre el Monasterio de La Cartuja en Granada: el barroco en su máxima expresión. La sacristía más bella del mundo y la orden del silencio explicados por un experto.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Entrada al Monasterio de La Cartuja",
     "languages": [
       "Español 🇪🇸",
@@ -549,6 +556,7 @@
     "id": "ruta-fray-leopoldo",
     "meta_title": "Ruta Fray Leopoldo Granada | Historia del Santo de los Pobres",
     "meta_description": "Descubre la vida y obra de Fray Leopoldo de Alpandeire a través de los lugares más importantes de su paso por Granada. Una visita cercana y llena de historias reales.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Jardines del Triunfo",
     "languages": [
       "Español 🇪🇸",
@@ -627,6 +635,7 @@
     "id": "ruta-gran-capitan",
     "meta_title": "Ruta Gran Capitán Granada | Gonzalo Fernández de Córdoba",
     "meta_description": "Recorre los escenarios históricos de Gonzalo Fernández de Córdoba en Granada. Una visita con el Monasterio de San Jerónimo como punto central de su legado.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Monasterio de San Jerónimo",
     "languages": [
       "Español 🇪🇸",
@@ -705,6 +714,7 @@
     "id": "ruta-san-juan-de-dios",
     "meta_title": "Ruta San Juan de Dios Granada | Legado del Santo de los Enfermos",
     "meta_description": "Adéntrate en la Granada de San Juan de Dios. Recorre los lugares clave de su obra y descubre su legado en la atención a los enfermos y las huellas que dejó en la ciudad.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Frente a la Basílica de San Juan de Dios",
     "languages": [
       "Español 🇪🇸",
@@ -783,6 +793,7 @@
     "id": "basilica-san-juan-de-dios",
     "meta_title": "Visita Basílica San Juan de Dios Granada | Joya del Barroco Aúreo",
     "meta_description": "Visita la Basílica de San Juan de Dios en Granada. Una obra maestra del barroco aúreo y lugar de reposo del santo de los pobres. Fe y arte unidos.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Calle San Juan de Dios (Puerta Principal de la Basílica)",
     "languages": [
       "Español 🇪🇸",
@@ -856,6 +867,7 @@
     "id": "albaicin-misterios",
     "meta_title": "Tour Albaicín Granada: Historia, Leyendas y Vistas Alhambra",
     "meta_description": "Callejea por el Albaicín, Patrimonio de la Humanidad. Un paseo entre historia nazarí, leyendas locales y los mejores miradores a la Alhambra.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Plaza Nueva (junto a la Fuente de los Granados)",
     "languages": [
       "Español 🇪🇸",
@@ -934,6 +946,7 @@
     "id": "sacromonte",
     "meta_title": "Visita Abadía Sacromonte Granada | Cuevas, Flamenco e Historia",
     "meta_description": "Adéntrate en el Sacromonte gitano. Conoce la vida en las cuevas, el origen del flamenco y la histórica Abadía del Monte Sacro. Una experiencia auténtica en Granada.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Peso de la Harina (inicio Cuesta del Chapiz)",
     "languages": [
       "Español 🇪🇸",
@@ -1012,6 +1025,7 @@
     "id": "centro-ciudad",
     "meta_title": "Tour Centro Histórico Granada | Catedral, Alcaicería y Madraza",
     "meta_description": "Paseo por el corazón de Granada: Catedral, Capilla Real, Alcaicería, Madraza y Corral del Carbón. Arte, historia y exotismo en dos horas con guía especializado.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Plaza de las Pasiegas (frente a la Catedral)",
     "languages": [
       "Español 🇪🇸",
@@ -1091,6 +1105,7 @@
     "id": "test-tour",
     "meta_title": "Test Tour Meta Title",
     "meta_description": "Test Tour Meta Description for SEO purposes.",
+    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
     "meeting_point": "Test Meeting Point",
     "languages": [
       "Español 🇪🇸",
