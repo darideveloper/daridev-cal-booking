@@ -947,7 +947,7 @@
     "meta_title": "Visita Abadía Sacromonte Granada | Cuevas, Flamenco e Historia",
     "meta_description": "Adéntrate en the Sacromonte gitano. Conoce la vida en las cuevas, el origen del flamenco y la histórica Abadía del Monte Sacro. Una experiencia auténtica en Granada.",
     "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
-    "meeting_point": "Plaza Nueva, frente a la fachada de la Real Chancilleria",
+    "meeting_point": "Plaza Nueva, frente a la fachada de la Real Chancilleria.",
     "languages": [
       "Español 🇪🇸",
       "Inglés 🇬🇧"
@@ -1097,55 +1097,6 @@
         "2026-04-26",
         "2026-03-03",
         "2026-04-30"
-      ],
-      "booked": []
-    }
-  },
-  {
-    "id": "test-tour",
-    "meta_title": "Test Tour Meta Title",
-    "meta_description": "Test Tour Meta Description for SEO purposes.",
-    "historian_note": "Como historiador, mi objetivo es transportarte al pasado en este particular viaje para vivir y sobre todo, comprender la historia.",
-    "meeting_point": "Test Meeting Point",
-    "languages": [
-      "Español 🇪🇸",
-      "Inglés 🇬🇧"
-    ],
-    "included": [
-      "Included Item 1",
-      "Included Item 2"
-    ],
-    "not_included": [
-      "Not Included Item 1",
-      "Not Included Item 2"
-    ],
-    "cancelation": "Policy de cancelación: Puedes cancelar sin cargos hasta 72 horas antes.",
-    "disclaimer": "Nota: Test disclaimer.",
-    "location_map": "https://www.google.com/maps",
-    "google_maps_iframe": "https://www.google.com/maps/embed",
-    "title": "Test Tour",
-    "subtitle": "Subtitle for test tour",
-    "focus": "Focus of the test tour.",
-    "introduction": "Introduction to the test tour.",
-    "discoveries": [
-      {
-        "id": "discovery-1",
-        "title": "Discovery Title 1",
-        "description": "Description for discovery 1."
-      }
-    ],
-    "faqs": [
-      {
-        "question": "Test Question?",
-        "answer": "Test Answer."
-      }
-    ],
-    "duration": "1h",
-    "price": 1,
-    "dates": {
-      "limited": [
-        "2026-03-04",
-        "2026-03-05"
       ],
       "booked": []
     }
