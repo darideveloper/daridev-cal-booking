@@ -27,6 +27,7 @@ export function BookingCalendar() {
   const formData = useBookingStore((state: any) => state.formData);
   const updateFormData = useBookingStore((state: any) => state.updateFormData);
   const visibility = useBookingStore((state: any) => state.visibility);
+  const config = useBookingStore((state: any) => state.config);
 
   const dateLocale = language === 'es' ? es : enUS;
 
@@ -115,6 +116,12 @@ export function BookingCalendar() {
         )}
         <CardContent className="flex flex-col items-center gap-4 h-full justify-center">
           
+          {config?.logo && (
+            <div className="w-full flex justify-center py-2">
+              <img src={config.logo} alt={config.company_name} className="h-8 w-auto object-contain" />
+            </div>
+          )}
+
           {visibility.service && (
             <div className="w-full grid gap-1.5 mt-2">
               <Label htmlFor="serviceId" className="text-xs">{t.calendar.tourLabel}</Label>

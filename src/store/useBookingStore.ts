@@ -5,6 +5,22 @@ import toursData from "../data/tours.json";
 export type Language = 'es' | 'en';
 export type Theme = 'light' | 'dark';
 
+export interface AppConfig {
+  brand_color: string;
+  logo: string;
+  currency: string;
+  contact_email: string;
+  contact_phone: string;
+  company_name: string;
+  timezone: string;
+  event_type_label: string;
+  event_label: string;
+  availability_free_label: string;
+  availability_regular_label: string;
+  availability_no_free_label: string;
+  extras_label: string;
+}
+
 interface Availability {
   limited: Date[];
   booked: Date[];
@@ -15,6 +31,8 @@ interface BookingState {
   theme: Theme;
   selectedDate: Date | undefined;
   currentStep: number;
+  config: AppConfig | null;
+  isConfigLoading: boolean;
   formData: {
     fullName: string;
     email: string;
@@ -39,7 +57,17 @@ interface BookingState {
   prevStep: () => void;
   updateFormData: (data: Partial<BookingState['formData']>) => void;
   resetBooking: () => void;
+  fetchConfig: (client: string) => Promise<void>;
 }
+
+const getApiUrl = (endpoint: string, client?: string) => {
+  const baseUrl = import.meta.env.PUBLIC_API_URL || "http://localhost:8000/api/";
+  if (!client) return `${baseUrl}${endpoint}`;
+  
+  const url = new URL(baseUrl);
+  url.hostname = `${client}.${url.hostname}`;
+  return `${url.toString()}${endpoint}`;
+};
 
 const injectVirtualLimitedDates = (limited: Date[], booked: Date[]): Date[] => {
   const today = new Date();
@@ -104,6 +132,8 @@ export const useBookingStore = create<BookingState>()(
         service: true,
       },
       availability: { limited: [], booked: [] },
+      config: null,
+      isConfigLoading: false,
       setLanguage: (language) => set({ language }),
       setTheme: (theme) => set({ theme }),
       setVisibility: (visibility) => set((state) => ({ 
@@ -143,12 +173,24 @@ export const useBookingStore = create<BookingState>()(
         },
         availability: { limited: [], booked: [] },
       }),
+      fetchConfig: async (client) => {
+        set({ isConfigLoading: true });
+        try {
+          const response = await fetch(getApiUrl('config/', client));
+          if (!response.ok) throw new Error('Failed to fetch config');
+          const config = await response.json();
+          set({ config, isConfigLoading: false });
+        } catch (error) {
+          console.error('Error fetching config:', error);
+          set({ isConfigLoading: false });
+        }
+      },
     }),
     {
       name: 'booking-storage',
-      // Visibility should not be persisted according to design.md
+      // Visibility and config should not be persisted
       partialize: (state) => {
-        const { visibility, ...rest } = state;
+        const { visibility, config, isConfigLoading, ...rest } = state;
         return rest;
       },
       onRehydrateStorage: () => (state) => {

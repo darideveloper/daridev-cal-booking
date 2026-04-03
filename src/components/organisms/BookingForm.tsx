@@ -15,6 +15,7 @@ import { Checkbox } from "@/components/atoms/ui/checkbox"
 export function BookingForm() {
   const { t, language } = useTranslation()
   const formData = useBookingStore((state: any) => state.formData)
+  const config = useBookingStore((state: any) => state.config)
   const updateFormData = useBookingStore((state: any) => state.updateFormData)
   const selectedDate = useBookingStore((state: any) => state.selectedDate)
   const prevStep = useBookingStore((state: any) => state.prevStep)
@@ -41,9 +42,13 @@ export function BookingForm() {
       <Card className="w-full max-w-md shadow-2xl border-none bg-background rounded-3xl overflow-hidden animate-in fade-in zoom-in duration-500">
         <div className="h-2 bg-primary w-full" />
         <CardContent className="flex flex-col items-center justify-center py-12 px-8 text-center space-y-6">
-          <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-2">
-            <CheckCircle2 className="w-10 h-10 text-primary" />
-          </div>
+          {config?.logo ? (
+            <img src={config.logo} alt={config.company_name || "Logo"} className="h-12 w-auto object-contain mb-2" />
+          ) : (
+            <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-2">
+              <CheckCircle2 className="w-10 h-10 text-primary" />
+            </div>
+          )}
           <div className="space-y-2">
             <h2 className="text-3xl font-serif font-bold text-foreground">{t.form.successTitle}</h2>
             <p className="text-muted-foreground">{t.form.successMessage}</p>
@@ -97,20 +102,25 @@ export function BookingForm() {
       )}
 
       <CardHeader className="pb-4">
-        <div className="flex items-center gap-2 mb-2">
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="rounded-full -ml-2 h-8 w-8 hover:bg-primary/10 hover:text-primary transition-colors"
-            onClick={prevStep}
-          >
-            <ArrowLeft className="w-4 h-4" />
-          </Button>
-          <div className="px-3 py-1 bg-primary/10 rounded-full">
-            <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
-              {t.form.step2Of2}
-            </span>
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              className="rounded-full -ml-2 h-8 w-8 hover:bg-primary/10 hover:text-primary transition-colors"
+              onClick={prevStep}
+            >
+              <ArrowLeft className="w-4 h-4" />
+            </Button>
+            <div className="px-3 py-1 bg-primary/10 rounded-full">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
+                {t.form.step2Of2}
+              </span>
+            </div>
           </div>
+          {config?.logo && (
+            <img src={config.logo} alt={config.company_name} className="h-6 w-auto object-contain" />
+          )}
         </div>
         <CardTitle className="text-2xl font-serif font-bold tracking-tight">{t.form.title}</CardTitle>
         <CardDescription className="text-muted-foreground/80">

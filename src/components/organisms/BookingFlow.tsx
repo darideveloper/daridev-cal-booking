@@ -9,10 +9,18 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
   const setLanguage = useBookingStore((state: any) => state.setLanguage)
   const setTheme = useBookingStore((state: any) => state.setTheme)
   const setVisibility = useBookingStore((state: any) => state.setVisibility)
+  const fetchConfig = useBookingStore((state: any) => state.fetchConfig)
+  const config = useBookingStore((state: any) => state.config)
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     
+    // 0. Handle Config (Branding)
+    const clientQuery = urlParams.get('client');
+    if (clientQuery) {
+      fetchConfig(clientQuery);
+    }
+
     // 1. Handle Language
     const langQuery = urlParams.get('lang') as Language | null;
     if (langQuery && (langQuery === 'es' || langQuery === 'en')) {
@@ -41,7 +49,22 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
     if (serviceGroupQuery) {
       updateFormData({ serviceGroup: serviceGroupQuery });
     }
-  }, [initialServiceId, updateFormData, setLanguage, setTheme, setVisibility])
+  }, [initialServiceId, updateFormData, setLanguage, setTheme, setVisibility, fetchConfig])
+
+  // Apply brand color
+  useEffect(() => {
+    if (config?.brand_color) {
+      // Basic validation for color string
+      const isValidColor = (color: string) => {
+        return color.startsWith('#') || color.startsWith('rgb') || color.startsWith('oklch');
+      };
+
+      if (isValidColor(config.brand_color)) {
+        document.documentElement.style.setProperty('--color-brand-red', config.brand_color);
+        document.documentElement.style.setProperty('--primary', config.brand_color);
+      }
+    }
+  }, [config])
 
   return (
     <div className="w-full max-w-2xl mx-auto flex flex-col items-center relative z-10 p-4 bg-muted/30 space-y-4 rounded-3xl border border-border h-full">
