@@ -28,6 +28,8 @@ export const translations = {
       submit: "Solicitar Reserva",
       processing: "Procesando...",
       requiredFields: "Todos los campos marcados son obligatorios para procesar su solicitud.",
+      step1Of2: "Paso 1 de 2",
+      step2Of2: "Paso 2 de 2",
     },
     stripe: {
       name: "Nombre",
@@ -82,6 +84,8 @@ export const translations = {
       submit: "Request Booking",
       processing: "Processing...",
       requiredFields: "All marked fields are required to process your request.",
+      step1Of2: "Step 1 of 2",
+      step2Of2: "Step 2 of 2",
     },
     stripe: {
       name: "Name",

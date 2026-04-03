@@ -6,8 +6,7 @@ import { Input } from "@/components/atoms/ui/input"
 import { Label } from "@/components/atoms/ui/label"
 import { Textarea } from "@/components/atoms/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/atoms/ui/card"
-import { ThemeToggle } from "../atoms/ui/ThemeToggle"
-import { LanguageToggle } from "../atoms/ui/LanguageToggle"
+import { BookingHeader } from "@/components/molecules/BookingHeader"
 import { ArrowLeft, Send, Users, Calendar, MapPin, CheckCircle2, ShieldCheck, AlertCircle } from "lucide-react"
 import toursData from "@/data/tours.json"
 import { Checkbox } from "@/components/atoms/ui/checkbox"
@@ -40,10 +39,12 @@ export function BookingForm() {
   if (isSubmitted) {
     return (
       <Card className="w-full max-w-md shadow-2xl border-none bg-background rounded-3xl overflow-hidden animate-in fade-in zoom-in duration-500">
-        <div className="h-2 bg-primary w-full" />
+        <BookingHeader />
         <CardContent className="flex flex-col items-center justify-center py-12 px-8 text-center space-y-6">
           {config?.logo ? (
-            <img src={config.logo} alt={config.company_name || "Logo"} className="h-12 w-auto object-contain mb-2" />
+            <div className="hidden">
+              <img src={config.logo} alt={config.company_name || "Logo"} className="h-12 w-auto object-contain mb-2" />
+            </div>
           ) : (
             <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-2">
               <CheckCircle2 className="w-10 h-10 text-primary" />
@@ -92,36 +93,14 @@ export function BookingForm() {
 
   return (
     <Card className="w-full max-w-md shadow-2xl border-none bg-background rounded-3xl overflow-hidden relative">
-      <div className="h-1.5 bg-primary w-full" />
-      
-      {(visibility.lang || visibility.theme) && (
-        <div className="absolute top-4 right-4 z-20 scale-75 lg:scale-90 flex items-center gap-2">
-          {visibility.lang && <LanguageToggle />}
-          {visibility.theme && <ThemeToggle />}
-        </div>
-      )}
+      <BookingHeader 
+        showBack={true} 
+        onBack={prevStep} 
+        showStep={true} 
+        stepText={t.form.step2Of2} 
+      />
 
       <CardHeader className="pb-4">
-        <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-2">
-            <Button 
-              variant="ghost" 
-              size="icon" 
-              className="rounded-full -ml-2 h-8 w-8 hover:bg-primary/10 hover:text-primary transition-colors"
-              onClick={prevStep}
-            >
-              <ArrowLeft className="w-4 h-4" />
-            </Button>
-            <div className="px-3 py-1 bg-primary/10 rounded-full">
-              <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
-                {t.form.step2Of2}
-              </span>
-            </div>
-          </div>
-          {config?.logo && (
-            <img src={config.logo} alt={config.company_name} className="h-6 w-auto object-contain" />
-          )}
-        </div>
         <CardTitle className="text-2xl font-serif font-bold tracking-tight">{t.form.title}</CardTitle>
         <CardDescription className="text-muted-foreground/80">
           {selectedTour 

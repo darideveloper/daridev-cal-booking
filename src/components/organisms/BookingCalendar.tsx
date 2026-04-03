@@ -9,9 +9,8 @@ import { es, enUS } from 'date-fns/locale';
 import { STATUS_CONFIG, type StatusKey } from './types';
 import { StatusLegend } from '@/components/molecules/StatusLegend';
 import { StatusDetails } from '@/components/molecules/StatusDetails';
+import { BookingHeader } from '@/components/molecules/BookingHeader';
 import { useBookingStore } from '../../store/useBookingStore';
-import { ThemeToggle } from '../atoms/ui/ThemeToggle';
-import { LanguageToggle } from '../atoms/ui/LanguageToggle';
 import { useTranslation } from '@/lib/i18n/useTranslation';
 import toursData from "@/data/tours.json";
 
@@ -107,21 +106,13 @@ export function BookingCalendar() {
 
   return (
     <>
-      <Card className="w-full max-w-md shadow-xl border-none bg-background relative">
-        {(visibility.lang || visibility.theme) && (
-          <div className="absolute top-2 right-2 z-20 scale-75 lg:scale-100 flex items-center gap-2">
-            {visibility.lang && <LanguageToggle />}
-            {visibility.theme && <ThemeToggle />}
-          </div>
-        )}
+      <Card className="w-full max-w-md shadow-xl border-none bg-background relative overflow-hidden">
+        <BookingHeader 
+          showStep={true} 
+          stepText={t.form?.step1Of2 || "Step 1 of 2"} 
+        />
         <CardContent className="flex flex-col items-center gap-4 h-full justify-center">
           
-          {config?.logo && (
-            <div className="w-full flex justify-center py-2">
-              <img src={config.logo} alt={config.company_name} className="h-8 w-auto object-contain" />
-            </div>
-          )}
-
           {visibility.service && (
             <div className="w-full grid gap-1.5 mt-2">
               <Label htmlFor="serviceId" className="text-xs">{t.calendar.tourLabel}</Label>
