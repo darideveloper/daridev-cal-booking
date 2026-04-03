@@ -196,30 +196,31 @@ export function BookingForm() {
               />
             </div>
 
-            <div className="flex items-start space-x-3 p-4 bg-muted/20 rounded-2xl border border-border/50 transition-colors hover:bg-muted/30">
+            <div className="flex items-center space-x-3 p-4 bg-muted/20 rounded-2xl border border-border/50 transition-colors hover:bg-muted/30">
               <Checkbox 
                 id="privacy" 
                 checked={formData.privacyAccepted}
                 onCheckedChange={(checked) => updateFormData({ privacyAccepted: !!checked })}
                 required
-                className="mt-1"
               />
               <div className="grid gap-1.5 leading-none">
                 <label
                   htmlFor="privacy"
-                  className="text-xs font-medium leading-normal text-muted-foreground cursor-pointer leading-[200%]"
+                  className="text-xs font-medium leading-normal text-muted-foreground cursor-pointer"
                 >
-                  {t.form.privacyPolicy.split('política de privacidad').map((part, index) => (
-                    <React.Fragment key={index}>
-                      {part}
-                      {index === 0 && (
+                  {(() => {
+                    const policyText = language === 'es' ? 'política de privacidad' : 'privacy policy';
+                    const parts = t.form.privacyPolicy.split(policyText);
+                    return (
+                      <>
+                        {parts[0]}
                         <a href="/privacy" className="text-primary hover:underline font-bold" target="_blank" rel="noopener noreferrer">
-                          {language === 'es' ? 'política de privacidad' : 'privacy policy'}
+                          {policyText}
                         </a>
-                      )}
-                    </React.Fragment>
-                  ))}
-                  {t.form.privacyPolicy.split('política de privacidad')[1] || (language === 'en' ? '.' : '')}
+                        {parts[1]}
+                      </>
+                    );
+                  })()}
                 </label>
               </div>
             </div>
