@@ -207,7 +207,7 @@ export function BookingForm() {
               <div className="grid gap-1.5 leading-none">
                 <label
                   htmlFor="privacy"
-                  className="text-xs font-medium leading-normal text-muted-foreground cursor-pointer"
+                  className="text-xs font-medium leading-normal text-muted-foreground cursor-pointer leading-[200%]"
                 >
                   {t.form.privacyPolicy.split('política de privacidad').map((part, index) => (
                     <React.Fragment key={index}>
