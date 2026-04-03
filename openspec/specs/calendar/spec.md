@@ -4,12 +4,15 @@
 TBD - created by archiving change render-booking-calendar. Update Purpose after archive.
 ## Requirements
 ### Requirement: Visual Status Representation
-The calendar SHALL visually distinguish between dates based on their availability status using intuitive colors (e.g. Green = Available, Amber = Limited).
+The calendar SHALL visually distinguish between dates based on their availability status using brand-consistent colors that maintain semantic clarity.
 
-#### Scenario: Verify Availability Coloring
-- **GIVEN** a `bookingData` object with different statuses.
+#### Scenario: Verify Branded Availability Coloring
+- **GIVEN** the unified brand color system.
 - **WHEN** the calendar is rendered.
-- **THEN** "Available" dates MUST show **emerald/green** accents, "Limited" MUST show **amber/gold** accents, and "Full" MUST show **slate/gray** accents with a strike-through.
+- **THEN** "Available" dates MUST show green-ish tones (OKLCH).
+- **AND** "Limited" dates MUST show amber/gold tones (OKLCH).
+- **AND** "Full" dates MUST show muted/slate tones (OKLCH) with a strike-through.
+- **AND** all colors MUST be consistent with the brand's primary hue where appropriate.
 
 ### Requirement: Interactive Date Selection
 The component SHALL allow users to select a single date and display its detailed status, restricted to future dates only.

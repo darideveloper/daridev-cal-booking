@@ -10,6 +10,7 @@ import { STATUS_CONFIG, type StatusKey, type StatusConfigValue } from './types';
 import { StatusLegend } from '@/components/molecules/StatusLegend';
 import { StatusDetails } from '@/components/molecules/StatusDetails';
 import { useBookingStore } from '../../store/useBookingStore';
+import { ThemeToggle } from '../atoms/ui/ThemeToggle';
 import toursData from "@/data/tours.json";
 
 /**
@@ -61,7 +62,10 @@ export function BookingCalendar() {
 
   return (
     <div className="flex flex-col items-center justify-center p-4 bg-muted/30 space-y-4 rounded-3xl border border-border h-full w-full">
-      <Card className="w-full max-w-md shadow-xl border-none bg-background flex-1">
+      <Card className="w-full max-w-md shadow-xl border-none bg-background flex-1 relative">
+        <div className="absolute top-2 right-2 z-20 scale-75 lg:scale-100">
+          <ThemeToggle />
+        </div>
         <CardContent className="flex flex-col items-center gap-4 h-full justify-center">
           
           <div className="w-full grid gap-1.5 mt-2">

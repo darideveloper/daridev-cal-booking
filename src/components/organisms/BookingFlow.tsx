@@ -2,6 +2,7 @@ import React, { useEffect } from "react"
 import { useBookingStore } from "../../store/useBookingStore"
 import { BookingCalendar } from "./BookingCalendar"
 import { BookingForm } from "./BookingForm"
+import { ThemeToggle } from "../atoms/ui/ThemeToggle"
 
 export default function BookingFlow({ initialTourId }: { initialTourId?: string }) {
   const currentStep = useBookingStore((state: any) => state.currentStep)
@@ -23,7 +24,7 @@ export default function BookingFlow({ initialTourId }: { initialTourId?: string 
   }, [initialTourId, updateFormData])
 
   return (
-    <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
+    <div className="w-full max-w-2xl mx-auto flex flex-col items-center relative z-10">
       {currentStep === 1 && <BookingCalendar />}
       {currentStep === 2 && <BookingForm />}
     </div>

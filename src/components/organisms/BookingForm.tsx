@@ -6,6 +6,7 @@ import { Textarea } from "@/components/atoms/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/atoms/ui/card"
 import { Button } from "@/components/atoms/ui/button"
 import { Loader2 } from "lucide-react"
+import { ThemeToggle } from "../atoms/ui/ThemeToggle"
 import toursData from "../../data/tours.json"
 
 export function BookingForm() {
@@ -97,10 +98,13 @@ export function BookingForm() {
       onSubmit={handleSubmit}
       className="flex flex-col p-4 bg-muted/30 space-y-4 rounded-3xl border border-border h-full w-full"
     >
-      <Card className="w-full shadow-xl border-none bg-background flex-1">
+      <Card className="w-full shadow-xl border-none bg-background flex-1 relative">
+        <div className="absolute top-2 right-2 z-20 scale-75 lg:scale-100">
+          <ThemeToggle />
+        </div>
         <CardHeader className="pb-4">
-          <CardTitle className="text-xl font-serif text-brand-charcoal">Datos de la reserva</CardTitle>
-          <CardDescription className="text-xs text-brand-charcoal/60">
+          <CardTitle className="text-xl font-serif text-foreground">Datos de la reserva</CardTitle>
+          <CardDescription className="text-xs text-muted-foreground">
             Completa tus datos para finalizar la solicitud.
           </CardDescription>
         </CardHeader>
@@ -109,7 +113,7 @@ export function BookingForm() {
           <div className="grid gap-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="grid gap-1.5">
-                <Label htmlFor="fullName" className="text-xs">Nombre Completo</Label>
+                <Label htmlFor="fullName" className="text-xs text-foreground">Nombre Completo</Label>
                 <Input
                   id="fullName"
                   name="fullName"
@@ -123,7 +127,7 @@ export function BookingForm() {
               </div>
 
               <div className="grid gap-1.5">
-                <Label htmlFor="email" className="text-xs">Email</Label>
+                <Label htmlFor="email" className="text-xs text-foreground">Email</Label>
                 <Input
                   id="email"
                   name="email"
@@ -139,7 +143,7 @@ export function BookingForm() {
             </div>
 
             <div className="grid gap-1.5 w-full md:w-1/2">
-              <Label htmlFor="guests" className="text-xs">Personas (máximo 30)</Label>
+              <Label htmlFor="guests" className="text-xs text-foreground">Personas (máximo 30)</Label>
               <Input
                 id="guests"
                 name="guests"
@@ -155,7 +159,7 @@ export function BookingForm() {
             </div>
 
             <div className="grid gap-1.5">
-              <Label htmlFor="specialRequests" className="text-xs">Peticiones especiales (opcional)</Label>
+              <Label htmlFor="specialRequests" className="text-xs text-foreground">Peticiones especiales (opcional)</Label>
               <Textarea
                 id="specialRequests"
                 name="specialRequests"
@@ -175,14 +179,14 @@ export function BookingForm() {
                 name="privacyAccepted"
                 checked={formData.privacyAccepted}
                 onChange={handleChange}
-                className="h-4 w-4 rounded border-gray-300 text-brand-red focus:ring-brand-red cursor-pointer"
+                className="mt-0.5 h-4 w-4 rounded border-input bg-background text-primary focus:ring-primary cursor-pointer transition-colors"
                 required
               />
               <Label 
                 htmlFor="privacyAccepted" 
-                className="text-xs peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer text-brand-charcoal/80"
+                className="text-xs peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer text-muted-foreground"
               >
-                He leído y acepto la <a href="https://granadago.com/privacidad/" target="_blank" rel="noopener noreferrer" className="text-brand-red underline hover:text-brand-red/80">política de privacidad</a>.
+                He leído y acepto la <a href="https://granadago.com/privacidad/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:opacity-80 transition-opacity">política de privacidad</a>.
               </Label>
             </div>
 

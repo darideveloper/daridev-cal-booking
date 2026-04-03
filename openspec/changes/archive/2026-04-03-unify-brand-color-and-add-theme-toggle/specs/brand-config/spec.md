@@ -1,8 +1,7 @@
-# brand-config Specification
+# brand-config Spec Delta
 
-## Purpose
-TBD - created by archiving change setup-brand-environment. Update Purpose after archive.
-## Requirements
+## MODIFIED Requirements
+
 ### Requirement: Visual Identity Tokens
 The project SHALL have a consistent visual identity derived from a single brand color and supporting primary/secondary/accent tones.
 
@@ -10,6 +9,8 @@ The project SHALL have a consistent visual identity derived from a single brand 
 - Given the primary Brand Red color: `oklch(0.577 0.245 27.325)`.
 - When this is defined as the primary source for `--color-brand-red` and mapped to `--primary`.
 - Then all primary UI elements MUST automatically inherit this color.
+
+## ADDED Requirements
 
 ### Requirement: Theme Switching System
 The system SHALL provide a mechanism for users to switch between Light and Dark themes.
@@ -23,4 +24,3 @@ The system SHALL provide a mechanism for users to switch between Light and Dark 
 - Given a user has selected a specific theme.
 - When they revisit the site or reload the page.
 - Then the application MUST load the saved theme from `localStorage` before rendering to avoid flashes.
-
