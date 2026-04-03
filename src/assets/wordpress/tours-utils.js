@@ -1,6 +1,18 @@
 const apiBase = "https://granada-go-tours-booking.apps.darideveloper.com"
 const toursBase = "https://granadago.com/tours"
 
+function getLanguage() {
+  // Check HTML lang attribute, default to 'es'
+  return document.documentElement.lang || 'es';
+}
+
+function getLabel(data) {
+  const lang = getLanguage();
+  if (typeof data === 'string') return data;
+  if (!data) return '';
+  return data[lang] || data['es'] || '';
+}
+
 async function getToursData() {
   const url = `${apiBase}/api/tours`
   const res = await fetch(url)

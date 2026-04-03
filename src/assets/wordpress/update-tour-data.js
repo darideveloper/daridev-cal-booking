@@ -45,9 +45,9 @@ async function updateTourData() {
   heroElem.style.backgroundImage = `${redGradient}, ${darkOverlay}, url('${bannerSrc}')`
 
   // Update hero texts
-  titleElem.innerHTML = tourData.title
-  subtitleElem.innerHTML = tourData.subtitle
-  focusElem.innerHTML = tourData.focus
+  titleElem.innerHTML = getLabel(tourData.title)
+  subtitleElem.innerHTML = getLabel(tourData.subtitle)
+  focusElem.innerHTML = getLabel(tourData.focus)
 
   // ----- Summary -----
   const durationElem = document.querySelector("#summary .duration p")
@@ -57,14 +57,14 @@ async function updateTourData() {
   durationElem.innerHTML = tourData.duration
   langElem.innerHTML = tourData.languages.map(lang => `<p>${lang}</p>`).join('')
   priceElem.innerHTML = "€ " + tourData.price
-  introElem.innerHTML = tourData.introduction
+  introElem.innerHTML = getLabel(tourData.introduction)
 
   // ----- Location -----
   const mapLinkElem = document.querySelector("#location a")
   const pointElem = document.querySelector("#location p")
   const mapIframeElem = document.querySelector("#location iframe")
   mapLinkElem.setAttribute("href", tourData.location_map)
-  pointElem.innerHTML = tourData.meeting_point
+  pointElem.innerHTML = getLabel(tourData.meeting_point)
   mapIframeElem.setAttribute("src", tourData.google_maps_iframe)
 
   // ----- Discoveries -----
@@ -77,8 +77,8 @@ async function updateTourData() {
     const imageElem = document.querySelector(`${baseSelector} img`)
 
     // Update text content
-    titleElem.innerHTML = discoverData.title
-    descElem.innerHTML = discoverData.description
+    titleElem.innerHTML = getLabel(discoverData.title)
+    descElem.innerHTML = getLabel(discoverData.description)
 
     // Handle image updates
     const imgSrc = `${apiBase}/tours/discover/${tourData.id}-${discoverData.id}.jpg`
@@ -92,9 +92,9 @@ async function updateTourData() {
   const includedElem = document.querySelector("#items .included .checks p")
   const notIncludedElem = document.querySelector("#items .no-included .checks p")
   const disclaimerElem = document.querySelector("#items .disclaimer p span")
-  includedElem.innerHTML = tourData.included.map(item => `✅ ${item}`).join('<br>')
-  notIncludedElem.innerHTML = tourData.not_included.map(item => `❌ ${item}`).join('<br>')
-  disclaimerElem.innerHTML = tourData.disclaimer
+  includedElem.innerHTML = tourData.included.map(item => `✅ ${getLabel(item)}`).join('<br>')
+  notIncludedElem.innerHTML = tourData.not_included.map(item => `❌ ${getLabel(item)}`).join('<br>')
+  disclaimerElem.innerHTML = getLabel(tourData.disclaimer)
 
   // ----- Related Tours -----
   randomTours.forEach((tour, index) => {
@@ -109,8 +109,8 @@ async function updateTourData() {
     const relatedImage = document.querySelector(`${baseSelector} img`)
 
     // Update text and attributes using the 'tour' object from the loop
-    relatedTitleElem.innerHTML = tour.title
-    relatedFocusElem.innerHTML = tour.focus
+    relatedTitleElem.innerHTML = getLabel(tour.title)
+    relatedFocusElem.innerHTML = getLabel(tour.focus)
     relatedPriceElem.innerHTML = `${tour.price} / grupo`
     relatedTimeElem.innerHTML = `${tour.duration} hrs`
     relatedButtonElem.setAttribute("href", `${toursBase}/${tour.id}/`)
@@ -125,6 +125,6 @@ async function updateTourData() {
 
   // ----- Cancelation -----
   const cancelationElem = document.querySelector("#cancelation p")
-  cancelationElem.innerHTML = tourData.cancelation
+  cancelationElem.innerHTML = getLabel(tourData.cancelation)
 
 }

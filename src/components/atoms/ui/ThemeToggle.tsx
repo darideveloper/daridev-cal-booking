@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import { Button } from './button';
+import { useTranslation } from '@/lib/i18n/useTranslation';
 
 export function ThemeToggle() {
+  const { t } = useTranslation();
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
 
   useEffect(() => {
@@ -36,7 +38,7 @@ export function ThemeToggle() {
       size="icon"
       onClick={toggleTheme}
       className="rounded-full w-10 h-10 transition-colors bg-background border-border shadow-sm hover:bg-accent/20"
-      aria-label="Toggle theme"
+      aria-label={t.accessibility.toggleTheme}
     >
       {theme === 'light' ? (
         <Moon className="h-5 w-5 text-foreground" />

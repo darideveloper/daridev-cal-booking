@@ -20,11 +20,11 @@ async function loadTours() {
 
       // Update Text Content
       const h3 = clone.getElementsByTagName("h3")[0]
-      if (h3) h3.textContent = item.title
+      if (h3) h3.textContent = getLabel(item.title)
 
       const descKey = 'data-elementor-setting-key'
       const desc = clone.querySelector(`[${descKey}="infocard_description"]`)
-      if (desc) desc.textContent = item.subtitle
+      if (desc) desc.textContent = getLabel(item.subtitle)
 
       const price = clone.querySelector('.price')
       if (price) price.textContent = "€" + item.price
@@ -37,7 +37,7 @@ async function loadTours() {
       img.setAttribute("data-srcset", imgSrc)
       img.setAttribute("srcset", imgSrc)
 
-      img.alt = item.title // Good for SEO/Accessibility
+      img.alt = getLabel(item.title) // Good for SEO/Accessibility
 
       // Convert Card to <a> Link
       const linkCard = document.createElement('a')

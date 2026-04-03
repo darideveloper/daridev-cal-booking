@@ -5,24 +5,29 @@ import { Button } from '@/components/atoms/ui/button';
 import { Label } from '@/components/atoms/ui/label';
 import { Select } from '@/components/atoms/ui/select';
 import { cn } from "@/lib/utils";
-import { es } from 'date-fns/locale';
+import { es, enUS } from 'date-fns/locale';
 import { STATUS_CONFIG, type StatusKey, type StatusConfigValue } from './types';
 import { StatusLegend } from '@/components/molecules/StatusLegend';
 import { StatusDetails } from '@/components/molecules/StatusDetails';
 import { useBookingStore } from '../../store/useBookingStore';
 import { ThemeToggle } from '../atoms/ui/ThemeToggle';
+import { LanguageToggle } from '../atoms/ui/LanguageToggle';
+import { useTranslation } from '@/lib/i18n/useTranslation';
 import toursData from "@/data/tours.json";
 
 /**
  * MAIN COMPONENT
  */
 export function BookingCalendar() {
+  const { t, language } = useTranslation();
   const selectedDate = useBookingStore((state: any) => state.selectedDate);
   const setSelectedDate = useBookingStore((state: any) => state.setSelectedDate);
   const availability = useBookingStore((state: any) => state.availability);
   const nextStep = useBookingStore((state: any) => state.nextStep);
   const formData = useBookingStore((state: any) => state.formData);
   const updateFormData = useBookingStore((state: any) => state.updateFormData);
+
+  const dateLocale = language === 'es' ? es : enUS;
 
   const today = useMemo(() => {
     const d = new Date();
@@ -31,11 +36,35 @@ export function BookingCalendar() {
   }, []);
 
   const modifiers = useMemo(() => ({
-    isBooked: (d: Date) => d > today && availability.booked.some((date: Date) => date.toDateString() === d.toDateString()),
-    isLimited: (d: Date) => d > today && availability.limited.some((date: Date) => date.toDateString() === d.toDateString()),
-    isAvailable: (d: Date) => d > today && 
-      !availability.booked.some((date: Date) => date.toDateString() === d.toDateString()) &&
-      !availability.limited.some((date: Date) => date.toDateString() === d.toDateString()),
+    isBooked: (d: Date) => {
+      const dateObj = d instanceof Date ? d : new Date(d);
+      return dateObj > today && availability.booked.some((bookedDate: Date) => {
+        const b = bookedDate instanceof Date ? bookedDate : new Date(bookedDate);
+        return b.toDateString() === dateObj.toDateString();
+      });
+    },
+    isLimited: (d: Date) => {
+      const dateObj = d instanceof Date ? d : new Date(d);
+      return dateObj > today && availability.limited.some((limitedDate: Date) => {
+        const l = limitedDate instanceof Date ? limitedDate : new Date(limitedDate);
+        return l.toDateString() === dateObj.toDateString();
+      });
+    },
+    isAvailable: (d: Date) => {
+      const dateObj = d instanceof Date ? d : new Date(d);
+      if (dateObj <= today) return false;
+      
+      const isBooked = availability.booked.some((bookedDate: Date) => {
+        const b = bookedDate instanceof Date ? bookedDate : new Date(bookedDate);
+        return b.toDateString() === dateObj.toDateString();
+      });
+      const isLimited = availability.limited.some((limitedDate: Date) => {
+        const l = limitedDate instanceof Date ? limitedDate : new Date(limitedDate);
+        return l.toDateString() === dateObj.toDateString();
+      });
+      
+      return !isBooked && !isLimited;
+    },
   }), [availability, today]);
 
   const modifiersClassNames = useMemo(() => {
@@ -47,10 +76,24 @@ export function BookingCalendar() {
   }, []);
 
   const getStatus = (d: Date | undefined): StatusKey => {
-    if (!d || d <= today) return 'standard';
-    const dateStr = d.toDateString();
-    if (availability.booked.some((date: Date) => date.toDateString() === dateStr)) return 'booked';
-    if (availability.limited.some((date: Date) => date.toDateString() === dateStr)) return 'limited';
+    if (!d) return 'standard';
+    const dateObj = d instanceof Date ? d : new Date(d);
+    if (dateObj <= today) return 'standard';
+    
+    const dateStr = dateObj.toDateString();
+    
+    const isBooked = availability.booked.some((bookedDate: Date) => {
+      const b = bookedDate instanceof Date ? bookedDate : new Date(bookedDate);
+      return b.toDateString() === dateStr;
+    });
+    if (isBooked) return 'booked';
+    
+    const isLimited = availability.limited.some((limitedDate: Date) => {
+      const l = limitedDate instanceof Date ? limitedDate : new Date(limitedDate);
+      return l.toDateString() === dateStr;
+    });
+    if (isLimited) return 'limited';
+    
     return 'available';
   };
 
@@ -63,13 +106,14 @@ export function BookingCalendar() {
   return (
     <div className="flex flex-col items-center justify-center p-4 bg-muted/30 space-y-4 rounded-3xl border border-border h-full w-full">
       <Card className="w-full max-w-md shadow-xl border-none bg-background flex-1 relative">
-        <div className="absolute top-2 right-2 z-20 scale-75 lg:scale-100">
+        <div className="absolute top-2 right-2 z-20 scale-75 lg:scale-100 flex items-center gap-2">
+          <LanguageToggle />
           <ThemeToggle />
         </div>
         <CardContent className="flex flex-col items-center gap-4 h-full justify-center">
           
           <div className="w-full grid gap-1.5 mt-2">
-            <Label htmlFor="tourId" className="text-xs">Tour</Label>
+            <Label htmlFor="tourId" className="text-xs">{t.calendar.tourLabel}</Label>
             <Select
               id="tourId"
               name="tourId"
@@ -78,10 +122,10 @@ export function BookingCalendar() {
               className="h-10 text-sm w-full"
               required
             >
-              <option value="" disabled>Selecciona un tour</option>
+              <option value="" disabled>{t.calendar.selectTour}</option>
               {toursData.map((tour: any) => (
                 <option key={tour.id} value={tour.id}>
-                  {tour.title}
+                  {typeof tour.title === 'string' ? tour.title : (tour.title[language] || tour.title.es)}
                 </option>
               ))}
             </Select>
@@ -94,7 +138,7 @@ export function BookingCalendar() {
               mode="single"
               selected={selectedDate}
               onSelect={setSelectedDate}
-              locale={es}
+              locale={dateLocale}
               className="rounded-md border-none w-full"
               classNames={{
                 day: cn(
@@ -117,14 +161,14 @@ export function BookingCalendar() {
               disabled={!selectedDate || !formData.tourId}
               onClick={nextStep}
             >
-              Continuar con la reserva
+              {t.calendar.continue}
             </Button>
           </div>
         </CardContent>
       </Card>
 
       <div className="max-w-md text-center text-white text-[10px] font-sans italic">
-        <p>La disponibilidad se actualiza diariamente.</p>
+        <p>{t.calendar.availabilityUpdate}</p>
       </div>
     </div>
   );

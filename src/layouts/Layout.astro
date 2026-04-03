@@ -3,7 +3,7 @@ import "../styles/global.css";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -12,6 +12,7 @@ import "../styles/global.css";
 		<meta name="generator" content={Astro.generator} />
 		<title>Granada Go Tours</title>
 		<script is:inline>
+			// Theme initialization
 			const theme = (() => {
 				if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
 					return localStorage.getItem('theme');
@@ -26,6 +27,42 @@ import "../styles/global.css";
 			} else {
 				document.documentElement.classList.remove('dark');
 			}
+
+			// Language initialization
+			const syncLanguage = () => {
+				const storageStr = localStorage.getItem('booking-storage');
+				if (storageStr) {
+					try {
+						const storage = JSON.parse(storageStr);
+						const lang = storage.state?.language || 'es';
+						document.documentElement.lang = lang;
+						
+						// Update title if needed
+						if (lang === 'en') {
+							document.title = 'Granada Go Tours';
+						} else {
+							document.title = 'Granada Go Tours';
+						}
+					} catch (e) {
+						console.error('Error parsing booking-storage', e);
+					}
+				}
+			};
+			syncLanguage();
+
+			// Listen for storage changes (for multiple tabs)
+			window.addEventListener('storage', (e) => {
+				if (e.key === 'booking-storage') {
+					syncLanguage();
+				}
+			});
+
+			// Update when the state changes via the store in the same tab
+			// We can use a custom event or just let the React components handle it
+			// for immediate UI updates, but for document attributes:
+			const observer = new MutationObserver(() => {
+				// This is a bit hacky but ensures consistency if needed
+			});
 		</script>
 	</head>
 	<body class="font-sans min-h-screen relative overflow-x-hidden">

@@ -4,7 +4,7 @@ import { Info, CheckCircle2, AlertCircle, XCircle } from 'lucide-react';
 export type StatusKey = 'booked' | 'limited' | 'available' | 'standard';
 
 export interface StatusConfigValue {
-  label: string;
+  i18nKey: keyof typeof import('../../lib/i18n/translations').translations.es.status;
   icon: React.ElementType;
   classes: {
     container: string;
@@ -17,7 +17,7 @@ export interface StatusConfigValue {
 
 export const STATUS_CONFIG: Record<StatusKey, StatusConfigValue> = {
   available: {
-    label: 'Disponible',
+    i18nKey: 'available',
     icon: CheckCircle2,
     classes: {
       container: 'bg-emerald-500/10 border-emerald-500/20',
@@ -28,7 +28,7 @@ export const STATUS_CONFIG: Record<StatusKey, StatusConfigValue> = {
     }
   },
   limited: {
-    label: 'Pocas plazas',
+    i18nKey: 'limited',
     icon: AlertCircle,
     classes: {
       container: 'bg-amber-500/10 border-amber-500/20',
@@ -39,7 +39,7 @@ export const STATUS_CONFIG: Record<StatusKey, StatusConfigValue> = {
     }
   },
   booked: {
-    label: 'Completo',
+    i18nKey: 'booked',
     icon: XCircle,
     classes: {
       container: 'bg-muted/30 border-border',
@@ -50,7 +50,7 @@ export const STATUS_CONFIG: Record<StatusKey, StatusConfigValue> = {
     }
   },
   standard: {
-    label: 'Estándar',
+    i18nKey: 'standard',
     icon: Info,
     classes: {
       container: 'bg-accent/5 border-border',
