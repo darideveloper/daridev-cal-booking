@@ -138,6 +138,7 @@ export function BookingCalendar() {
               mode="single"
               selected={selectedDate}
               onSelect={setSelectedDate}
+              showOutsideDays={false}
               locale={dateLocale}
               className="rounded-md border-none w-full"
               classNames={{
