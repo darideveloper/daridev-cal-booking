@@ -20,9 +20,9 @@ async function getToursData() {
   return data
 }
 
-async function getTourData(tourId) {
+async function getTourData(serviceId) {
   const data = await getToursData()
-  const tourData = data.find(item => item.id === tourId)
+  const tourData = data.find(item => item.id === serviceId)
   return tourData
 }
 

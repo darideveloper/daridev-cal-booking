@@ -6,7 +6,7 @@ import { Label } from '@/components/atoms/ui/label';
 import { Select } from '@/components/atoms/ui/select';
 import { cn } from "@/lib/utils";
 import { es, enUS } from 'date-fns/locale';
-import { STATUS_CONFIG, type StatusKey, type StatusConfigValue } from './types';
+import { STATUS_CONFIG, type StatusKey } from './types';
 import { StatusLegend } from '@/components/molecules/StatusLegend';
 import { StatusDetails } from '@/components/molecules/StatusDetails';
 import { useBookingStore } from '../../store/useBookingStore';
@@ -26,6 +26,7 @@ export function BookingCalendar() {
   const nextStep = useBookingStore((state: any) => state.nextStep);
   const formData = useBookingStore((state: any) => state.formData);
   const updateFormData = useBookingStore((state: any) => state.updateFormData);
+  const visibility = useBookingStore((state: any) => state.visibility);
 
   const dateLocale = language === 'es' ? es : enUS;
 
@@ -99,37 +100,41 @@ export function BookingCalendar() {
 
   const statusKey = getStatus(selectedDate);
   
-  const handleTourChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    updateFormData({ tourId: e.target.value });
+  const handleServiceChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    updateFormData({ serviceId: e.target.value });
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-4 bg-muted/30 space-y-4 rounded-3xl border border-border h-full w-full">
-      <Card className="w-full max-w-md shadow-xl border-none bg-background flex-1 relative">
-        <div className="absolute top-2 right-2 z-20 scale-75 lg:scale-100 flex items-center gap-2">
-          <LanguageToggle />
-          <ThemeToggle />
-        </div>
+    <>
+      <Card className="w-full max-w-md shadow-xl border-none bg-background relative">
+        {(visibility.lang || visibility.theme) && (
+          <div className="absolute top-2 right-2 z-20 scale-75 lg:scale-100 flex items-center gap-2">
+            {visibility.lang && <LanguageToggle />}
+            {visibility.theme && <ThemeToggle />}
+          </div>
+        )}
         <CardContent className="flex flex-col items-center gap-4 h-full justify-center">
           
-          <div className="w-full grid gap-1.5 mt-2">
-            <Label htmlFor="tourId" className="text-xs">{t.calendar.tourLabel}</Label>
-            <Select
-              id="tourId"
-              name="tourId"
-              value={formData.tourId || ""}
-              onChange={handleTourChange}
-              className="h-10 text-sm w-full"
-              required
-            >
-              <option value="" disabled>{t.calendar.selectTour}</option>
-              {toursData.map((tour: any) => (
-                <option key={tour.id} value={tour.id}>
-                  {typeof tour.title === 'string' ? tour.title : (tour.title[language] || tour.title.es)}
-                </option>
-              ))}
-            </Select>
-          </div>
+          {visibility.service && (
+            <div className="w-full grid gap-1.5 mt-2">
+              <Label htmlFor="serviceId" className="text-xs">{t.calendar.tourLabel}</Label>
+              <Select
+                id="serviceId"
+                name="serviceId"
+                value={formData.serviceId || ""}
+                onChange={handleServiceChange}
+                className="h-10 text-sm w-full"
+                required
+              >
+                <option value="" disabled>{t.calendar.selectTour}</option>
+                {toursData.map((tour: any) => (
+                  <option key={tour.id} value={tour.id}>
+                    {typeof tour.title === 'string' ? tour.title : (tour.title[language] || tour.title.es)}
+                  </option>
+                ))}
+              </Select>
+            </div>
+          )}
 
           <StatusLegend />
 
@@ -138,7 +143,6 @@ export function BookingCalendar() {
               mode="single"
               selected={selectedDate}
               onSelect={setSelectedDate}
-              showOutsideDays={false}
               locale={dateLocale}
               className="rounded-md border-none w-full"
               classNames={{
@@ -159,7 +163,7 @@ export function BookingCalendar() {
             
             <Button 
               className="w-full py-6 text-lg font-serif rounded-xl"
-              disabled={!selectedDate || !formData.tourId}
+              disabled={!selectedDate || !formData.serviceId}
               onClick={nextStep}
             >
               {t.calendar.continue}
@@ -167,10 +171,10 @@ export function BookingCalendar() {
           </div>
         </CardContent>
       </Card>
-
-      <div className="max-w-md text-center text-white text-[10px] font-sans italic">
+      
+      <div className="max-w-md text-center text-muted-foreground text-[10px] font-sans italic mt-2">
         <p>{t.calendar.availabilityUpdate}</p>
       </div>
-    </div>
+    </>
   );
 }

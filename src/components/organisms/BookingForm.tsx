@@ -1,239 +1,256 @@
-import * as React from "react"
+import React, { useState } from "react"
 import { useBookingStore } from "../../store/useBookingStore"
+import { useTranslation } from "@/lib/i18n/useTranslation"
+import { Button } from "@/components/atoms/ui/button"
 import { Input } from "@/components/atoms/ui/input"
 import { Label } from "@/components/atoms/ui/label"
 import { Textarea } from "@/components/atoms/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/atoms/ui/card"
-import { Button } from "@/components/atoms/ui/button"
-import { Loader2 } from "lucide-react"
 import { ThemeToggle } from "../atoms/ui/ThemeToggle"
 import { LanguageToggle } from "../atoms/ui/LanguageToggle"
-import { useTranslation } from "@/lib/i18n/useTranslation"
-import toursData from "../../data/tours.json"
+import { ArrowLeft, Send, Users, Calendar, MapPin, CheckCircle2, ShieldCheck, AlertCircle } from "lucide-react"
+import toursData from "@/data/tours.json"
+import { Checkbox } from "@/components/atoms/ui/checkbox"
 
 export function BookingForm() {
   const { t, language } = useTranslation()
-  const { formData, selectedDate, updateFormData, prevStep } = useBookingStore() as any
-  const [isLoading, setIsLoading] = React.useState(false)
+  const formData = useBookingStore((state: any) => state.formData)
+  const updateFormData = useBookingStore((state: any) => state.updateFormData)
+  const selectedDate = useBookingStore((state: any) => state.selectedDate)
+  const prevStep = useBookingStore((state: any) => state.prevStep)
+  const visibility = useBookingStore((state: any) => state.visibility)
+  
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value, type } = e.target as HTMLInputElement
-    let processedValue: string | number | boolean = value
-    
-    if (type === "checkbox") {
-      processedValue = (e.target as HTMLInputElement).checked
-    } else if (name === "guests") {
-      const numValue = parseInt(value, 10)
-      processedValue = isNaN(numValue) ? 0 : Math.min(numValue, 30)
-    }
-
-    updateFormData({ [name]: processedValue })
-  }
+  const selectedTour = toursData.find(t => t.id === formData.serviceId)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setIsSubmitting(true)
+    
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 2000))
+    
+    setIsSubmitting(false)
+    setIsSubmitted(true)
+  }
 
-    if (!formData.privacyAccepted) {
-      alert(t.errors.privacyRequired)
-      return
-    }
-
-    setIsLoading(true)
-
-    try {
-      const selectedTour = toursData.find(t => t.id === formData.tourId)
-      if (!selectedTour) {
-        throw new Error(t.errors.tourRequired)
-      }
-
-      const tourTitle = typeof selectedTour.title === 'string' 
-        ? selectedTour.title 
-        : (selectedTour.title[language] || selectedTour.title.es)
-
-      const payload = {
-        url: import.meta.env.PUBLIC_RETURN_URL,
-        url_success: import.meta.env.PUBLIC_SUCCESS_URL,
-        user: import.meta.env.PUBLIC_STRIPE_USER,
-        currency: "eur",
-        products: {
-          [tourTitle]: {
-            description: `
-              ${t.stripe.name}: ${formData.fullName}
-              ${t.stripe.email}: ${formData.email}
-              ${t.stripe.tour}: ${tourTitle}
-              ${t.stripe.date}: ${selectedDate?.toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US') || t.stripe.notSpecified}
-              ${t.stripe.guests}: ${formData.guests}
-              ${t.stripe.requests}: ${formData.specialRequests || t.stripe.none}
-            `.trim().replace(/\s+/g, ' '),
-            image_url: import.meta.env.PUBLIC_STRIPE_IMAGE_URL,
-            price: selectedTour.price,
-            amount: 1
-          }
-        }
-      }
-
-      const response = await fetch(import.meta.env.PUBLIC_STRIPE_API_URL, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
-      })
-
-      if (!response.ok) {
-        throw new Error(t.errors.processingError)
-      }
-
-      const data = await response.json()
-      if (data.stripe_url) {
-        window.open(data.stripe_url, '_blank');
-        window.location.reload();
-      } else {
-        throw new Error(t.errors.noPaymentUrl)
-      }
-    } catch (error) {
-      console.error('Error submitting booking:', error)
-      alert(error instanceof Error ? error.message : `${t.errors.processingError}. ${t.errors.tryAgain}`)
-      setIsLoading(false)
-    }
+  if (isSubmitted) {
+    return (
+      <Card className="w-full max-w-md shadow-2xl border-none bg-background rounded-3xl overflow-hidden animate-in fade-in zoom-in duration-500">
+        <div className="h-2 bg-primary w-full" />
+        <CardContent className="flex flex-col items-center justify-center py-12 px-8 text-center space-y-6">
+          <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mb-2">
+            <CheckCircle2 className="w-10 h-10 text-primary" />
+          </div>
+          <div className="space-y-2">
+            <h2 className="text-3xl font-serif font-bold text-foreground">{t.form.successTitle}</h2>
+            <p className="text-muted-foreground">{t.form.successMessage}</p>
+          </div>
+          <div className="w-full p-4 bg-muted rounded-2xl text-left space-y-3 border border-border">
+            <div className="flex items-center gap-3 text-sm">
+              <div className="w-8 h-8 rounded-lg bg-background flex items-center justify-center border border-border">
+                <Calendar className="w-4 h-4 text-primary" />
+              </div>
+              <div>
+                <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">{t.stripe.date}</p>
+                <p className="font-medium">{selectedDate?.toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US')}</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 text-sm">
+              <div className="w-8 h-8 rounded-lg bg-background flex items-center justify-center border border-border">
+                <MapPin className="w-4 h-4 text-primary" />
+              </div>
+              <div>
+                <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">{t.calendar.tourLabel}</p>
+                <p className="font-medium">
+                  {selectedTour 
+                    ? (typeof selectedTour.title === 'string' ? selectedTour.title : (selectedTour.title[language] || selectedTour.title.es))
+                    : 'Tour'
+                  }
+                </p>
+              </div>
+            </div>
+          </div>
+          <Button 
+            variant="outline" 
+            className="rounded-xl px-8"
+            onClick={() => window.location.reload()}
+          >
+            {t.form.close}
+          </Button>
+        </CardContent>
+      </Card>
+    )
   }
 
   return (
-    <form 
-      onSubmit={handleSubmit}
-      className="flex flex-col p-4 bg-muted/30 space-y-4 rounded-3xl border border-border h-full w-full"
-    >
-      <Card className="w-full shadow-xl border-none bg-background flex-1 relative">
-        <div className="absolute top-2 right-2 z-20 scale-75 lg:scale-100 flex items-center gap-2">
-          <LanguageToggle />
-          <ThemeToggle />
+    <Card className="w-full max-w-md shadow-2xl border-none bg-background rounded-3xl overflow-hidden relative">
+      <div className="h-1.5 bg-primary w-full" />
+      
+      {(visibility.lang || visibility.theme) && (
+        <div className="absolute top-4 right-4 z-20 scale-75 lg:scale-90 flex items-center gap-2">
+          {visibility.lang && <LanguageToggle />}
+          {visibility.theme && <ThemeToggle />}
         </div>
-        <CardHeader className="pb-4">
-          <CardTitle className="text-xl font-serif text-foreground">{t.form.title}</CardTitle>
-          <CardDescription className="text-xs text-muted-foreground">
-            {t.form.description}
-          </CardDescription>
-        </CardHeader>
-        
-        <CardContent>
+      )}
+
+      <CardHeader className="pb-4">
+        <div className="flex items-center gap-2 mb-2">
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            className="rounded-full -ml-2 h-8 w-8 hover:bg-primary/10 hover:text-primary transition-colors"
+            onClick={prevStep}
+          >
+            <ArrowLeft className="w-4 h-4" />
+          </Button>
+          <div className="px-3 py-1 bg-primary/10 rounded-full">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-primary">
+              {t.form.step2Of2}
+            </span>
+          </div>
+        </div>
+        <CardTitle className="text-2xl font-serif font-bold tracking-tight">{t.form.title}</CardTitle>
+        <CardDescription className="text-muted-foreground/80">
+          {selectedTour 
+            ? (typeof selectedTour.title === 'string' ? selectedTour.title : (selectedTour.title[language] || selectedTour.title.es))
+            : t.form.description
+          }
+        </CardDescription>
+      </CardHeader>
+
+      <CardContent>
+        <form onSubmit={handleSubmit} className="space-y-5">
           <div className="grid gap-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="grid gap-1.5">
-                <Label htmlFor="fullName" className="text-xs text-foreground">{t.form.fullName}</Label>
-                <Input
-                  id="fullName"
-                  name="fullName"
-                  placeholder={t.form.fullNamePlaceholder}
-                  value={formData.fullName}
-                  onChange={handleChange}
-                  disabled={isLoading}
-                  className="h-9 text-sm"
-                  required
-                />
-              </div>
-
-              <div className="grid gap-1.5">
-                <Label htmlFor="email" className="text-xs text-foreground">{t.form.email}</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder={t.form.emailPlaceholder}
-                  value={formData.email}
-                  onChange={handleChange}
-                  disabled={isLoading}
-                  className="h-9 text-sm"
-                  required
-                />
-              </div>
-            </div>
-
-            <div className="grid gap-1.5 w-full md:w-1/2">
-              <Label htmlFor="guests" className="text-xs text-foreground">{t.form.guests}</Label>
+            <div className="space-y-2 group">
+              <Label htmlFor="fullName" className="text-xs font-bold uppercase tracking-wider text-muted-foreground group-focus-within:text-primary transition-colors">
+                {t.form.fullName}
+              </Label>
               <Input
-                id="guests"
-                name="guests"
-                type="number"
-                min="1"
-                max="30"
-                value={formData.guests}
-                onChange={handleChange}
-                disabled={isLoading}
-                className="h-9 text-sm"
+                id="fullName"
+                placeholder={t.form.fullNamePlaceholder}
+                value={formData.fullName}
+                onChange={(e) => updateFormData({ fullName: e.target.value })}
+                className="rounded-xl border-border bg-muted/30 focus:bg-background transition-all h-11"
                 required
               />
             </div>
 
-            <div className="grid gap-1.5">
-              <Label htmlFor="specialRequests" className="text-xs text-foreground">{t.form.specialRequests}</Label>
+            <div className="space-y-2 group">
+              <Label htmlFor="email" className="text-xs font-bold uppercase tracking-wider text-muted-foreground group-focus-within:text-primary transition-colors">
+                {t.form.email}
+              </Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder={t.form.emailPlaceholder}
+                value={formData.email}
+                onChange={(e) => updateFormData({ email: e.target.value })}
+                className="rounded-xl border-border bg-muted/30 focus:bg-background transition-all h-11"
+                required
+              />
+            </div>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="guests" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+                  {t.form.guests}
+                </Label>
+                <div className="relative">
+                  <Input
+                    id="guests"
+                    type="number"
+                    min="1"
+                    value={formData.guests}
+                    onChange={(e) => updateFormData({ guests: parseInt(e.target.value) || 1 })}
+                    className="rounded-xl border-border bg-muted/30 pl-10 h-11"
+                    required
+                  />
+                  <Users className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-muted-foreground" />
+                </div>
+              </div>
+
+              <div className="space-y-2">
+                <Label className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+                  {t.stripe.date}
+                </Label>
+                <div className="h-11 rounded-xl bg-muted/50 border border-border flex items-center px-3 gap-2.5 text-sm font-medium text-foreground">
+                  <Calendar className="w-4 h-4 text-primary" />
+                  {selectedDate?.toLocaleDateString(language === 'es' ? 'es-ES' : 'en-US')}
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-2 group">
+              <Label htmlFor="specialRequests" className="text-xs font-bold uppercase tracking-wider text-muted-foreground group-focus-within:text-primary transition-colors">
+                {t.form.specialRequests}
+              </Label>
               <Textarea
                 id="specialRequests"
-                name="specialRequests"
                 placeholder={t.form.specialRequestsPlaceholder}
                 value={formData.specialRequests}
-                onChange={handleChange}
-                disabled={isLoading}
-                className="text-sm min-h-[80px]"
-                rows={3}
+                onChange={(e) => updateFormData({ specialRequests: e.target.value })}
+                className="rounded-xl border-border bg-muted/30 focus:bg-background transition-all resize-none min-h-[100px]"
               />
             </div>
 
-            <div className="flex items-start space-x-2 pt-2">
-              <input
-                type="checkbox"
-                id="privacyAccepted"
-                name="privacyAccepted"
+            <div className="flex items-start space-x-3 p-4 bg-muted/20 rounded-2xl border border-border/50 transition-colors hover:bg-muted/30">
+              <Checkbox 
+                id="privacy" 
                 checked={formData.privacyAccepted}
-                onChange={handleChange}
-                className="mt-0.5 h-4 w-4 rounded border-input bg-background text-primary focus:ring-primary cursor-pointer transition-colors"
+                onCheckedChange={(checked) => updateFormData({ privacyAccepted: !!checked })}
                 required
+                className="mt-1"
               />
-              <Label 
-                htmlFor="privacyAccepted" 
-                className="text-xs peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer text-muted-foreground"
-              >
-                {t.form.privacyPolicy.split('política de privacidad')[0]}
-                <a href="https://granadago.com/privacidad/" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:opacity-80 transition-opacity">
-                  {language === 'es' ? 'política de privacidad' : 'privacy policy'}
-                </a>
-                {t.form.privacyPolicy.split('política de privacidad')[1] || (language === 'en' ? '.' : '')}
-              </Label>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4 pt-2">
-              <Button 
-                variant="outline" 
-                className="py-5 font-serif rounded-xl"
-                onClick={prevStep}
-                type="button"
-                disabled={isLoading}
-              >
-                {t.form.back}
-              </Button>
-              <Button 
-                className="py-5 font-serif rounded-xl"
-                type="submit"
-                disabled={isLoading}
-              >
-                {isLoading ? (
-                  <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    {t.form.processing}
-                  </>
-                ) : (
-                  t.form.submit
-                )}
-              </Button>
+              <div className="grid gap-1.5 leading-none">
+                <label
+                  htmlFor="privacy"
+                  className="text-xs font-medium leading-normal text-muted-foreground cursor-pointer"
+                >
+                  {t.form.privacyPolicy.split('política de privacidad').map((part, index) => (
+                    <React.Fragment key={index}>
+                      {part}
+                      {index === 0 && (
+                        <a href="/privacy" className="text-primary hover:underline font-bold" target="_blank" rel="noopener noreferrer">
+                          {language === 'es' ? 'política de privacidad' : 'privacy policy'}
+                        </a>
+                      )}
+                    </React.Fragment>
+                  ))}
+                  {t.form.privacyPolicy.split('política de privacidad')[1] || (language === 'en' ? '.' : '')}
+                </label>
+              </div>
             </div>
           </div>
-        </CardContent>
-      </Card>
-      
-      <div className="text-center text-white text-[10px] font-sans italic px-4 pb-2">
-        <p>{t.form.requiredFields}</p>
-      </div>
-    </form>
+
+          <div className="flex items-center gap-2 p-3 bg-primary/5 rounded-xl border border-primary/10">
+            <AlertCircle className="w-4 h-4 text-primary shrink-0" />
+            <p className="text-[10px] text-muted-foreground italic leading-tight">
+              {t.form.requiredFields}
+            </p>
+          </div>
+
+          <Button 
+            type="submit" 
+            className="w-full py-7 text-lg font-serif rounded-2xl shadow-lg shadow-primary/20 relative overflow-hidden group"
+            disabled={isSubmitting || !formData.privacyAccepted}
+          >
+            {isSubmitting ? (
+              <span className="flex items-center gap-2">
+                <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
+                {t.form.submitting}
+              </span>
+            ) : (
+              <span className="flex items-center gap-2">
+                <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                {t.form.submit}
+              </span>
+            )}
+          </Button>
+        </form>
+      </CardContent>
+    </Card>
   )
 }

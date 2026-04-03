@@ -1,7 +1,7 @@
 // --- Configuration & Extraction ---
 const currentPath = window.location.pathname
 const segments = currentPath.split("/").filter((segment) => segment.length > 0)
-const [page, tourId] = segments
+const [page, serviceId] = segments
 
 // --- Primary Logic Execution ---
 if (page === "tours") {
@@ -18,12 +18,12 @@ if (page === "tours") {
 async function updateTourData() {
   // Update Booking Iframe
   const iframeElem = document.querySelector(".custom-iframe-container iframe")
-  const bookingUrl = `${apiBase}/${tourId}`
+  const bookingUrl = `${apiBase}/${serviceId}`
   iframeElem.setAttribute("src", bookingUrl)
 
   // Fetch API Data
   const [tourData, randomTours] = await Promise.all([
-    getTourData(tourId),
+    getTourData(serviceId),
     getRandomTours(),
   ])
 

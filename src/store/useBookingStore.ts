@@ -3,6 +3,7 @@ import { persist } from 'zustand/middleware';
 import toursData from "../data/tours.json";
 
 export type Language = 'es' | 'en';
+export type Theme = 'light' | 'dark';
 
 interface Availability {
   limited: Date[];
@@ -11,18 +12,27 @@ interface Availability {
 
 interface BookingState {
   language: Language;
+  theme: Theme;
   selectedDate: Date | undefined;
   currentStep: number;
   formData: {
     fullName: string;
     email: string;
-    tourId: string | null;
+    serviceId: string | null;
+    serviceGroup: string | null;
     guests: number;
     specialRequests: string;
     privacyAccepted: boolean;
   };
+  visibility: {
+    lang: boolean;
+    theme: boolean;
+    service: boolean;
+  };
   availability: Availability;
   setLanguage: (language: Language) => void;
+  setTheme: (theme: Theme) => void;
+  setVisibility: (visibility: Partial<BookingState['visibility']>) => void;
   setSelectedDate: (date: Date | undefined) => void;
   setStep: (step: number) => void;
   nextStep: () => void;
@@ -52,8 +62,8 @@ const injectVirtualLimitedDates = (limited: Date[], booked: Date[]): Date[] => {
   return virtualLimited;
 };
 
-const getInitialAvailability = (tourId: string | null): Availability => {
-  const tour = toursData.find(t => t.id === tourId);
+const getInitialAvailability = (serviceId: string | null): Availability => {
+  const tour = toursData.find(t => t.id === serviceId);
   if (!tour || !tour.dates) {
     return { limited: [], booked: [] };
   }
@@ -76,18 +86,29 @@ export const useBookingStore = create<BookingState>()(
   persist(
     (set) => ({
       language: 'es',
+      theme: 'light',
       selectedDate: undefined,
       currentStep: 1,
       formData: {
         fullName: '',
         email: '',
-        tourId: null,
+        serviceId: null,
+        serviceGroup: null,
         guests: 1,
         specialRequests: '',
         privacyAccepted: false,
       },
+      visibility: {
+        lang: true,
+        theme: true,
+        service: true,
+      },
       availability: { limited: [], booked: [] },
       setLanguage: (language) => set({ language }),
+      setTheme: (theme) => set({ theme }),
+      setVisibility: (visibility) => set((state) => ({ 
+        visibility: { ...state.visibility, ...visibility } 
+      })),
       setSelectedDate: (date) => set({ selectedDate: date }),
       setStep: (step) => set({ currentStep: step }),
       nextStep: () => set((state) => ({ currentStep: state.currentStep + 1 })),
@@ -95,8 +116,8 @@ export const useBookingStore = create<BookingState>()(
       updateFormData: (data) => set((state) => {
         const newFormData = { ...state.formData, ...data };
         let newAvailability = state.availability;
-        if (data.tourId !== undefined) {
-          newAvailability = getInitialAvailability(newFormData.tourId);
+        if (data.serviceId !== undefined) {
+          newAvailability = getInitialAvailability(newFormData.serviceId);
         }
         return { 
           formData: newFormData,
@@ -109,16 +130,27 @@ export const useBookingStore = create<BookingState>()(
         formData: {
           fullName: '',
           email: '',
-          tourId: null,
+          serviceId: null,
+          serviceGroup: null,
           guests: 1,
           specialRequests: '',
           privacyAccepted: false,
+        },
+        visibility: {
+          lang: true,
+          theme: true,
+          service: true,
         },
         availability: { limited: [], booked: [] },
       }),
     }),
     {
       name: 'booking-storage',
+      // Visibility should not be persisted according to design.md
+      partialize: (state) => {
+        const { visibility, ...rest } = state;
+        return rest;
+      },
       onRehydrateStorage: () => (state) => {
         if (!state) return;
         

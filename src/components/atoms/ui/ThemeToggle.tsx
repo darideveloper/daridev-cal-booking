@@ -1,35 +1,41 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import { Button } from './button';
 import { useTranslation } from '@/lib/i18n/useTranslation';
+import { useBookingStore } from '@/store/useBookingStore';
 
 export function ThemeToggle() {
   const { t } = useTranslation();
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const theme = useBookingStore((state: any) => state.theme);
+  const setTheme = useBookingStore((state: any) => state.setTheme);
 
   useEffect(() => {
+    // Check localStorage first as Layout.astro script might have set it
     const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
-    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    const initialTheme = savedTheme || systemTheme;
     
-    setTheme(initialTheme);
-    if (initialTheme === 'dark') {
-      document.documentElement.classList.add('dark');
+    // If store is still default light but localStorage says otherwise, update store
+    if (savedTheme && savedTheme !== theme) {
+      setTheme(savedTheme);
+      applyTheme(savedTheme);
     } else {
-      document.documentElement.classList.remove('dark');
+      // Otherwise just ensure store theme is applied to document
+      applyTheme(theme);
     }
-  }, []);
+  }, [theme, setTheme]);
 
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-    
+  const applyTheme = (newTheme: 'light' | 'dark') => {
     if (newTheme === 'dark') {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
+  };
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+    applyTheme(newTheme);
   };
 
   return (

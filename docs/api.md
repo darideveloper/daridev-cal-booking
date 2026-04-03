@@ -24,7 +24,13 @@ Retrieve branding, business info, and regional settings to initialize the fronte
   "contact_email": "contact@company.com",
   "contact_phone": "+123456789",
   "company_name": "First Company",
-  "timezone": "America/Mexico_City"
+  "timezone": "America/Mexico_City",
+  "event_type_label": "Event Type",
+  "event_label": "Event",
+  "availability_free_label": "Free",
+  "availability_regular_label": "Regular",
+  "availability_no_free_label": "Full",
+  "extras_label": "Extras"
 }
 ```
 
