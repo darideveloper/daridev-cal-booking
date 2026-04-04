@@ -8,7 +8,7 @@ import { Textarea } from "@/components/atoms/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/atoms/ui/card"
 import { BookingHeader } from "@/components/molecules/BookingHeader"
 import { ArrowLeft, Send, Users, Calendar, MapPin, CheckCircle2, ShieldCheck, AlertCircle } from "lucide-react"
-import toursData from "@/data/tours.json"
+import bookingData from "@/data/booking.json"
 import { Checkbox } from "@/components/atoms/ui/checkbox"
 
 export function BookingForm() {
@@ -23,7 +23,9 @@ export function BookingForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const selectedTour = toursData.find(t => t.id === formData.serviceId)
+  const selectedTour = bookingData
+    .flatMap(category => category.services)
+    .find(s => s.id === formData.serviceId)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -96,7 +98,7 @@ export function BookingForm() {
         showBack={true} 
         onBack={prevStep} 
         showStep={true} 
-        stepText={t.form.step2Of2} 
+        stepText={t.form.step3Of3 || "Step 3 of 3"} 
       />
 
       <CardHeader className="pb-4">

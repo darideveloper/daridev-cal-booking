@@ -12,7 +12,7 @@ import { StatusDetails } from '@/components/molecules/StatusDetails';
 import { BookingHeader } from '@/components/molecules/BookingHeader';
 import { useBookingStore } from '../../store/useBookingStore';
 import { useTranslation } from '@/lib/i18n/useTranslation';
-import toursData from "@/data/tours.json";
+import bookingData from "@/data/booking.json";
 
 /**
  * MAIN COMPONENT
@@ -27,6 +27,7 @@ export function BookingCalendar() {
   const updateFormData = useBookingStore((state: any) => state.updateFormData);
   const visibility = useBookingStore((state: any) => state.visibility);
   const config = useBookingStore((state: any) => state.config);
+  const prevStep = useBookingStore((state: any) => state.prevStep);
 
   const dateLocale = language === 'es' ? es : enUS;
 
@@ -99,40 +100,17 @@ export function BookingCalendar() {
   };
 
   const statusKey = getStatus(selectedDate);
-  
-  const handleServiceChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    updateFormData({ serviceId: e.target.value });
-  };
 
   return (
     <>
       <Card className="w-full max-w-md shadow-xl border-none bg-background relative overflow-hidden">
         <BookingHeader 
+          showBack={true}
+          onBack={prevStep}
           showStep={true} 
-          stepText={t.form?.step1Of2 || "Step 1 of 2"} 
+          stepText={t.form?.step2Of3 || "Step 2 of 3"} 
         />
         <CardContent className="flex flex-col items-center gap-4 h-full justify-center">
-          
-          {visibility.service && (
-            <div className="w-full grid gap-1.5 mt-2">
-              <Label htmlFor="serviceId" className="text-xs">{t.calendar.tourLabel}</Label>
-              <Select
-                id="serviceId"
-                name="serviceId"
-                value={formData.serviceId || ""}
-                onChange={handleServiceChange}
-                className="h-10 text-sm w-full"
-                required
-              >
-                <option value="" disabled>{t.calendar.selectTour}</option>
-                {toursData.map((tour: any) => (
-                  <option key={tour.id} value={tour.id}>
-                    {typeof tour.title === 'string' ? tour.title : (tour.title[language] || tour.title.es)}
-                  </option>
-                ))}
-              </Select>
-            </div>
-          )}
 
           <StatusLegend />
 
@@ -177,3 +155,4 @@ export function BookingCalendar() {
     </>
   );
 }
+

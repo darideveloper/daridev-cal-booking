@@ -1,8 +1,7 @@
-# booking-flow Specification
+# Spec Delta: Three-Step Booking Flow
 
-## Purpose
-TBD - created by archiving change move-tour-selector-to-start-screen. Update Purpose after archive.
-## Requirements
+## MODIFIED Requirements
+
 ### Requirement: Multi-Step Sequence
 The booking flow MUST provide a structured, multi-step experience that focuses on one task at a time.
 
@@ -33,4 +32,3 @@ The booking flow MUST provide a structured, multi-step experience that focuses o
 - **Then** the store's `serviceId` MUST be automatically set to the corresponding ID.
 - **And** the `serviceTypeId` MUST be automatically inferred and set based on the `serviceId`.
 - **And** the application SHOULD advance to Step 2 (`BookingCalendar`) automatically since Step 1 is fulfilled.
-

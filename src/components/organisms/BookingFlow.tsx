@@ -2,6 +2,8 @@ import React, { useEffect } from "react"
 import { useBookingStore, type Language, type Theme } from "../../store/useBookingStore"
 import { BookingCalendar } from "./BookingCalendar"
 import { BookingForm } from "./BookingForm"
+import { BookingServiceSelection } from "./BookingServiceSelection"
+import bookingData from "../../data/booking.json"
 
 export default function BookingFlow({ initialServiceId }: { initialServiceId?: string }) {
   const currentStep = useBookingStore((state: any) => state.currentStep)
@@ -36,12 +38,21 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
     }
 
     // 3. Handle Service (formerly tour)
-    const serviceQuery = urlParams.get('service') || urlParams.get('tour');
+    const serviceQuery = urlParams.get('service') || urlParams.get('tour') || initialServiceId;
     if (serviceQuery) {
-      updateFormData({ serviceId: serviceQuery });
-      setVisibility({ service: false });
-    } else if (initialServiceId) {
-      updateFormData({ serviceId: initialServiceId });
+      // Find the category for this service to pre-fill Step 1
+      const category = bookingData.find(cat => 
+        cat.services.some((s: any) => s.id === serviceQuery)
+      );
+      
+      updateFormData({ 
+        serviceId: serviceQuery,
+        serviceTypeId: category ? category.id : null
+      });
+      
+      if (urlParams.get('service') || urlParams.get('tour')) {
+        setVisibility({ service: false });
+      }
     }
 
     // 4. Handle Service Group
@@ -68,8 +79,10 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
 
   return (
     <div className="w-full max-w-2xl mx-auto flex flex-col items-center relative z-10 p-4 bg-muted/30 space-y-4 rounded-3xl border border-border h-full">
-      {currentStep === 1 && <BookingCalendar />}
-      {currentStep === 2 && <BookingForm />}
+      {currentStep === 1 && <BookingServiceSelection />}
+      {currentStep === 2 && <BookingCalendar />}
+      {currentStep === 3 && <BookingForm />}
     </div>
   )
 }
+

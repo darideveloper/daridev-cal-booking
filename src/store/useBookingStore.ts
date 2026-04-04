@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import toursData from "../data/tours.json";
+import bookingData from "../data/booking.json";
 
 export type Language = 'es' | 'en';
 export type Theme = 'light' | 'dark';
@@ -36,6 +36,7 @@ interface BookingState {
   formData: {
     fullName: string;
     email: string;
+    serviceTypeId: string | null;
     serviceId: string | null;
     serviceGroup: string | null;
     guests: number;
@@ -91,8 +92,10 @@ const injectVirtualLimitedDates = (limited: Date[], booked: Date[]): Date[] => {
 };
 
 const getInitialAvailability = (serviceId: string | null): Availability => {
-  const tour = toursData.find(t => t.id === serviceId);
-  if (!tour || !tour.dates) {
+  const allServices = bookingData.flatMap(category => category.services);
+  const selectedService = allServices.find(s => s.id === serviceId);
+  
+  if (!selectedService || !selectedService.dates) {
     return { limited: [], booked: [] };
   }
   
@@ -101,8 +104,8 @@ const getInitialAvailability = (serviceId: string | null): Availability => {
     return new Date(year, month - 1, day);
   };
 
-  const limited = (tour.dates.limited || []).map(parseDate);
-  const booked = (tour.dates.booked || []).map(parseDate);
+  const limited = (selectedService.dates.limited || []).map(parseDate);
+  const booked = (selectedService.dates.booked || []).map(parseDate);
 
   return {
     limited: injectVirtualLimitedDates(limited, booked),
@@ -120,6 +123,7 @@ export const useBookingStore = create<BookingState>()(
       formData: {
         fullName: '',
         email: '',
+        serviceTypeId: null,
         serviceId: null,
         serviceGroup: null,
         guests: 1,
@@ -145,9 +149,18 @@ export const useBookingStore = create<BookingState>()(
       prevStep: () => set((state) => ({ currentStep: Math.max(1, state.currentStep - 1) })),
       updateFormData: (data) => set((state) => {
         const newFormData = { ...state.formData, ...data };
+        
+        if ('serviceTypeId' in data && data.serviceTypeId !== state.formData.serviceTypeId) {
+          newFormData.serviceId = null;
+        }
+
         let newAvailability = state.availability;
-        if (data.serviceId !== undefined) {
-          newAvailability = getInitialAvailability(newFormData.serviceId);
+        if (newFormData.serviceId !== state.formData.serviceId) {
+          if (newFormData.serviceId) {
+            newAvailability = getInitialAvailability(newFormData.serviceId);
+          } else {
+            newAvailability = { limited: [], booked: [] };
+          }
         }
         return { 
           formData: newFormData,
@@ -160,6 +173,7 @@ export const useBookingStore = create<BookingState>()(
         formData: {
           fullName: '',
           email: '',
+          serviceTypeId: null,
           serviceId: null,
           serviceGroup: null,
           guests: 1,
@@ -173,6 +187,7 @@ export const useBookingStore = create<BookingState>()(
         },
         availability: { limited: [], booked: [] },
       }),
+
       fetchConfig: async (client) => {
         set({ isConfigLoading: true });
         try {
