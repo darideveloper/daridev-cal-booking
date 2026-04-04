@@ -70,3 +70,11 @@ The calendar SHALL automatically mark the 10 days immediately following "Today" 
 - **THEN** dates from February 28 to March 9 MUST be displayed with the "Limited" visual status (Amber).
 - **AND** if March 1 was explicitly marked as "Booked" in the data, it MUST remain "Booked" (Slate).
 
+### Requirement: Show Current Month Dates Only
+The `BookingCalendar` SHALL only display and allow the selection of dates that fall within the month currently being viewed. Dates from the previous or next month (outside days) MUST be hidden from the calendar grid.
+
+#### Scenario: Verify Hidden Outside Days
+- **GIVEN** the calendar is displaying "May 2026".
+- **WHEN** the calendar grid is rendered.
+- **THEN** any dates from April or June that would normally complete the first or last week of the grid MUST be hidden (not visible and not selectable).
+

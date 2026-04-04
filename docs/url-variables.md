@@ -20,6 +20,11 @@ The booking flow can be pre-configured and its UI customized using the following
 - **Values**: `light`, `dark`.
 - **Effect**: If provided, the theme toggle will be hidden from the user.
 
+### `client`
+- **Description**: Identifies a specific client for dynamic branding and configuration.
+- **Values**: String identifier (e.g., `granada-go`).
+- **Effect**: If provided, the application will fetch branding assets (colors, logos) and business rules from a dedicated configuration endpoint using this identifier.
+
 ### `service_group`
 - **Description**: Optional identifier for a group of services.
 - **Values**: String identifier.
@@ -33,5 +38,5 @@ The booking flow can be pre-configured and its UI customized using the following
 ### Dark Theme Spanish Booking with Fixed Service
 `https://your-domain.com/?service=catedral-granada&lang=es&theme=dark`
 
-### Full Customization
-`https://your-domain.com/?service=alhambra-completa&lang=en&theme=light&service_group=premium-tours`
+### Full Customization with Dynamic Branding
+`https://your-domain.com/?client=granada-go&service=alhambra-completa&lang=en&theme=light`
