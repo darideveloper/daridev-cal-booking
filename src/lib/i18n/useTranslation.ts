@@ -16,7 +16,9 @@ export function useTranslation() {
       calendar: { 
         ...baseT.calendar, 
         tourLabel: config.event_type_label || baseT.calendar.tourLabel,
-        selectTour: config.event_label || baseT.calendar.selectTour 
+        selectTour: config.event_label 
+          ? (language === 'es' ? `Selecciona un ${config.event_label.toLowerCase()}` : `Select a ${config.event_label.toLowerCase()}`)
+          : baseT.calendar.selectTour 
       },
       status: { 
         ...baseT.status,

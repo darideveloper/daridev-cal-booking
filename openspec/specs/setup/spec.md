@@ -35,3 +35,11 @@ The project SHALL have a standard utility function for merging CSS classes.
 - When the `cn` function is exported and uses `twMerge` with `clsx`.
 - Then the components SHALL be able to handle conditional and complex Tailwind classes efficiently.
 
+### Requirement: Removal of Deprecated External Scripts
+The deprecated scripts and styles for external integration MUST be removed.
+
+#### Scenario: No WordPress Integration
+- **GIVEN** the codebase.
+- **WHEN** inspecting the `src/assets/` directory.
+- **THEN** the `wordpress/` subdirectory and its contents MUST NOT exist.
+

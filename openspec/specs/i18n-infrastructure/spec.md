@@ -38,3 +38,11 @@ Calendars and date formatting SHALL adapt their locale to the currently selected
 - **WHEN** a date is displayed (e.g., in `StatusDetails`).
 - **THEN** it MUST use English month names and formatting (e.g., "March 1st, 2026").
 
+### Requirement: Dynamic Translation Titles
+The application MUST use dynamic company names in translated titles instead of hardcoded branding.
+
+#### Scenario: Use API Company Name in Title
+- **GIVEN** a config from `/api/config/` containing `company_name`.
+- **WHEN** generating page titles or headers.
+- **THEN** the application MUST use `company_name` instead of hardcoded "Granada Go Tours".
+

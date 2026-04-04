@@ -34,7 +34,7 @@ export const translations = {
     stripe: {
       name: "Nombre",
       email: "Email",
-      tour: "Tour",
+      service: "Servicio",
       date: "Fecha",
       guests: "Invitados",
       requests: "Peticiones",
@@ -43,13 +43,13 @@ export const translations = {
     },
     errors: {
       privacyRequired: "Debes aceptar la política de privacidad para continuar.",
-      tourRequired: "Tour no seleccionado",
+      serviceRequired: "Servicio no seleccionado",
       processingError: "Error al procesar la reserva",
       noPaymentUrl: "No se recibió la URL de pago",
       tryAgain: "Por favor, inténtalo de nuevo.",
     },
     layout: {
-      title: "Granada Go Tours",
+      title: "Sistema de Reservas",
     },
     accessibility: {
       toggleTheme: "Cambiar tema",
@@ -90,7 +90,7 @@ export const translations = {
     stripe: {
       name: "Name",
       email: "Email",
-      tour: "Tour",
+      service: "Service",
       date: "Date",
       guests: "Guests",
       requests: "Requests",
@@ -99,13 +99,13 @@ export const translations = {
     },
     errors: {
       privacyRequired: "You must accept the privacy policy to continue.",
-      tourRequired: "Tour not selected",
+      serviceRequired: "Service not selected",
       processingError: "Error processing booking",
       noPaymentUrl: "Payment URL not received",
       tryAgain: "Please try again.",
     },
     layout: {
-      title: "Granada Go Tours",
+      title: "Booking System",
     },
     accessibility: {
       toggleTheme: "Toggle theme",

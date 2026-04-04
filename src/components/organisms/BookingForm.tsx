@@ -73,9 +73,8 @@ export function BookingForm() {
                 <p className="font-medium">
                   {selectedTour 
                     ? (typeof selectedTour.title === 'string' ? selectedTour.title : (selectedTour.title[language] || selectedTour.title.es))
-                    : 'Tour'
-                  }
-                </p>
+                    : (config?.event_label || t.calendar.tourLabel)
+                    }                </p>
               </div>
             </div>
           </div>

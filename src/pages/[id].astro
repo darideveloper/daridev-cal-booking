@@ -1,14 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import BookingPage from "../components/pages/index.astro";
-import toursData from "../data/tours.json";
-
-export async function getStaticPaths() {
-  return toursData.map((tour) => ({
-    params: { id: tour.id },
-    props: { tour },
-  }));
-}
 
 const { id } = Astro.params;
 ---

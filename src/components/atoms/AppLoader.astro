@@ -1,4 +1,5 @@
 ---
+const { title = "Loading..." } = Astro.props;
 ---
 <!-- Branded Loader -->
 <div id="app-loader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-background transition-opacity duration-500">
@@ -10,7 +11,7 @@
         </div>
         <!-- Brand Text -->
         <p class="font-serif text-lg text-foreground/70 animate-pulse tracking-wide">
-            Granada Go
+            {title}
         </p>
     </div>
 </div>
