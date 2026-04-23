@@ -24,3 +24,10 @@ pnpm-debug.log*
 .idea/
 
 .playwright-mcp
+
+# OpenSpec
+openspec/changes/*
+!openspec/changes/archive/
+
+# Documentation
+docs/
