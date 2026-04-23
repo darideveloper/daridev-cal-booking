@@ -58,16 +58,12 @@ interface BookingState {
   prevStep: () => void;
   updateFormData: (data: Partial<BookingState['formData']>) => void;
   resetBooking: () => void;
-  fetchConfig: (client: string) => Promise<void>;
+  fetchConfig: () => Promise<void>;
 }
 
-const getApiUrl = (endpoint: string, client?: string) => {
+const getApiUrl = (endpoint: string) => {
   const baseUrl = import.meta.env.PUBLIC_API_URL || "http://localhost:8000/api/";
-  if (!client) return `${baseUrl}${endpoint}`;
-  
-  const url = new URL(baseUrl);
-  url.hostname = `${client}.${url.hostname}`;
-  return `${url.toString()}${endpoint}`;
+  return `${baseUrl}${endpoint}`;
 };
 
 const injectVirtualLimitedDates = (limited: Date[], booked: Date[]): Date[] => {
@@ -188,10 +184,10 @@ export const useBookingStore = create<BookingState>()(
         availability: { limited: [], booked: [] },
       }),
 
-      fetchConfig: async (client) => {
+      fetchConfig: async () => {
         set({ isConfigLoading: true });
         try {
-          const response = await fetch(getApiUrl('config/', client));
+          const response = await fetch(getApiUrl('config/'));
           if (!response.ok) throw new Error('Failed to fetch config');
           const config = await response.json();
           set({ config, isConfigLoading: false });

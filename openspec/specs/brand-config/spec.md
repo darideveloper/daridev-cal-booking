@@ -24,13 +24,12 @@ The system SHALL provide a mechanism for users to switch between Light and Dark 
 - When they revisit the site or reload the page.
 - Then the application MUST load the saved theme from `localStorage` before rendering to avoid flashes.
 
-### Requirement: Dynamic Configuration Initialization
-The application SHALL fetch and store its branding and business configuration from the `GET /config/` API endpoint on initial load, using the `client` URL parameter as a subdomain for the API call.
+### Requirement: Static Configuration Initialization
+The application SHALL fetch and store its branding and business configuration from the `GET /config/` API endpoint on initial load from the primary backend host.
 
-#### Scenario: Successful Configuration Load with Subdomain
+#### Scenario: Successful Configuration Load
 - **GIVEN** the application is mounting.
-- **AND** the URL contains `?client=company1`.
-- **WHEN** the request is made to `http://company1.api-base-host/api/config/` and returns a successful response.
+- **WHEN** the request is made to the static `/api/config/` endpoint and returns a successful response.
 - **THEN** the application MUST store the configuration in its global state.
 
 ### Requirement: Dynamic Brand Color Injection

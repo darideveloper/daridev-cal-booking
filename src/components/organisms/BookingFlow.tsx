@@ -18,10 +18,7 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
     const urlParams = new URLSearchParams(window.location.search);
     
     // 0. Handle Config (Branding)
-    const clientQuery = urlParams.get('client');
-    if (clientQuery) {
-      fetchConfig(clientQuery);
-    }
+    fetchConfig();
 
     // 1. Handle Language
     const langQuery = urlParams.get('lang') as Language | null;

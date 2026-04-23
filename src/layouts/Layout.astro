@@ -3,21 +3,13 @@ import "../styles/global.css";
 import AppLoader from "../components/atoms/AppLoader.astro";
 
 // Determine the API base URL.
-// In a real environment, you might get this from env vars or Astro.request.url.
-// For now, we'll try to extract the host or fallback to a default.
-const host = Astro.request.headers.get('host') || 'company1.localhost';
-// We'll construct the API URL. In production, this might be different.
 // Since Astro runs server-side, we need the full URL to the backend.
-// This assumes the backend is running locally or accessible via the host.
-// A common pattern is to have an env var for the backend URL.
-const backendUrl = import.meta.env.BACKEND_URL || `http://${host}`;
+const backendUrl = import.meta.env.PUBLIC_API_URL || "http://localhost:8000/api/";
 
 let config = null;
 try {
 	// Add a timeout or error handling for the fetch in production
-	const res = await fetch(`${backendUrl}/api/config/`, {
-		headers: { 'Host': host }
-	});
+	const res = await fetch(`${backendUrl}config/`);
 	if (res.ok) {
 		config = await res.json();
 	}
