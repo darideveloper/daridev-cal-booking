@@ -31,6 +31,10 @@ export const translations = {
       step1Of3: "Paso 1 de 3",
       step2Of3: "Paso 2 de 3",
       step3Of3: "Paso 3 de 3",
+      successTitle: "¡Solicitud Enviada!",
+      successMessage: "Hemos recibido tu solicitud de reserva. Te contactaremos pronto.",
+      close: "Cerrar",
+      submitting: "Enviando...",
     },
     stripe: {
       name: "Nombre",
@@ -88,6 +92,10 @@ export const translations = {
       step1Of3: "Step 1 of 3",
       step2Of3: "Step 2 of 3",
       step3Of3: "Step 3 of 3",
+      successTitle: "Request Sent!",
+      successMessage: "We have received your booking request. We will contact you soon.",
+      close: "Close",
+      submitting: "Sending...",
     },
     stripe: {
       name: "Name",

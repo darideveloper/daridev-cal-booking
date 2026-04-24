@@ -10,6 +10,7 @@ import { BookingHeader } from "@/components/molecules/BookingHeader"
 import { ArrowLeft, Send, Users, Calendar, MapPin, CheckCircle2, ShieldCheck, AlertCircle } from "lucide-react"
 import bookingData from "@/data/booking.json"
 import { Checkbox } from "@/components/atoms/ui/checkbox"
+import { submitBooking } from "@/lib/api/endpoints/booking"
 
 export function BookingForm() {
   const { t, language } = useTranslation()
@@ -27,15 +28,26 @@ export function BookingForm() {
     .flatMap(category => category.services)
     .find(s => s.id === formData.serviceId)
 
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000))
-    
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    try {
+      await submitBooking({
+        fullName: formData.fullName,
+        email: formData.email,
+        serviceId: formData.serviceId,
+        guests: formData.guests,
+        specialRequests: formData.specialRequests,
+      })
+      setIsSubmitted(true)
+    } catch (error) {
+      console.error('Error submitting booking:', error)
+      // TODO: Handle error feedback
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {

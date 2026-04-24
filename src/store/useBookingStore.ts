@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import bookingData from "../data/booking.json";
+import { fetchConfig as fetchAppConfig } from '../lib/api/endpoints/config';
 
 export type Language = 'es' | 'en';
 export type Theme = 'light' | 'dark';
@@ -61,10 +62,6 @@ interface BookingState {
   fetchConfig: () => Promise<void>;
 }
 
-const getApiUrl = (endpoint: string) => {
-  const baseUrl = import.meta.env.PUBLIC_API_URL || "http://localhost:8000/api/";
-  return `${baseUrl}${endpoint}`;
-};
 
 const injectVirtualLimitedDates = (limited: Date[], booked: Date[]): Date[] => {
   const today = new Date();
@@ -184,12 +181,11 @@ export const useBookingStore = create<BookingState>()(
         availability: { limited: [], booked: [] },
       }),
 
+
       fetchConfig: async () => {
         set({ isConfigLoading: true });
         try {
-          const response = await fetch(getApiUrl('config/'));
-          if (!response.ok) throw new Error('Failed to fetch config');
-          const config = await response.json();
+          const config = await fetchAppConfig();
           set({ config, isConfigLoading: false });
         } catch (error) {
           console.error('Error fetching config:', error);
