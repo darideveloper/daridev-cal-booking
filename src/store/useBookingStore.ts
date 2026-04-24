@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
-import bookingData from "../data/booking.json";
 import { fetchConfig as fetchAppConfig } from '../lib/api/endpoints/config';
+import { fetchServices as fetchAppServices, type ServiceCategory } from '../lib/api/endpoints/services';
 
 export type Language = 'es' | 'en';
 export type Theme = 'light' | 'dark';
@@ -34,6 +34,8 @@ interface BookingState {
   currentStep: number;
   config: AppConfig | null;
   isConfigLoading: boolean;
+  services: ServiceCategory[];
+  isServicesLoading: boolean;
   formData: {
     fullName: string;
     email: string;
@@ -60,6 +62,7 @@ interface BookingState {
   updateFormData: (data: Partial<BookingState['formData']>) => void;
   resetBooking: () => void;
   fetchConfig: () => Promise<void>;
+  fetchServices: () => Promise<void>;
 }
 
 
@@ -84,8 +87,7 @@ const injectVirtualLimitedDates = (limited: Date[], booked: Date[]): Date[] => {
   return virtualLimited;
 };
 
-const getInitialAvailability = (serviceId: string | null): Availability => {
-  const allServices = bookingData.flatMap(category => category.services);
+const getInitialAvailability = (serviceId: string | null, allServices: any[]): Availability => {
   const selectedService = allServices.find(s => s.id === serviceId);
   
   if (!selectedService || !selectedService.dates) {
@@ -131,6 +133,8 @@ export const useBookingStore = create<BookingState>()(
       availability: { limited: [], booked: [] },
       config: null,
       isConfigLoading: false,
+      services: [],
+      isServicesLoading: false,
       setLanguage: (language) => set({ language }),
       setTheme: (theme) => set({ theme }),
       setVisibility: (visibility) => set((state) => ({ 
@@ -150,7 +154,8 @@ export const useBookingStore = create<BookingState>()(
         let newAvailability = state.availability;
         if (newFormData.serviceId !== state.formData.serviceId) {
           if (newFormData.serviceId) {
-            newAvailability = getInitialAvailability(newFormData.serviceId);
+            const allServices = state.services.flatMap((category: any) => category.services);
+            newAvailability = getInitialAvailability(newFormData.serviceId, allServices);
           } else {
             newAvailability = { limited: [], booked: [] };
           }
@@ -192,12 +197,22 @@ export const useBookingStore = create<BookingState>()(
           set({ isConfigLoading: false });
         }
       },
+      fetchServices: async () => {
+        set({ isServicesLoading: true });
+        try {
+          const services = await fetchAppServices();
+          set({ services, isServicesLoading: false });
+        } catch (error) {
+          console.error('Error fetching services:', error);
+          set({ isServicesLoading: false });
+        }
+      },
     }),
     {
       name: 'booking-storage',
       // Visibility and config should not be persisted
       partialize: (state) => {
-        const { visibility, config, isConfigLoading, ...rest } = state;
+        const { visibility, config, isConfigLoading, services, isServicesLoading, ...rest } = state;
         return rest;
       },
       onRehydrateStorage: () => (state) => {

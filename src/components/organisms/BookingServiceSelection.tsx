@@ -6,7 +6,7 @@ import { Select } from '@/components/atoms/ui/select';
 import { BookingHeader } from '@/components/molecules/BookingHeader';
 import { useBookingStore } from '../../store/useBookingStore';
 import { useTranslation } from '@/lib/i18n/useTranslation';
-import bookingData from "@/data/booking.json";
+
 
 export function BookingServiceSelection() {
   const { t, language } = useTranslation();
@@ -23,7 +23,9 @@ export function BookingServiceSelection() {
     updateFormData({ serviceId: e.target.value });
   };
 
-  const selectedCategory = bookingData.find(cat => cat.id === formData.serviceTypeId);
+  const servicesData = useBookingStore((state: any) => state.services);
+
+  const selectedCategory = servicesData.find((cat: any) => cat.id === formData.serviceTypeId);
   const services = selectedCategory ? selectedCategory.services : [];
 
   return (
@@ -49,7 +51,7 @@ export function BookingServiceSelection() {
               required
             >
               <option value="" disabled>{t.calendar?.selectTour || "Seleccione una opción"}</option>
-              {bookingData.map((category: any) => (
+              {servicesData.map((category: any) => (
                 <option key={category.id} value={category.id}>
                   {typeof category.name === 'string' ? category.name : (category.name[language] || category.name.es)}
                 </option>

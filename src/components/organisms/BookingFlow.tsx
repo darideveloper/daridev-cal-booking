@@ -3,7 +3,7 @@ import { useBookingStore, type Language, type Theme } from "../../store/useBooki
 import { BookingCalendar } from "./BookingCalendar"
 import { BookingForm } from "./BookingForm"
 import { BookingServiceSelection } from "./BookingServiceSelection"
-import bookingData from "../../data/booking.json"
+
 
 export default function BookingFlow({ initialServiceId }: { initialServiceId?: string }) {
   const currentStep = useBookingStore((state: any) => state.currentStep)
@@ -13,13 +13,18 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
   const setVisibility = useBookingStore((state: any) => state.setVisibility)
   const fetchConfig = useBookingStore((state: any) => state.fetchConfig)
   const config = useBookingStore((state: any) => state.config)
+  const servicesData = useBookingStore((state: any) => state.services)
+  const fetchServices = useBookingStore((state: any) => state.fetchServices)
+
+  useEffect(() => {
+    // 0. Handle Config (Branding) and Services
+    fetchConfig();
+    fetchServices();
+  }, [fetchConfig, fetchServices]);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
     
-    // 0. Handle Config (Branding)
-    fetchConfig();
-
     // 1. Handle Language
     const langQuery = urlParams.get('lang') as Language | null;
     if (langQuery && (langQuery === 'es' || langQuery === 'en')) {
@@ -38,7 +43,7 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
     const serviceQuery = urlParams.get('service') || urlParams.get('tour') || initialServiceId;
     if (serviceQuery) {
       // Find the category for this service to pre-fill Step 1
-      const category = bookingData.find(cat => 
+      const category = servicesData.find((cat: any) => 
         cat.services.some((s: any) => s.id === serviceQuery)
       );
       
@@ -57,7 +62,7 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
     if (serviceGroupQuery) {
       updateFormData({ serviceGroup: serviceGroupQuery });
     }
-  }, [initialServiceId, updateFormData, setLanguage, setTheme, setVisibility, fetchConfig])
+  }, [initialServiceId, updateFormData, setLanguage, setTheme, setVisibility, servicesData])
 
   // Apply brand color
   useEffect(() => {

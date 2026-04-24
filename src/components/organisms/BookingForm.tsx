@@ -8,7 +8,7 @@ import { Textarea } from "@/components/atoms/ui/textarea"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/atoms/ui/card"
 import { BookingHeader } from "@/components/molecules/BookingHeader"
 import { ArrowLeft, Send, Users, Calendar, MapPin, CheckCircle2, ShieldCheck, AlertCircle } from "lucide-react"
-import bookingData from "@/data/booking.json"
+
 import { Checkbox } from "@/components/atoms/ui/checkbox"
 import { submitBooking } from "@/lib/api/endpoints/booking"
 
@@ -24,9 +24,11 @@ export function BookingForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
-  const selectedTour = bookingData
-    .flatMap(category => category.services)
-    .find(s => s.id === formData.serviceId)
+  const servicesData = useBookingStore((state: any) => state.services)
+
+  const selectedTour = servicesData
+    .flatMap((category: any) => category.services)
+    .find((s: any) => s.id === formData.serviceId)
 
 
   const handleSubmit = async (e: React.FormEvent) => {

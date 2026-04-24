@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import BookingPage from "../components/pages/index.astro";
-import bookingData from "../data/booking.json";
+import { fetchServices } from '../lib/api/endpoints/services';
 
 export async function getStaticPaths() {
-  const allServices = bookingData.flatMap((category: any) => category.services);
+  const categories = await fetchServices();
+  const allServices = categories.flatMap((category: any) => category.services);
   return allServices.map((service: any) => ({
     params: { id: service.id },
     props: { service },

@@ -12,7 +12,7 @@ import { StatusDetails } from '@/components/molecules/StatusDetails';
 import { BookingHeader } from '@/components/molecules/BookingHeader';
 import { useBookingStore } from '../../store/useBookingStore';
 import { useTranslation } from '@/lib/i18n/useTranslation';
-import bookingData from "@/data/booking.json";
+
 
 /**
  * MAIN COMPONENT
