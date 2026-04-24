@@ -1,8 +1,4 @@
-# Spec: Centralized State Management
-
-## Purpose
-This spec defines the requirements for managing application state (such as booking details and user selections) using a centralized store, ensuring data consistency and reactivity across the entire user interface.
-## Requirements
+## MODIFIED Requirements
 ### Requirement: Centralized Booking State
 The application SHALL manage booking-related data (e.g., selected date, selected services array, user details) in a centralized store to ensure state consistency across components.
 
@@ -16,14 +12,6 @@ The application SHALL manage booking-related data (e.g., selected date, selected
 - **WHEN** a user adds a service to their booking.
 - **THEN** the service details MUST be appended to the `selectedServices` array in the store.
 
-### Requirement: State Reactivity
-UI components SHALL automatically react to changes in the centralized booking store.
-
-#### Scenario: Reflect State in UI
-- **GIVEN** the `BookingCalendar` is rendered.
-- **WHEN** the `selectedDate` in the store is changed (either by the calendar or externally).
-- **THEN** the calendar's selection and the status display MUST update to show the new date.
-
 ### Requirement: Virtual Availability Injection
 The state management system SHALL dynamically calculate availability across all selected services and supplement it with a "Virtual Limited" window during initialization.
 
@@ -33,11 +21,12 @@ The state management system SHALL dynamically calculate availability across all 
 - **THEN** the availability MUST be calculated as the intersection of all selected services.
 - **AND** the `availability.limited` state MUST be merged with the next 10 days relative to the current time.
 
-### Requirement: API State Integration
-The centralized store SHALL encapsulate methods that interact with the **API Service Layer**, ensuring a clean separation between state management and network implementation.
+## NEW Requirements
+### Requirement: Legacy State Migration
+The state management system SHALL provide a migration path for users with legacy single-service data in their local storage.
 
-#### Scenario: Dispatch fetchConfig
-- **GIVEN** the `useBookingStore` is initialized.
-- **WHEN** the `fetchConfig` dispatch action is called.
-- **THEN** it MUST invoke the corresponding `api/config` service and update the store's `config` state.
-
+#### Scenario: Rehydrate Legacy State
+- **GIVEN** the store is rehydrating from `localStorage`.
+- **WHEN** a legacy `serviceId` (string) or `serviceTypeId` (string) is detected in the persisted state.
+- **THEN** the system MUST automatically migrate these into a new `selectedServices` array format to prevent application errors.
+- **AND** the old single-value fields SHOULD be cleared or ignored after migration.

@@ -42,15 +42,28 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
     // 3. Handle Service (formerly tour)
     const serviceQuery = urlParams.get('service') || urlParams.get('tour') || initialServiceId;
     if (serviceQuery) {
-      // Find the category for this service to pre-fill Step 1
-      const category = servicesData.find((cat: any) => 
-        cat.services.some((s: any) => s.id === serviceQuery)
+      const isAlreadyAdded = (useBookingStore.getState() as any).formData.selectedServices.some(
+        (s: any) => s.serviceId === serviceQuery
       );
-      
-      updateFormData({ 
-        serviceId: serviceQuery,
-        serviceTypeId: category ? category.id : null
-      });
+
+      if (!isAlreadyAdded) {
+        // Find the category for this service to pre-fill Step 1
+        const category = servicesData.find((cat: any) => 
+          cat.services.some((s: any) => s.id === serviceQuery)
+        );
+        
+        const currentServices = (useBookingStore.getState() as any).formData.selectedServices;
+
+        updateFormData({ 
+          selectedServices: [
+            ...currentServices,
+            { 
+              serviceId: serviceQuery,
+              serviceTypeId: category ? category.id : (null as any)
+            }
+          ]
+        });
+      }
       
       if (urlParams.get('service') || urlParams.get('tour')) {
         setVisibility({ service: false });

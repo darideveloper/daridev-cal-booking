@@ -3,7 +3,7 @@ import { apiClient } from "../client";
 export interface BookingPayload {
   fullName: string;
   email: string;
-  serviceId: string | null;
+  serviceIds: string[];
   guests: number;
   specialRequests: string;
 }

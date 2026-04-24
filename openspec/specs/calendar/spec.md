@@ -34,12 +34,7 @@ The component SHALL consume a simplified availability data structure where avail
 - **GIVEN** a `bookingData` structure (e.g. from `useBookingStore`)
 - **WHEN** it contains `booked` and `limited` arrays of `Date` objects
 - **THEN** any future date not present in these arrays MUST be treated as "available".
-- **AND** all specified exception dates MUST be correctly mapped to their respective modifiers in the calendar component.
-
-#### MODIFIED Scenario: Status Keys Consistency
-- **GIVEN** the `STATUS_CONFIG` object
-- **WHEN** statuses are assigned
-- **THEN** the keys MUST be `available`, `limited`, and `booked` (for exceptions), and `standard` (for non-future dates).
+- **AND** the availability arrays MUST represent the intersected availability across all stacked services.
 
 ### Requirement: Hover State Consistency
 The component SHALL provide clear visual feedback when a user hovers over a date, while maintaining the visibility of its current status.

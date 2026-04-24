@@ -26,9 +26,9 @@ export function BookingForm() {
 
   const servicesData = useBookingStore((state: any) => state.services)
 
-  const selectedTour = servicesData
+  const selectedTours = servicesData
     .flatMap((category: any) => category.services)
-    .find((s: any) => s.id === formData.serviceId)
+    .filter((s: any) => formData.selectedServices.some((ss: any) => ss.serviceId === s.id))
 
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -39,7 +39,7 @@ export function BookingForm() {
       await submitBooking({
         fullName: formData.fullName,
         email: formData.email,
-        serviceId: formData.serviceId,
+        serviceIds: formData.selectedServices.map((s: any) => s.serviceId),
         guests: formData.guests,
         specialRequests: formData.specialRequests,
       })
@@ -86,11 +86,17 @@ export function BookingForm() {
               </div>
               <div>
                 <p className="text-[10px] uppercase tracking-wider text-muted-foreground font-bold">{t.calendar.tourLabel}</p>
-                <p className="font-medium">
-                  {selectedTour 
-                    ? (typeof selectedTour.title === 'string' ? selectedTour.title : (selectedTour.title[language] || selectedTour.title.es))
-                    : (config?.event_label || t.calendar.tourLabel)
-                    }                </p>
+                <div className="space-y-1">
+                  {selectedTours.length > 0 ? (
+                    selectedTours.map((tour: any) => (
+                      <p key={tour.id} className="font-medium leading-tight text-sm">
+                        • {typeof tour.title === 'string' ? tour.title : (tour.title[language] || tour.title.es)}
+                      </p>
+                    ))
+                  ) : (
+                    <p className="font-medium">{config?.event_label || t.calendar.tourLabel}</p>
+                  )}
+                </div>
               </div>
             </div>
           </div>
@@ -118,8 +124,8 @@ export function BookingForm() {
       <CardHeader className="pb-4">
         <CardTitle className="text-2xl font-serif font-bold tracking-tight">{t.form.title}</CardTitle>
         <CardDescription className="text-muted-foreground/80">
-          {selectedTour 
-            ? (typeof selectedTour.title === 'string' ? selectedTour.title : (selectedTour.title[language] || selectedTour.title.es))
+          {selectedTours.length > 0
+            ? selectedTours.map((t: any) => typeof t.title === 'string' ? t.title : (t.title[language] || t.title.es)).join(', ')
             : t.form.description
           }
         </CardDescription>

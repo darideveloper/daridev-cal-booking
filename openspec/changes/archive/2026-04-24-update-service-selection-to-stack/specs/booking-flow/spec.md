@@ -1,8 +1,4 @@
-# booking-flow Specification
-
-## Purpose
-TBD - created by archiving change move-tour-selector-to-start-screen. Update Purpose after archive.
-## Requirements
+## MODIFIED Requirements
 ### Requirement: Multi-Step Sequence
 The booking flow MUST provide a structured, multi-step experience that focuses on one task at a time.
 
@@ -17,4 +13,3 @@ The booking flow MUST provide a structured, multi-step experience that focuses o
 - **When** the `BookingFlow` component mounts.
 - **THEN** the system MUST perform an **idempotent** addition: it SHALL only add the service to the `selectedServices` stack if it is not already present.
 - **AND** the application SHOULD advance to Step 2 (`BookingCalendar`) automatically if Step 1 is fulfilled by this initialization.
-

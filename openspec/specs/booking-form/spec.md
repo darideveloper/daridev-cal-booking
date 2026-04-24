@@ -33,6 +33,11 @@ The booking interface MUST adapt its layout based on the screen size and the cur
 - **And** `Tour` and `Número de personas` MUST be displayed in the same row.
 - **And** `Peticiones especiales` MUST span the full width of the form.
 
+#### Scenario: Display Multiple Services Summary
+- **Given** the user is on Step 3 (Form)
+- **When** the form renders
+- **Then** it MUST display a summary of all services currently in the `selectedServices` array.
+
 ### Requirement: State Synchronization & Navigation
 The booking flow MUST persist state across steps and provide clear navigation.
 
@@ -56,7 +61,7 @@ The booking form MUST support initialization of its state via component properti
 #### Scenario: Initialize Tour ID
 - **Given** the `BookingForm` is rendered with `initialTourId="alhambra-completa"`
 - **When** the component mounts
-- **Then** the `formData.tourId` in the Zustand store MUST be set to "alhambra-completa".
+- **Then** the `formData.selectedServices` array in the Zustand store MUST be initialized with "alhambra-completa".
 
 ### Requirement: UI Simplification
 The `BookingForm` SHALL NOT display step indicators.

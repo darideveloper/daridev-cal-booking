@@ -12,6 +12,7 @@ import { StatusDetails } from '@/components/molecules/StatusDetails';
 import { BookingHeader } from '@/components/molecules/BookingHeader';
 import { useBookingStore } from '../../store/useBookingStore';
 import { useTranslation } from '@/lib/i18n/useTranslation';
+import { AlertCircle } from 'lucide-react';
 
 
 /**
@@ -114,6 +115,24 @@ export function BookingCalendar() {
 
           <StatusLegend />
 
+          {formData.selectedServices.length > 1 && (
+            <div className="w-full p-3 bg-amber-50 border border-amber-200 rounded-xl flex items-start gap-3 animate-in fade-in slide-in-from-top-2 duration-300">
+              <div className="w-5 h-5 rounded-full bg-amber-100 flex items-center justify-center shrink-0 mt-0.5">
+                <AlertCircle className="w-3.5 h-3.5 text-amber-600" />
+              </div>
+              <div className="space-y-1">
+                <p className="text-[11px] font-bold text-amber-900 leading-tight">
+                  {language === 'es' ? 'Combinando disponibilidades' : 'Combining availabilities'}
+                </p>
+                <p className="text-[10px] text-amber-700 leading-snug">
+                  {language === 'es' 
+                    ? 'Mostrando solo los días donde TODOS los servicios seleccionados están disponibles simultáneamente.' 
+                    : 'Showing only days where ALL selected services are available simultaneously.'}
+                </p>
+              </div>
+            </div>
+          )}
+
           <div className="p-2 bg-background rounded-xl border border-border shadow-sm w-full">
             <Calendar
               mode="single"
@@ -140,7 +159,7 @@ export function BookingCalendar() {
             
             <Button 
               className="w-full py-6 text-lg font-serif rounded-xl"
-              disabled={!selectedDate || !formData.serviceId}
+              disabled={!selectedDate || formData.selectedServices.length === 0}
               onClick={nextStep}
             >
               {t.calendar.continue}

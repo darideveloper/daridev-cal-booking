@@ -27,6 +27,11 @@ interface Availability {
   booked: Date[];
 }
 
+export interface SelectedService {
+  serviceTypeId: string;
+  serviceId: string;
+}
+
 interface BookingState {
   language: Language;
   theme: Theme;
@@ -39,8 +44,7 @@ interface BookingState {
   formData: {
     fullName: string;
     email: string;
-    serviceTypeId: string | null;
-    serviceId: string | null;
+    selectedServices: SelectedService[];
     serviceGroup: string | null;
     guests: number;
     specialRequests: string;
@@ -87,20 +91,34 @@ const injectVirtualLimitedDates = (limited: Date[], booked: Date[]): Date[] => {
   return virtualLimited;
 };
 
-const getInitialAvailability = (serviceId: string | null, allServices: any[]): Availability => {
-  const selectedService = allServices.find(s => s.id === serviceId);
-  
-  if (!selectedService || !selectedService.dates) {
+const getIntersectedAvailability = (selectedServices: SelectedService[], allServices: any[]): Availability => {
+  if (selectedServices.length === 0) {
     return { limited: [], booked: [] };
   }
-  
+
   const parseDate = (dateStr: string) => {
     const [year, month, day] = dateStr.split('-').map(Number);
     return new Date(year, month - 1, day);
   };
 
-  const limited = (selectedService.dates.limited || []).map(parseDate);
-  const booked = (selectedService.dates.booked || []).map(parseDate);
+  const allBookedStrings = new Set<string>();
+  const allLimitedStrings = new Set<string>();
+
+  selectedServices.forEach(selected => {
+    const service = allServices.find(s => s.id === selected.serviceId);
+    if (service && service.dates) {
+      (service.dates.booked || []).forEach((d: string) => allBookedStrings.add(parseDate(d).toDateString()));
+      (service.dates.limited || []).forEach((d: string) => allLimitedStrings.add(parseDate(d).toDateString()));
+    }
+  });
+
+  // A date is booked if it is booked for ANY service in the stack
+  const booked = Array.from(allBookedStrings).map(d => new Date(d));
+  
+  // A date is limited if it is limited for ANY service in the stack (and not already booked)
+  const limited = Array.from(allLimitedStrings)
+    .filter(d => !allBookedStrings.has(d))
+    .map(d => new Date(d));
 
   return {
     limited: injectVirtualLimitedDates(limited, booked),
@@ -118,8 +136,7 @@ export const useBookingStore = create<BookingState>()(
       formData: {
         fullName: '',
         email: '',
-        serviceTypeId: null,
-        serviceId: null,
+        selectedServices: [],
         serviceGroup: null,
         guests: 1,
         specialRequests: '',
@@ -147,19 +164,12 @@ export const useBookingStore = create<BookingState>()(
       updateFormData: (data) => set((state) => {
         const newFormData = { ...state.formData, ...data };
         
-        if ('serviceTypeId' in data && data.serviceTypeId !== state.formData.serviceTypeId) {
-          newFormData.serviceId = null;
+        let newAvailability = state.availability;
+        if (data.selectedServices) {
+          const allServices = state.services.flatMap((category: any) => category.services);
+          newAvailability = getIntersectedAvailability(newFormData.selectedServices, allServices);
         }
 
-        let newAvailability = state.availability;
-        if (newFormData.serviceId !== state.formData.serviceId) {
-          if (newFormData.serviceId) {
-            const allServices = state.services.flatMap((category: any) => category.services);
-            newAvailability = getInitialAvailability(newFormData.serviceId, allServices);
-          } else {
-            newAvailability = { limited: [], booked: [] };
-          }
-        }
         return { 
           formData: newFormData,
           availability: newAvailability,
@@ -171,8 +181,7 @@ export const useBookingStore = create<BookingState>()(
         formData: {
           fullName: '',
           email: '',
-          serviceTypeId: null,
-          serviceId: null,
+          selectedServices: [],
           serviceGroup: null,
           guests: 1,
           specialRequests: '',
@@ -210,7 +219,6 @@ export const useBookingStore = create<BookingState>()(
     }),
     {
       name: 'booking-storage',
-      // Visibility and config should not be persisted
       partialize: (state) => {
         const { visibility, config, isConfigLoading, services, isServicesLoading, ...rest } = state;
         return rest;
@@ -218,6 +226,22 @@ export const useBookingStore = create<BookingState>()(
       onRehydrateStorage: () => (state) => {
         if (!state) return;
         
+        // --- Legacy State Migration ---
+        const anyState = state as any;
+        if (anyState.formData && !anyState.formData.selectedServices) {
+          anyState.formData.selectedServices = [];
+          if (anyState.formData.serviceId && anyState.formData.serviceTypeId) {
+            anyState.formData.selectedServices.push({
+              serviceId: anyState.formData.serviceId,
+              serviceTypeId: anyState.formData.serviceTypeId
+            });
+          }
+          // Clean up legacy fields
+          delete anyState.formData.serviceId;
+          delete anyState.formData.serviceTypeId;
+        }
+        // ------------------------------
+
         // Revive selectedDate
         if (state.selectedDate && typeof state.selectedDate === 'string') {
           state.selectedDate = new Date(state.selectedDate);
