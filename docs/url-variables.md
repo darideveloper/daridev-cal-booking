@@ -15,12 +15,18 @@ The booking flow can be pre-configured and its UI customized using the following
 - **Values**: `es` (Spanish), `en` (English).
 - **Effect**: If provided, the language toggle will be hidden from the user.
 
-### `theme`
+### theme
 - **Description**: Sets the initial visual theme.
 - **Values**: `light`, `dark`.
 - **Effect**: If provided, the theme toggle will be hidden from the user.
 
-### `service_group`
+### zoom
+- **Description**: Sets the initial body zoom level.
+- **Values**: A numeric percentage (e.g., `80`, `100`, `120`).
+- **Effect**: If provided, the body will be scaled to the specified percentage.
+
+### service_group
+
 - **Description**: Optional identifier for a group of services.
 - **Values**: String identifier.
 - **Effect**: Stored in the application state for future filtering or categorization logic.

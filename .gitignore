@@ -30,4 +30,5 @@ openspec/changes/*
 !openspec/changes/archive/
 
 # Documentation
-docs/
+docs/.playwright-mcp/
+.playwright-cli/

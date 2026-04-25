@@ -12,6 +12,7 @@ try {
 
 const pageTitle = config?.company_name || "Booking System";
 const brandColor = config?.brand_color || "#a01313";
+const zoom = Astro.url.searchParams.get('zoom');
 ---
 
 <!doctype html>
@@ -31,6 +32,10 @@ const brandColor = config?.brand_color || "#a01313";
 				--primary: var(--brandColor);
 			}
 		</style>
+
+		{zoom && (
+			<style is:global set:html={`body { zoom: ${zoom}%; }`} />
+		)}
 
 		<script is:inline>
 			// Theme initialization
