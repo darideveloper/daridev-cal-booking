@@ -24,6 +24,8 @@ export function BookingServiceSelection() {
   const selectedCategory = servicesData.find((cat: any) => cat.id === localServiceTypeId);
   const services = selectedCategory ? selectedCategory.services : [];
 
+  const fetchAvailability = useBookingStore((state: any) => state.fetchAvailability);
+
   const handleAddService = () => {
     if (!localServiceId || !localServiceTypeId) return;
     
@@ -46,6 +48,12 @@ export function BookingServiceSelection() {
     updateFormData({
       selectedServices: formData.selectedServices.filter((s: any) => s.serviceId !== serviceId)
     });
+  };
+
+  const onContinue = () => {
+    const controller = new AbortController();
+    fetchAvailability(formData.selectedServices, controller.signal);
+    nextStep();
   };
 
   const getServiceName = (serviceId: string) => {
@@ -163,7 +171,7 @@ export function BookingServiceSelection() {
           <Button 
             className="w-full py-6 text-lg font-serif rounded-2xl shadow-lg shadow-primary/10"
             disabled={formData.selectedServices.length === 0}
-            onClick={nextStep}
+            onClick={onContinue}
           >
             {t.calendar?.continue || "Continuar"}
           </Button>

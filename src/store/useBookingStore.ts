@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { fetchAvailability } from '../lib/api/availability';
 import { fetchConfig as fetchAppConfig } from '../lib/api/endpoints/config';
 import { fetchServices as fetchAppServices, type ServiceCategory } from '../lib/api/endpoints/services';
 
@@ -23,8 +24,7 @@ export interface AppConfig {
 }
 
 interface Availability {
-  limited: Date[];
-  booked: Date[];
+  available: Date[];
 }
 
 export interface SelectedService {
@@ -56,6 +56,8 @@ interface BookingState {
     service: boolean;
   };
   availability: Availability;
+  isAvailabilityLoading: boolean;
+  availabilityError: string | null;
   setLanguage: (language: Language) => void;
   setTheme: (theme: Theme) => void;
   setVisibility: (visibility: Partial<BookingState['visibility']>) => void;
@@ -64,67 +66,15 @@ interface BookingState {
   nextStep: () => void;
   prevStep: () => void;
   updateFormData: (data: Partial<BookingState['formData']>) => void;
+  fetchAvailability: (selectedServices: SelectedService[], signal: AbortSignal) => Promise<void>;
   resetBooking: () => void;
   fetchConfig: () => Promise<void>;
   fetchServices: () => Promise<void>;
+  setAvailability: (availability: Availability) => void;
+  setAvailabilityLoading: (isLoading: boolean) => void;
+  setAvailabilityError: (error: string | null) => void;
 }
 
-
-const injectVirtualLimitedDates = (limited: Date[], booked: Date[]): Date[] => {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  
-  const virtualLimited: Date[] = [...limited];
-  const bookedStrings = new Set(booked.map(d => d.toDateString()));
-  const limitedStrings = new Set(limited.map(d => d.toDateString()));
-
-  for (let i = 1; i <= 12; i++) {
-    const d = new Date(today);
-    d.setDate(today.getDate() + i);
-    const dateStr = d.toDateString();
-    
-    if (!bookedStrings.has(dateStr) && !limitedStrings.has(dateStr)) {
-      virtualLimited.push(d);
-    }
-  }
-  
-  return virtualLimited;
-};
-
-const getIntersectedAvailability = (selectedServices: SelectedService[], allServices: any[]): Availability => {
-  if (selectedServices.length === 0) {
-    return { limited: [], booked: [] };
-  }
-
-  const parseDate = (dateStr: string) => {
-    const [year, month, day] = dateStr.split('-').map(Number);
-    return new Date(year, month - 1, day);
-  };
-
-  const allBookedStrings = new Set<string>();
-  const allLimitedStrings = new Set<string>();
-
-  selectedServices.forEach(selected => {
-    const service = allServices.find(s => s.id === selected.serviceId);
-    if (service && service.dates) {
-      (service.dates.booked || []).forEach((d: string) => allBookedStrings.add(parseDate(d).toDateString()));
-      (service.dates.limited || []).forEach((d: string) => allLimitedStrings.add(parseDate(d).toDateString()));
-    }
-  });
-
-  // A date is booked if it is booked for ANY service in the stack
-  const booked = Array.from(allBookedStrings).map(d => new Date(d));
-  
-  // A date is limited if it is limited for ANY service in the stack (and not already booked)
-  const limited = Array.from(allLimitedStrings)
-    .filter(d => !allBookedStrings.has(d))
-    .map(d => new Date(d));
-
-  return {
-    limited: injectVirtualLimitedDates(limited, booked),
-    booked: booked,
-  };
-};
 
 export const useBookingStore = create<BookingState>()(
   persist(
@@ -147,7 +97,9 @@ export const useBookingStore = create<BookingState>()(
         theme: true,
         service: true,
       },
-      availability: { limited: [], booked: [] },
+      availability: { available: [] },
+      isAvailabilityLoading: false,
+      availabilityError: null,
       config: null,
       isConfigLoading: false,
       services: [],
@@ -161,20 +113,26 @@ export const useBookingStore = create<BookingState>()(
       setStep: (step) => set({ currentStep: step }),
       nextStep: () => set((state) => ({ currentStep: state.currentStep + 1 })),
       prevStep: () => set((state) => ({ currentStep: Math.max(1, state.currentStep - 1) })),
-      updateFormData: (data) => set((state) => {
-        const newFormData = { ...state.formData, ...data };
-        
-        let newAvailability = state.availability;
-        if (data.selectedServices) {
-          const allServices = state.services.flatMap((category: any) => category.services);
-          newAvailability = getIntersectedAvailability(newFormData.selectedServices, allServices);
+      updateFormData: (data) => set((state) => ({ 
+        formData: { ...state.formData, ...data } 
+      })),
+      fetchAvailability: async (selectedServices: SelectedService[], signal: AbortSignal) => {
+        set({ isAvailabilityLoading: true, availabilityError: null });
+        try {
+          const availability = await fetchAvailability(
+            selectedServices.map(s => s.serviceId),
+            signal
+          );
+          set({ availability, isAvailabilityLoading: false });
+        } catch (error: any) {
+          if (error.name !== 'CanceledError') {
+            set({ availabilityError: 'Failed to fetch availability', isAvailabilityLoading: false });
+          }
         }
-
-        return { 
-          formData: newFormData,
-          availability: newAvailability,
-        };
-      }),
+      },
+      setAvailability: (availability) => set({ availability }),
+      setAvailabilityLoading: (isAvailabilityLoading) => set({ isAvailabilityLoading }),
+      setAvailabilityError: (availabilityError) => set({ availabilityError }),
       resetBooking: () => set({
         selectedDate: undefined,
         currentStep: 1,

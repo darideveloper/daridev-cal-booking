@@ -23,6 +23,8 @@ export function BookingCalendar() {
   const selectedDate = useBookingStore((state: any) => state.selectedDate);
   const setSelectedDate = useBookingStore((state: any) => state.setSelectedDate);
   const availability = useBookingStore((state: any) => state.availability);
+  const isAvailabilityLoading = useBookingStore((state: any) => state.isAvailabilityLoading);
+  const availabilityError = useBookingStore((state: any) => state.availabilityError);
   const nextStep = useBookingStore((state: any) => state.nextStep);
   const formData = useBookingStore((state: any) => state.formData);
   const updateFormData = useBookingStore((state: any) => state.updateFormData);
@@ -39,41 +41,17 @@ export function BookingCalendar() {
   }, []);
 
   const modifiers = useMemo(() => ({
-    isBooked: (d: Date) => {
-      const dateObj = d instanceof Date ? d : new Date(d);
-      return dateObj > today && availability.booked.some((bookedDate: Date) => {
-        const b = bookedDate instanceof Date ? bookedDate : new Date(bookedDate);
-        return b.toDateString() === dateObj.toDateString();
-      });
-    },
-    isLimited: (d: Date) => {
-      const dateObj = d instanceof Date ? d : new Date(d);
-      return dateObj > today && availability.limited.some((limitedDate: Date) => {
-        const l = limitedDate instanceof Date ? limitedDate : new Date(limitedDate);
-        return l.toDateString() === dateObj.toDateString();
-      });
-    },
     isAvailable: (d: Date) => {
       const dateObj = d instanceof Date ? d : new Date(d);
-      if (dateObj <= today) return false;
-      
-      const isBooked = availability.booked.some((bookedDate: Date) => {
-        const b = bookedDate instanceof Date ? bookedDate : new Date(bookedDate);
-        return b.toDateString() === dateObj.toDateString();
+      return dateObj > today && availability.available.some((availableDate: Date) => {
+        const a = availableDate instanceof Date ? availableDate : new Date(availableDate);
+        return a.toDateString() === dateObj.toDateString();
       });
-      const isLimited = availability.limited.some((limitedDate: Date) => {
-        const l = limitedDate instanceof Date ? limitedDate : new Date(limitedDate);
-        return l.toDateString() === dateObj.toDateString();
-      });
-      
-      return !isBooked && !isLimited;
     },
   }), [availability, today]);
 
   const modifiersClassNames = useMemo(() => {
     return {
-      isBooked: STATUS_CONFIG.booked.classes.modifier,
-      isLimited: STATUS_CONFIG.limited.classes.modifier,
       isAvailable: STATUS_CONFIG.available.classes.modifier,
     };
   }, []);
@@ -85,19 +63,12 @@ export function BookingCalendar() {
     
     const dateStr = dateObj.toDateString();
     
-    const isBooked = availability.booked.some((bookedDate: Date) => {
-      const b = bookedDate instanceof Date ? bookedDate : new Date(bookedDate);
-      return b.toDateString() === dateStr;
+    const isAvailable = availability.available.some((availableDate: Date) => {
+      const a = availableDate instanceof Date ? availableDate : new Date(availableDate);
+      return a.toDateString() === dateStr;
     });
-    if (isBooked) return 'booked';
     
-    const isLimited = availability.limited.some((limitedDate: Date) => {
-      const l = limitedDate instanceof Date ? limitedDate : new Date(limitedDate);
-      return l.toDateString() === dateStr;
-    });
-    if (isLimited) return 'limited';
-    
-    return 'available';
+    return isAvailable ? 'available' : 'booked';
   };
 
   const statusKey = getStatus(selectedDate);
@@ -133,7 +104,17 @@ export function BookingCalendar() {
             </div>
           )}
 
-          <div className="p-2 bg-background rounded-xl border border-border shadow-sm w-full">
+          <div className="p-2 bg-background rounded-xl border border-border shadow-sm w-full relative">
+            {isAvailabilityLoading && (
+              <div className="absolute inset-0 z-10 flex items-center justify-center bg-background/80 backdrop-blur-sm rounded-xl">
+                <p className="text-xs">{language === 'es' ? 'Cargando disponibilidad...' : 'Loading availability...'}</p>
+              </div>
+            )}
+            {availabilityError && (
+              <div className="absolute inset-0 z-10 flex items-center justify-center bg-background/90 p-4 text-center rounded-xl">
+                <p className="text-xs text-destructive">{availabilityError}</p>
+              </div>
+            )}
             <Calendar
               mode="single"
               selected={selectedDate}
@@ -150,7 +131,15 @@ export function BookingCalendar() {
                 ...modifiersClassNames,
               }}
               modifiers={modifiers}
-              disabled={[(d: Date) => d <= today, ...availability.booked]}
+              disabled={(d: Date) => {
+                const dateObj = d instanceof Date ? d : new Date(d);
+                if (dateObj <= today) return true;
+                const isAvailable = availability.available.some((availableDate: Date) => {
+                  const a = availableDate instanceof Date ? availableDate : new Date(availableDate);
+                  return a.toDateString() === dateObj.toDateString();
+                });
+                return !isAvailable;
+              }}
             />
           </div>
 
