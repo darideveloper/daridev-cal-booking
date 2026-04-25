@@ -5,7 +5,7 @@ import { BookingForm } from "./BookingForm"
 import { BookingServiceSelection } from "./BookingServiceSelection"
 
 
-export default function BookingFlow({ initialServiceId }: { initialServiceId?: string }) {
+export default function BookingFlow() {
   const currentStep = useBookingStore((state: any) => state.currentStep)
   const updateFormData = useBookingStore((state: any) => state.updateFormData)
   const setLanguage = useBookingStore((state: any) => state.setLanguage)
@@ -40,7 +40,7 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
     }
 
     // 3. Handle Service (formerly tour)
-    const serviceQuery = urlParams.get('service') || urlParams.get('tour') || initialServiceId;
+    const serviceQuery = urlParams.get('service') || urlParams.get('tour');
     if (serviceQuery) {
       const isAlreadyAdded = (useBookingStore.getState() as any).formData.selectedServices.some(
         (s: any) => s.serviceId === serviceQuery
@@ -75,7 +75,7 @@ export default function BookingFlow({ initialServiceId }: { initialServiceId?: s
     if (serviceGroupQuery) {
       updateFormData({ serviceGroup: serviceGroupQuery });
     }
-  }, [initialServiceId, updateFormData, setLanguage, setTheme, setVisibility, servicesData])
+  }, [updateFormData, setLanguage, setTheme, setVisibility, servicesData])
 
   // Apply brand color
   useEffect(() => {
